@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALAMAN 3</title>
+</head>
+
+<body bgcolor="#abc8ad">
+    <h1 align="center">HALAMAN 3 FORM BIODATA DIRI</h1>
+    <table style="background-color: azure;" align="center" width="600px">
+        <hr width="600px" size="5" noshade="">
+        <tr>
+            <td>
+                <form action="/submit-your-form" method="post">
+                    <table cellpadding="10px" width="100%" border="2" background="#ffff">
+                        <tr>
+                            <td><label for="nama">Nama:</label></td>
+                            <td><input type="text" id="nama" name="nama"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="alamat">Alamat:</label></td>
+                            <td><input type="text" id="alamat" name="alamat"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tanggalLahir">Tanggal Lahir:</label></td>
+                            <td><input type="date" id="tanggalLahir" name="tanggalLahir"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pendidikan">Pendidikan:</label></td>
+                            <td>
+                                <select id="pendidikan" name="pendidikan">
+                                    <option value="MI">ISLAMIYAH</option>
+                                    <option value="SMP">SMP 1 NURUL ANWAR</option>
+                                    <option value="SMA">SMA NURUL ANWAR</option>
+                                    <option value="SI">S1 SISTEM INFORMASI</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="hobi">HOBI</label></td>
+                            <td>
+                                <input type="checkbox" id="HOBI" name="HOBI" value="voli">voli
+                                <input type="checkbox" id="HOBI" name="HOBI" value="game">game
+                                <input type="checkbox" id="HOBI" name="HOBI" value="analis">analis
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>
+                                <input type="radio" name="jk">Laki-Laki
+                                <input type="radio" name="jk">Perempuan
+                            </td>
+                        </tr>
+                        <tr>
+                            <input type="submit" value="Submit">
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+<footer>
+    <details align="center ">
+        <summary>KLIK DISINI UNTUK MELIHAT LEBIH LANJUT </summary>
+        <p>untuk melanjutkan kehalaman selanjut nya </p>
+        <button onclick="document.location='halaman1.html'">HAL 1</button>
+        <button onclick="document.location='halaman2.html'">HAL 2</button>
+        <button onclick="document.location='halaman3.html'">HAL 3</button>
+    </details>
+</footer>
+
+</html>

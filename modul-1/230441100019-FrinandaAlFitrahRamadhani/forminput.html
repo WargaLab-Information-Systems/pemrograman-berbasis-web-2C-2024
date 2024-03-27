@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data</title>
+    <style>
+        header{
+        width: 100%;
+        background-color: rgb(122, 122, 122);
+        margin-top: 10px;
+        padding: 15px;
+        }
+        button{
+            background-color: rgb(122, 122, 122);
+            border: none;
+        }
+        form{
+            background-color: #abc4ff;
+            margin: 20px 400px 20px 400px;
+            padding-bottom: 30px;
+            border-style: solid;
+            border-radius: 0px;
+        }
+        .abc label{
+            margin-left: 20px;
+        }
+        .abc input{
+            width: 90%;
+            border-style: solid;
+            margin-left: 20px;
+        }
+        .jk label{
+            margin-left: 20px;
+        }
+        .jk input{
+            margin-left: 20px;
+        }
+        .hobi label{
+            margin-left: 20px;
+        }
+        .hobi input{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button><a href="coba.html">Beranda</a></button>
+        <button><a href="biodata.html">Biodata</a></button>
+        <button><a href="tabel.html">Data Mahasiswa</a></button>
+        <button><a href="forminput.html">Input Data</a></button>
+    </header>
+    <form action="coba.html">
+        <h1><center><u>Input Data</u></center></h1>
+        <div class="abc">
+            <label for="nama">Nama :</label><br>
+            <input type="text" name="nama" placeholder="Masukkan Nama"><br>
+        </div>
+        <div class="abc">
+            <label for="nim">NIM :</label><br>
+            <input type="text" name="nim" placeholder="Masukkan NIM"><br>
+        </div>
+        <div class="abc">
+            <label for="">Tanggal Lahir :</label><br>
+            <input type="date"><br>
+        </div>
+        <div class="jk">
+            <label for="" name="jk">Jenis Kelamin :</label><br>
+            <input type="radio" name="jk" placeholder="Masukkan Jenis Kelamin">Laki-Laki
+            <input type="radio" name="jk" placeholder="Masukkan Jenis Kelamin">Perempuan<br>
+        </div>
+        <div class="abc">
+            <label for="alamat">Alamat :</label><br>
+            <textarea name="alamat" rows="10" cols="30" style="margin-left: 20px; width: 9  0%;" placeholder="Masukkan Alamat"></textarea><br>
+        </div>
+        <div class="abc">
+            <label for="agama">Agama :</label><br>
+            <input type="text" name="agama" placeholder="Masukkan Agama"><br>
+        </div>
+        <div class="abc">
+            <label for="pdkn">Pendidikan :</label><br>
+            <input type="text" name="pdkn" placeholder="Masukkan Pendidikan Saat Ini"><br>
+        </div>
+        <div class="hobi">
+            <label for="hobi">Hobby :</label><br>
+            <input type="checkbox" name="hobi">Sepak Bola
+            <input type="checkbox" name="hobi">Futsal
+            <input type="checkbox" name="hobi">Voli<br>
+            <input type="checkbox" name="hobi">Pencak Silat
+            <input type="checkbox" name="hobi">Renang
+            <input type="checkbox" name="hobi">Lainnya
+        </div><br>
+        <div class="abc">
+            <input type="submit" value="Kirim" style="border-radius: 5px; background-color: rgb(0, 0, 0); color: white;">
+        </div>
+    </form>
+</body>
+</html>

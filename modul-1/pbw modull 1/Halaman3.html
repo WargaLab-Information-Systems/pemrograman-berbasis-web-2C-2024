@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inputan</title>
+</head>
+<body>
+    <body bgcolor="6698FF"></body>
+    <h1 style="border:2px solid rgb(90, 20, 165);">FORM BIODATA</h1>
+    <form>
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" size="50"><br>
+        
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br>
+        
+        <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+        <select id="tanggal_lahir" name="tanggal_lahir">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+           
+        </select>
+        <select id="bulan_lahir" name="bulan_lahir">
+            <option value="Januari">Januari</option>
+            <option value="Februari">Februari</option>
+            <option value="Maret">Maret</option>
+            <option value="April">April</option>
+            <option value="Mei">Mei</option>
+            <option value="Juni">Juni</option>
+            <option value="July">July</option>
+            
+        </select>
+        <select id="tahun_lahir" name="tahun_lahir">
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+
+        </select><br>
+
+        <p [align="left"]>Jenis Kelamin:</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Laki-Laki</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">Perempuan</label><br><br>
+        
+        <label for="pendidikan">Pendidikan:</label><br>
+        <input type="text" id="pendidikan" name="pendidikan" size="50"><br>
+
+        <p [align="left"]>HOBBY:</p>
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Menggambar">
+        <label for="vehicle1"> Menggambar</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Bernyanyi">
+        <label for="vehicle2"> Bernyanyi</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Memancing">
+        <label for="vehicle3"> Memancing</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Memasak">
+        <label for="vehicle1"> Memasak</label><br>
+
+        <label for="cita-cita">Cita-Cita:</label><br>
+        <input type="text" id="cita-cita" name="cita-cita" size="50"><br>
+        
+
+        <button type="submit">Save</button>
+        <button type="reset">Reset</button>
+    </form>
+    <h1><a href="Halaman1.html">BACK</a></h1>
+</body>
+</html>

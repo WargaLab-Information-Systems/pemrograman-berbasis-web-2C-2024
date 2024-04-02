@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <style>
+        h2 {
+            background-color: coral;
+            text-align: center;
+ 
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        div {
+            margin-bottom: 20px;
+            padding: 70px;
+            border: 4px solid #cec2c2;
+            border-radius: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="radio"], input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #ff6347;
+        }
+        button{
+            border-radius: 30px;
+        }
+        body{
+            background-color: #c6a09a;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Input Biodata</h2>
+    <form>
+        <div>
+            <h4>input data pribadi</h4>
+            <label for="fname">Nama Awal:</label>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Nama Terakhir:</label>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" required><br>
+            <label for="phone">Nomor Telepon:</label>
+            <input type="text" id="phone" name="phone" required><br>
+        </div>
+        <div>
+            <h4>agama kepercayaan</h4>
+            <label><input type="radio" name="religion" value="Islam" required>Islam</label><br>
+            <label><input type="radio" name="religion" value="Hindu" required>Hindu</label><br>
+            <label><input type="radio" name="religion" value="Budha" required>Budha</label><br>
+            <label><input type="radio" name="religion" value="Lain-lain" required>Lain-lain</label><br>
+        </div>
+        <div>
+            <h4>makanan kesukaan</h4>
+            <label><input type="checkbox" name="food[]" value="Ayam Goreng"> Ayam Goreng</label><br>
+            <label><input type="checkbox" name="food[]" value="Rica-Rica"> Rica-Rica</label><br>
+            <label><input type="checkbox" name="food[]" value="Mie Ayam Pangsit"> Mie Ayam Pangsit</label><br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

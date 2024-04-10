@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+
+.navigasi {
+    background-color: #AFEEEE;
+    height: 360px;  
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 500px; /* Tentukan lebar yang diinginkan */
+    height: 300px; /* Biarkan tinggi disesuaikan secara proporsional */
+}
+
+.navbar { 
+    background-color: #FF8C00; /* Warna latar belakang navbar */
+    color: #203405; /* Warna teks navbar */
+    padding: 10px 0;
+} 
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #ffffff; /* Warna teks link navbar */
+    text-decoration: none;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.food-item,
+.drink-item {
+    margin: 0 20px;
+    text-align: center;
+    background-color: #6495ED; /* Warna latar belakang item makanan/minuman */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(95, 10, 10, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.food-item:hover,
+.drink-item:hover {
+    transform: translateY(-5px);
+}
+
+.food-item img,
+.drink-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.food-item h3,
+.drink-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333333; /* Warna teks judul item */
+}
+
+section{
+    width: 50%;
+    float: right;;
+    padding: 40px;
+    background-color: rgb(224, 18, 18);
+    height: auto;
+}
+
+.food-item p,
+.drink-item p {
+    color: hsl(0, 0%, 0%); /* Warna teks deskripsi item */
+    margin: 0;
+    padding: 0 20px 20px 20px;
+}
+
+section{
+    width: 50%;
+    float: right;;
+    padding: 40px;
+    background-color: rgb(224, 18, 18);
+    height: auto;
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: rgb(70, 185, 70);
+    text-align: center;
+    padding: 0px;
+}
+
+footer h2{
+    padding-top: 15px;
+    margin: auto;
+}
+
+footer p{
+    padding-bottom: 15px;
+}

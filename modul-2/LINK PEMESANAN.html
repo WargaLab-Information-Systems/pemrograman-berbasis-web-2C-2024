@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINK PEMESANAN</title>
+</head>
+    <style>
+        body {
+            background-image: url(bg2.jpeg);
+            background-size: cover;
+            height: 300vh;
+            background-position: center;
+            font-size: medium;
+            color: #fdc241;
+            padding: 10px 10px;
+
+            a{
+                text-decoration: none;
+                color: #fdc241;
+                padding: 20px 20px;
+            }
+        }
+    </style>
+<body>
+    <center><p style="color: #fdc241;"><font size="6"><b>ORDER HERE</b></font></p></center><hr color="#fdc241" width="500">
+    <center><table border="1" cellspacing="0" cellpadding="0px">
+        <form>
+        <center> <table cellpadding="15" size="25">
+        <tr>
+            <td>Nama Pemesan </td>
+            <td> : <input type="text"><br></td>
+        </tr>
+
+        <tr>
+            <td><label for="Makanan">Order By</label></td>
+                <td> : 
+                    <select id="Makanan" name="Makanan">
+                        <option value="Makanan">Pilih Salah Satu</option>
+                        <option value="Makanan">DINE IN ( Makan Di Tempat )</option>
+                        <option value="Makanan">TAKE AWAY ( Di Bawa Pulang )</option>
+                    </select>
+                </td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Pilih Menu</td> 
+            <td><label> : <input type="checkbox"> Croissant </label>
+            <label>  <input type="checkbox"> Croffle </label>
+            <label>  <input type="checkbox"> Slice Cake </label>
+            <label>  <input type="checkbox"> Cinnamon Roll </label>
+            <label>  <input type="checkbox"> Pancake </label></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><label> : <input type="checkbox"> Americano </label>
+            <label>  <input type="checkbox"> Latte </label>
+            <label>  <input type="checkbox"> Boba Milk Tea</label>
+            <label>  <input type="checkbox"> Dalgona Cofee </label>
+            <label>  <input type="checkbox"> Matcha Latte </label></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td> : <label>  <input type="checkbox"> Menu Lain </label></td>
+        </tr>
+
+        <tr>
+            <td>Keterangan</td> 
+            <td> : <textarea name="message" rows="3" cols="30">Kamu bisa menambahkan jumlah pesanan dan keterangan yang kamu inginkan</textarea><br></td>
+        </tr>
+    </table>
+
+       <center><input type="submit" value="Submit"></center>
+
+       <br></br>
+       
+       <hr color="#fdc241" width="500">
+       <a href="MODUL2.html">KEMBALI KE HALAMAN UTAMA</a>
+</body>
+</html>

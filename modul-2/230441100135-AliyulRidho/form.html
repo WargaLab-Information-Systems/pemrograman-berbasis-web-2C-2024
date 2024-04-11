@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PITZAH-KING ORDER FORM</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="verif.html" target="_blank">
+        <h1>Pesanan</h1>
+        <div class="input-box">
+          <input
+            type="text"
+            name="pemesan"
+            id="pemesan"
+            placeholder="Nama Pemesan"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            name="alamat"
+            id="pemesan"
+            placeholder="Alamat Pemesan"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            name="nomor"
+            id="nomor"
+            placeholder="Nomor Pemesan"
+            required
+          />
+        </div>
+
+        <div class="checkbox-input">
+          <details>
+            <summary>Pilih Pesanan Anda:</summary>
+            <ul>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >Magarita Pizza For King. /50k</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >Papperoni Pizza For King. /55k</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >Seafood Pizza for King. /55k</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >Vegetarians Pizza for King. /40k</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >The Pizza for The Real KING. /1Jt</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >Just King. / 60k</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >Real King. / 70k</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >King And Queen. /120k</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >King Family. 170k</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" /><label
+                  for="menu"
+                  class="label-menu"
+                  >Kingdom Deluxe. 750k</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="menu" value="menu1" required /><label
+                  for="menu"
+                  class="label-menu"
+                  >Sudah.</label
+                >
+              </li>
+            </ul>
+          </details>
+        </div>
+
+        <div class="radio-input">
+          <p>Silahkan pilih metode pembayaran anda :</p>
+          <div class="metode">
+            <label for="pembayaran">COD</label>
+            <input type="radio" id="pembayaran" name="pilihan-radio" required />
+            <input type="radio" id="pembayaran" name="pilihan-radio" required />
+            <label for="pembayaran" class="va">BANK</label>
+          </div>
+        </div>
+
+        <button type="submit" class="tombol">PESAN SEKARANG!</button>
+      </form>
+    </div>
+  </body>
+</html>

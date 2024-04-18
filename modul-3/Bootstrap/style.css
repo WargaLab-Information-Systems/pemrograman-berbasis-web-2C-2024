@@ -1,0 +1,10 @@
+.feature-box {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    color: #007bff;
+  }

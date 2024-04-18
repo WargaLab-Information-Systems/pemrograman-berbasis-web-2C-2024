@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hjauku.</title>
+  </head>
+  <body>
+    <div class="bg-white">
+        <header class="absolute inset-x-0 top-0 z-50">
+          <nav class="flex items-center justify-between p--5 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img class="h-40 w-auto" src="logolingkungan.png" alt="">
+              </a>
+            </div>
+            <div class="flex lg:hidden">
+              <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+              <a href="#home" class=" hover:bg-green-400 font-boldtext-sm font-semibold rounded mb-2 py-2 px-2 leading-6 text-gray-900">Home</a>
+              <a href="#about" class="hover:bg-green-400 font-boldtext-sm font-semibold rounded mb-2 py-2 px-2 leading-6 text-gray-900">About</a>
+              <a href="#services" class="hover:bg-green-400 font-boldtext-sm font-semibold rounded mb-2 py-2 px-2 leading-6 text-gray-900">Services</a>
+              <a href="#contact" class="hover:bg-green-400 font-boldtext-sm font-semibold rounded mb-2 py-2 px-2 leading-6 text-gray-900">Contact</a>
+            </div>
+          </nav>
+          <!-- Mobile menu, show/hide based on menu open state. -->
+          <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Your Company</span>
+                  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                </a>
+                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-900">
+                  <span class="sr-only">Close menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                  <div class="space-y-2 py-6">
+                    <a href="#home" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">home</a>
+                    <a href="#about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+                    <a href="#services" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
+                    <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+                  </div>
+                  <div class="py-6">
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+    </div>
+    <section id="home">
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+          <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#86ff71] to-[#9bfa96] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+          <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+              <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                Announcing our next round of funding. <a href="#" class="font-semibold text-green-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </div>
+            <div class="text-center">
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Penghijauan, Menciptakan Generasi Yang Cerah Di Masa Mendatang</h1>
+              <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="#" class="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400">Get started</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#7dff5f] to-[#116900] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+        </div>
+   </section> 
+    
+   <section id="about" class="min-h-screen flex items-center">
+     <div class="container mx-auto px-4 mb-5">
+        <div class="header-box flex lg:flex-row flex-col items-center gap-10">
+          <div class="box w-1/2 lg:order-1 order-2 lg:text-left text-center">
+          <h1 class=" font-bold text-4xl tracking-tight text-green-500 sm:text-4xl text-center mb-16">Apa itu Hijauku.?</h1>
+          <p class="mb-4 text-slate-600 text-base leading-loose font-mono">Hijauku. adalah sebuah entitas yang berkomitmen kuat untuk mengubah lingkungan 
+             dan membentuk masa depan yang lebih cerah bagi generasi mendatang melalui program kerja 
+             penghijauan. Dengan penuh semangat, organisasi ini menghadirkan berbagai inisiatif yang bertujuan 
+             untuk merevitalisasi ekosistem yang terdegradasi dan mengurangi dampak negatif perubahan iklim. 
+             Melalui penanaman pohon, restorasi lahan, dan kampanye kesadaran lingkungan, mereka tidak hanya 
+             menciptakan ruang hijau baru tetapi juga membangun fondasi bagi generasi masa depan yang lebih 
+             berkelanjutan dan peduli terhadap alam</p>
+            
+            <button class="bg-teal-400 hover:bg-blue-200 py-2 px-4 rounded mb-2 text-white">Tentang Kami?</button>
+          </div>
+          <div class="box lg:w-1/2 lg:order-2 order-1">
+             <img src="hijau.png" alt="hijau" class="xl:w-[500px]
+             lg:w-[400px] md:w-[300px] sm:w-[250px] w-[200px] block ml-auto" />
+          </div>
+        </div>
+     </div>
+   </section>
+
+    <section id="services" class="flex justify-center items-center min-h-screen" >
+        <div class="relative isolate overflow-hidden bg-white Spy-24 sm:py-32">
+            <img src="gunung.jpg" alt="gunung" class="absolute inset-0 -z-10 h-full w-full object-cover  md:object-center opacity-90">
+            <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
+              <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#7dff5f] to-[#116900] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+            <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+              <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#7dff5f] to-[#116900] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                <div class="justify-center grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 items-center text-green-700 sm:grid-cols-2 md:flex lg:gap-x-10">
+                  <a href="#" class="bg-green-300 hover:bg-green-400 text-green-700 font-bold py-2 px-4 rounded mb-2">Penghematan Sumber Daya Energi <span aria-hidden="true">&rarr;</span></a>
+                  <a href="#" class="bg-green-300 hover:bg-green-400 text-green-700 font-bold py-2 px-4 rounded mb-2">Pemanfaatan Barang Lama <span aria-hidden="true">&rarr;</span></a>
+                  <a href="#" class="bg-green-300 hover:bg-green-400 text-green-700 font-bold py-2 px-4 rounded mb-2">Mendaur Ulang Barang Bekas <span aria-hidden="true">&rarr;</span></a>
+                  <a href="#" class="bg-green-300 hover:bg-green-400 text-green-700 font-bold py-2 px-4 rounded mb-2">Penanaman Pohon Atau Reboisasi <span aria-hidden="true">&rarr;</span></a>
+                </div>
+                <dl class="gap-y-20 ml-64 grid grid-cols-1 gap-8 mt-32 sm:grid-cols-2 lg:grid-cols-4 items-center">
+                  <div class="bg-green-900 hover:bg-green-500 font-bold py-2 px-4 rounded mb-2mt--20 flex flex-col-reverse">
+                    <dt class="text-base leading-7 text-gray-300">Orang Bergabung</dt>
+                    <dd class="text-2xl font-bold leading-9 tracking-tight text-white">10000+</dd>
+                  </div>
+                  <div class="bg-green-900 hover:bg-green-500 font-bold py-2 px-4 rounded mb-2mt--20 flex flex-col-reverse"">
+                    <dt class="text-base leading-7 text-gray-300">Perusahaan Bekerjasama</dt>
+                    <dd class="text-2xl font-bold leading-9 tracking-tight text-white">200+</dd>
+                  </div>
+                  <div class="bg-green-900 hover:bg-green-500 font-bold py-2 px-4 rounded mb-2mt--20 flex flex-col-reverse"">
+                    <dt class="text-base leading-7 text-gray-300">Project Terselesaikan</dt>
+                    <dd class="text-2xl font-bold leading-9 tracking-tight text-white">1500+</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+    </section> 
+
+    <section id="contact" >
+      <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+          <h2 class="py-5 px-5 bg-green-300 rounded  mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Contact us</h2>
+        </div>
+        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form class="space-y-6 bg-green-200 rounded-lg p-6" action="#" method="POST ">
+             
+            <div>
+              <label for="name" class="block text-sm font-medium leading-6 text-black">Nama:</label>
+              <input type="text" id="name" name="name" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">   
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium leading-6 text-black">Email address:</label>
+              <div class="mt-2">
+              <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+    
+            <div>
+              <label for="message" class="block text-sm font-medium leading-6 text-black">Pesan:</label>
+              <textarea id="message" name="message" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea></textarea>
+            </div>
+      
+            <div>
+              <button type="submit" class="flex w-full justify-center rounded-md bg-green-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="copyright">
+        <div class="wrapper text-center mt-24">
+            &copy; 2023. <b>WithLavelia.</b> All Rights Reserved.
+        </div>
+      </div>
+    </section>
+    
+    
+</body>
+</html>

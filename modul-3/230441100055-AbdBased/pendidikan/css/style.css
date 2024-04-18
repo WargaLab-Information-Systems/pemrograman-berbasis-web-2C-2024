@@ -1,0 +1,150 @@
+body {
+  width: 100%;
+}
+
+.backround {
+  height: 75vh;
+  width: 1347px;
+  object-fit: cover;
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container a {
+  font-family: "comic sans ms";
+}
+
+.col-12 p {
+  color: #ff9800;
+  font-family: "comic sans ms";
+  font-weight: bold;
+}
+
+.col-8 h1 {
+  color: aqua;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.col-8 h1 span {
+  color: #1c1678;
+}
+
+.slogan p {
+  color: black;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.slogan p span {
+  color: #ff9800;
+  font-family: "comic sans ms";
+  font-size: 25px;
+}
+
+.text-center button {
+  color: aqua;
+  border-radius: 20px;
+  border: solid white 2px;
+}
+
+.container .row .col-12 p {
+  font-family: "Poppins";
+}
+
+.container .row .col-12 p span {
+  color: #ff2e63;
+}
+
+.benefit {
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.card img {
+  height: 180px;
+}
+
+.card-body {
+  height: 145px;
+  margin-bottom: 5px;
+}
+
+.card-body h5 {
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.card-body p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card-body-kursus {
+  height: 100px;
+}
+
+.card-body-kursus h5 {
+  font-weight: bold;
+  font-family: "poppins";
+  text-align: center;
+}
+
+.card-body-kursus p {
+  font-family: "comic sans ms";
+  text-align: center;
+}
+
+footer {
+  background-color: #a34343;
+  width: 100%;
+  clear: both;
+  padding: 5px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.footer-container {
+  margin-top: 100px;
+  width: 100%;
+}
+.media-social {
+  display: flex;
+  justify-content: center;
+}
+.media-social a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px;
+  color: white;
+}
+.media-social a i:hover {
+  color: #e9c874;
+  transform: scale(1.2) translateY(-5px);
+  transition: 0.5s;
+}
+
+.nav-footer {
+  margin: 30px 0;
+}
+
+.footer-bottom {
+  background-color: #a34343;
+  clear: both;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+
+div.footer-bottom p {
+  color: black;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.footer-bottom p span {
+  color: white;
+}

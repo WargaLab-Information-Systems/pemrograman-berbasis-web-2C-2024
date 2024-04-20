@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEMESANAN LAPIS PAHLAWAN</title>
+    <style>
+      body {
+        background-color: rgb(169, 233, 169);
+        padding: 10px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: auto;
+      }
+      h2 {
+        text-align: center;
+        font-size: 36px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      table td {
+        padding: 8px;
+      }
+      input[type="text"],
+      input[type="number"],
+      select,
+      textarea {
+        width: calc(100% - 10px);
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #333;
+      }
+      a:hover {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>PEMESANAN LAPIS KUKUS</h2>
+    <hr />
+    <form action="" method="POST">
+      <table>
+        <tr>
+          <td width="100">Nama</td>
+          <td><input type="text" name="nama" /></td>
+        </tr>
+        <tr>
+          <td>No handphone</td>
+          <td><input type="number" name="no_hp" /></td>
+        </tr>
+        <tr>
+          <td>Alamat Pengantaran</td>
+          <td><input type="text" name="alamat" /></td>
+        </tr>
+        <tr>
+          <td>Pilih menu</td>
+          <td>
+            <select name="menu">
+              <option>CHOCOPANDAN</option>
+              <option>ES TELER</option>
+              <option>PISANG</option>
+              <option>TARO</option>
+              <option>COKLAT</option>
+              <option>TERANG BULAN</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Keterangan Pemesanan</td>
+          <td><textarea name="keterangan"></textarea></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Simpan" /></td>
+        </tr>
+      </table>
+    </form>
+    <a href="modul2.html">KEMBALI KE MENU AWAL</a>
+  </body>
+</html>

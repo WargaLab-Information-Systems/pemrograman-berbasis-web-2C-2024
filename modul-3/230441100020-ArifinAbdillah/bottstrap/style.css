@@ -1,0 +1,41 @@
+/* gaya untuk header */
+header {
+    background-image: url(https://i.pinimg.com/736x/fb/b6/4d/fbb64dda02358c65f2d9cdf1d2498958.jpg);
+    background-color: #007bff;
+    color: #fff; 
+    padding: 50px 0;
+    width: 100%;
+  }
+  
+  /* Gaya untuk footer */
+  footer {
+    background-color: #007bff; 
+    width: 100%;
+    padding: 20px 0; 
+  }
+  
+  /* Gaya untuk judul */
+  h2, h3, h4 {
+    color: #000000; 
+  }
+  
+  /* Gaya untuk gambar */
+  img {
+    border-radius: 5px; 
+  }
+  
+  /* Gaya untuk jumbotron */
+  .jumbotron {
+    border-radius: 10px; 
+  }
+  
+  /* Gaya untuk paragraf */
+  p {
+    color: black;
+    line-height: 1.6; 
+  }
+  /* gaya unruk header */
+  h1 {
+    color: rgb(0, 0, 0);
+  }
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Josefin+Sans&family=Lora:wght@500&family=Open+Sans:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Green</title>
+</head>
+
+<body class="bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('color.jpg')">
+    <div class="header">
+        <div class="topbar h-19 rounded-lg" style="background-color: white; opacity: 60%; height: 60px;">
+            <p class="text-lime-800 text-5xl tracking-wider mx-7" style="font-family: PT Serif, serif;">Green</p>
+        </div>
+    </div>
+
+    <div class="flex h-screen">
+        <div class="w-1/6 p-4" style="background-color: white; opacity: 60%;">
+            <h1 class=" text-lime-800 text-2xl font-bold mb-4 mx-4">Menu</h1>
+            <ul class="text-white">
+                <li class="mb-5"><a href="beranda.html" class="mx-4 text-lime-800 font-mono hover:underline">Beranda</a></li>
+                <li class="mb-5"><a href="tentang.html" class="mx-4 text-lime-800 font-mono hover:underline">Tentang</a></li>
+                <li class="mb-5"><a href="galeri.html" class="mx-4 text-lime-800 font-mono hover:underline">Galeri</a></li>
+                <li class="mb-5"><a href="kontak.html" class="mx-4 text-lime-800 font-mono hover:underline">Kontak</a></li>
+            </ul>
+        </div>
+        
+        <div class="w-3/4 p-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4 mx-4" style="font-family: PT Serif, serif;">Welcome To GREEN</h1>
+            <div class="container">
+                <form action="#" method="POST" class="bg-white rounded-lg p-6">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nama:</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Pesan:</label>
+                        <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Kirim</button>
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </div>
+</body>
+
+</html>

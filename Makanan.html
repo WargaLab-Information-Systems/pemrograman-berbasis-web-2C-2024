@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makanan minuman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="Home">
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Makanan & Minuman Khas Lamongan Terkenal</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/tugu-removebg-preview.png">
+            </div>
+
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png">
+            </div>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            
+            html{
+                scroll-behavior: smooth;
+            }
+            
+            #Home .main_text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: white;
+                font-size: 3rem;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            
+            #Home .main_image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            
+            section{
+                width: 100%;
+                height: 100vh;
+            }
+            
+            section nav{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: fixed;
+                right: 0;
+                left: 0;
+                background: rgb(255, 255, 255);
+                box-shadow: 0 0 10px rgba(19, 18, 18, 0.5);
+            }
+            
+            section nav .logo img{
+                width: 100px;
+                cursor: pointer;
+                margin: 7px 0;
+            }
+            
+            section nav ul{
+                list-style: none;
+            }
+            
+            section nav ul li{
+                display: inline-block;
+                margin: 0 15px;
+            }
+            
+            section nav ul li a{
+                text-decoration: none;
+                color: #000;
+                font-weight: 500;
+                font-size: 17px;
+                transition: 0.1s;
+            }
+            
+            section nav ul li a::after{
+                content: '';
+                width: 0;
+                height: 2px;
+                background: #fac031;
+                display: block;
+                transition: 0.2s linear;
+            }
+            
+            section nav ul li a:hover::after{
+                width: 100%;
+            }
+            
+            section nav ul li a:hover{
+                color: #fac031;
+            }
+            
+            section nav .icon i{
+                font-size: 18px;
+                color: #000;
+                margin: 0 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            
+            section nav .icon i:hover{
+                color: #fac031;
+            }
+            
+            section .main{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+               
+                top: 130px;
+            }
+            
+            section .main .men_text h1{
+                font-size: 60px;
+                
+                top: -90px;
+                left: 20px;
+            }
+            
+            section .main .men_text h1 span{
+                margin-left: 15px;
+                color: #fac031;
+                font-family: mv boli;
+                line-height: 22px;
+                font-size: 70px;
+            }
+            
+            section .main .main_image img{
+                width: 700px;
+                
+                left: 70px;
+            }
+            
+            section p{
+                width: 650px;
+                text-align: justify;
+                position: relative;
+                left: 123px;
+                bottom: 120px;
+                line-height: 22px;
+            }
+            
+            section .main_btn{
+                background: #fac031;
+                position: relative;
+                left: 123px;
+                bottom: 30px;
+                width: 150px;
+                cursor: pointer;
+                padding: 12px 25px;
+            }
+            
+            section .main_btn a{
+                color: #fff;
+                margin-right: 5px;
+                text-decoration: none;
+            }
+            
+            section .main_btn i{
+                color: #fff;
+                
+            }
+            
+            
+            
+            
+            
+            /About/
+            
+            .about{
+                width: 100%;
+                height: 100vh;
+                padding: 70px 0;
+            }
+            
+            .about .about_main{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            
+            .about .about_main .image img{
+                width: 800px;
+                
+                top: 60px;
+            }
+            
+            .about .about_main .about_text h1 span{
+                color: #fac031;
+                margin-right: 15px;
+                font-family: mv boli;
+            }
+            
+            .about .about_main .about_text h1{
+                font-size: 55px;
+                
+                bottom: 50px;
+            }
+            
+            .about .about_main .about_text h3{
+                font-size: 30px;
+                margin: 0 0 50px 0;
+            }
+            
+            .about .about_main .about_text p{
+                width: 650px;
+                text-align: justify;
+                margin-right: 30px;
+                line-height: 22px;
+            }
+            
+            .about .about_btn{
+                background: #fac031;
+                padding: 12px 25px;
+                text-decoration: none;
+                color: #fff;
+                bottom: 30px;
+            }
+            
+            
+            
+            /Menu/
+            
+            .menu{
+                width: 100%;
+                padding: 70px 0;
+            }
+            
+            .menu h1{
+                font-size: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+            
+            .menu h1 span{
+                color: #fac031;
+                margin-left: 15px;
+                font-family: mv boli;
+            }
+            
+            .menu h1 span::after{
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #fac031;
+                display: block;
+                position: relative;
+                bottom: 15px;
+            }
+            
+            .menu .menu_box{
+                width: 95%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 15px;
+            }
+            
+            .menu .menu_box .menu_card{
+                width: 325px;
+                height: 480px;
+                padding-top: 10px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+            
+            .menu .menu_box .menu_card .menu_image{
+                width: 300px;
+                height: 245px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            
+            .menu .menu_box .menu_card .menu_image img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: 0.3s;
+            }
+            
+            .menu .menu_box .menu_card .menu_image:hover img{
+                transform: scale(1.1);
+            }
+            
+            .menu .menu_box .menu_card .small_card{
+                width: 45px;
+                height: 45px;
+                float: right;
+                position: relative;
+                top: -240px;
+                right: -8px;
+                opacity: 0;
+                border-radius: 7px;
+                transition: 0.3s;
+            }
+            
+            .menu .menu_box .menu_card:hover .small_card{
+                position: relative;
+                top: -240px;
+                right: 20px;
+                opacity: 1;
+            }
+            
+            .menu .menu_box .menu_card .small_card i{
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 50px;
+                color: #000;
+                cursor: pointer;
+                text-shadow: 0 0 6px #000;
+                transition: 0.2s;
+            }
+            
+            .menu .menu_box .menu_card .small_card i:hover{
+                color: #fac031;
+            }
+            
+            .menu .menu_box .menu_card .menu_info h2{
+                width: 60%;
+                text-align: center;
+                margin: 10px auto 10px auto;
+                font-size: 25px;
+                color: #fac031;
+            }
+            
+            .menu .menu_box .menu_card .menu_info p{
+                text-align: center;
+                margin-top: 8px;
+                line-height: 21px;
+            }
+            
+            .menu .menu_box .menu_card .menu_info h3{
+                text-align: center;
+                margin-top: 10px;
+            }
+            
+            .menu .menu_box .menu_card .menu_info .menu_icon{
+                color: #fac031;
+                text-align: center;
+                margin: 10px 0 10px 0;
+            }
+            
+            .menu .menu_box .menu_card .menu_info .menu_btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: white;
+                background: #000;
+                padding: 8px 10px;
+                margin: 0 80px;
+                transition: 0.3s;
+            }
+            
+            
+            
+            /Gallary/
+            
+            .gallary{
+                width: 100%;
+                padding: 70px 0;
+            }
+            
+            .gallary h1{
+                font-size: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .gallary h1 span{
+                margin-left: 15px;
+                color: #fac031;
+                font-family: mv boli;
+            }
+            
+            .gallary h1 span::after{
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #fac031;
+                display: block;
+                position: relative;
+                bottom: 15px;
+            }
+            
+            .gallary .gallary_image_box{
+                width: 95%;
+                margin: 10px auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 10px;
+            }
+            
+            .gallary .gallary_image_box .gallary_image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: black;
+            }
+            
+            .gallary .gallary_image_box .gallary_image img{
+                width: 100%;
+                transition: .3s;
+            }
+            
+            .gallary .gallary_image_box .gallary_image:hover img{
+                opacity: 0.4;
+            }
+            
+            .gallary .gallary_image_box .gallary_image h3{
+                position: absolute;
+                font-size: 35px;
+                margin-bottom: 130px;
+                color: #fac031;
+                font-family: polo;
+                z-index: 5;
+                opacity: 0;
+                transition: 0.3s;
+            }
+            
+            .gallary .gallary_image_box .gallary_image:hover h3{
+                opacity: 1;
+            }
+            
+            .gallary .gallary_image_box .gallary_image p{
+                position: absolute;
+                width: 400px;
+                margin-top: 30px;
+                text-align: center;
+                color: white;
+                line-height: 22px;
+                opacity: 0;
+                z-index: 5;
+                transition: 0.3s;
+            }
+            
+            .gallary .gallary_image_box .gallary_image:hover p{
+                opacity: 1;
+            }
+            
+            .gallary .gallary_image_box .gallary_image .gallary_btn{
+                position: absolute;
+                margin-top: 180px;
+                color: #000;
+                background: #fac031;
+                padding: 7px 25px;
+                text-decoration: none;
+                opacity: 0;
+                transform: translateY(45px);
+                z-index: 5;
+                transition: 0.3s;
+            }
+            
+            .gallary .gallary_image_box .gallary_image:hover .gallary_btn{
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            
+            
+            /Review/
+            
+            .review{
+                
+                width: 100%;
+                height: 100vh;
+                padding: 70px 0;
+            }
+            
+            .review h1{
+                font-size: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .review h1 span{
+                margin-left: 15px;
+                color: #fac031;
+                font-family: mv boli;
+            }
+            
+            .review h1 span::after{
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #fac031;
+                
+                bottom: 15px;
+                display: block;
+            }
+            
+            .review .review_box{
+                width: 95%;
+                margin: 70px auto;
+                display: flex;
+            }
+            
+            .review .review_box .review_card{
+                width: 350px;
+                height: 535px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+                border-radius: 8px;
+                padding: 8px 20px;
+                margin: 0 8px;
+            }
+            
+            .review .review_box .review_card .review_profile{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                transition: 0.3s;
+            }
+            
+            .review .review_box .review_card:hover .review_profile{
+                transform: translateY(-60px);
+            }
+            
+            .review .review_box .review_card .review_profile img{
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+                border: 5px solid #cccccc;
+            }
+            
+            .review .review_box .review_card .review_text{
+                text-align: center;
+            }
+            
+            .review .review_box .review_card .review_text .name{
+                color: #000;
+                transition: 0.3s;
+            }
+            
+            .review .review_box .review_card:hover .review_text .name{
+                transform: translateY(-50px);
+            }
+            
+            .review .review_box .review_card .review_text .review_icon{
+                color: #fac031;
+                transition: 0.3s;
+            }
+            
+            .review .review_box .review_card:hover .review_text .review_icon{
+                transform: translateY(-30px);
+            }
+            
+            .review .review_box .review_card .review_text .review_social i{
+                margin: 5px 1px;
+                font-size: 15px;
+                opacity: 0;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            
+            .review .review_box .review_card:hover .review_text .review_social i{
+                opacity: 1;
+                transform: translateY(-8px);
+            }
+            
+            .review .review_box .review_card .review_text p{
+                text-align: center;
+                line-height: 22px;
+                transition: 0.3s;
+            }
+            
+            .review .review_box .review_card:hover .review_text p{
+                margin-top: 5px;
+            }
+            
+            
+            
+            /Order/
+            
+            .order{
+                width: 100%;
+                height: 100%;
+                padding: 70px 0;
+                background-image: url(image/bg2.jpg);
+                background-size: cover;
+                background-position: center;
+                
+            }
+            
+            .order h1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #000;
+                font-size: 55px;
+            }
+            
+            .order h1 span{
+                color: #fac031;
+                margin-right: 15px;
+                font-family: mv boli;
+            }
+            
+            .order h1 span::after{
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #fac031;
+                display: block;
+                
+                bottom: 15px;
+            }
+            
+            .order .order_main{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            
+            .order .order_main .order_image img{
+                width: 540px;
+            }
+            
+            .order .order_main form{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 0 10px;
+            }
+            
+            .order .order_main form .input p{
+                line-height: 25px;
+            }
+            
+            .order .order_main form .input{
+                margin: 5px;
+            }
+            
+            .order .order_main form .input input{
+                width: 300px;
+                height: 35px;
+                padding: 0 10px;
+                border: 2px solid #cccccc;
+                background: #eeeeee;
+                outline: none;
+                border-radius: 3px;
+            }
+            
+            .order .order_main form .input input:focus{
+                border: 2px solid #fac031;
+            }
+            
+            .order .order_main form .order_btn{
+                padding: 10px 0;
+                background: #fac031;
+                color: white;
+                width: 40%;
+                text-align: center;
+                margin-top: 20px;
+                text-decoration: none;
+            }
+            
+            
+            /Footer/
+            
+            footer{
+                width: 100%;
+                padding: 30px 0 0 20px;
+                background: #eeeeee;
+            }
+            
+            footer .footer_main{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+            
+            footer .footer_main .footer_tag{
+                text-align: center;
+            }
+            
+            footer .footer_main .footer_tag h2{
+                color: #000;
+                margin-bottom: 25px;
+                font-size: 30px;
+            }
+            
+            footer .footer_main .footer_tag p{
+                margin: 10px 0;
+            }
+            
+            footer .footer_main .footer_tag i{
+                margin: 0 5px;
+                cursor: pointer;
+            }
+            
+            footer .footer_main .footer_tag i:hover{
+                color: #fac031;
+            }
+            
+            footer .end{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+            }
+            
+            footer .end span{
+                color: #fac031;
+                margin-left: 10px;
+            }
+            
+            ::-webkit-scrollbar{
+                width: 13px;
+            }
+            
+            ::-webkit-scrollbar-track{
+                border-radius: 15px;
+                box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+            }
+            
+            ::-webkit-scrollbar-thumb{
+                background: #fac031;
+                border-radius: 15px;
+            }
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Order">Order</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+
+        
+
+        <div class="main_btn">
+            <a href="#">Order Now</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </section>
+
+
+    <!--About-->
+
+    <div class="about" id="About">
+        <div class="about_main">
+
+            <div class="image">
+                <img src="image/Food-Plate.png">
+            </div>
+
+            <div class="about_text">
+                <h1><span>About</span>Us</h1>
+                <h3>Why Choose us?</h3>
+                <p>
+                    Makanan dan minuman dari Lamongan mempesona dengan kekayaan cita rasa dan tradisi kuliner yang khas. Dari hidangan utama hingga minuman penyegar, setiap sajian membawa sentuhan unik dari Jawa Timur yang tak terlupakan.
+                    Sementara itu, minuman khas Lamongan menjadi penyejuk di tengah hari yang panas. Setiap hidangan dan minuman dari Lamongan tidak hanya memberikan kenikmatan bagi lidah, tetapi juga mengajak kita untuk merasakan kekayaan budaya dan tradisi yang turun-temurun dari Jawa Timur. Dengan setiap suapan dan tegukan, kita memahami betapa istimewanya warisan kuliner ini bagi masyarakat Lamongan dan seluruh Indonesia.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="#" class="about_btn">Order Now</a>
+
+    </div>
+    <!--Menu-->
+
+    <div class="menu" id="Menu">
+        <h1>Our<span>Menu</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/soto.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Soto Ayam</h2>
+                    <h3>30.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+            
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pecel lele.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pecel Lele</h2>
+                    <h3>20.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/boranan.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Nasi Boran</h2>
+                    <h3>25.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/asem bandeng.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Asem Bandeng</h2>
+                    <h3>40.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/es jeruk.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Es Jeruk</h2>
+                    <h3>10.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/es kelapa.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Es Degan</h2>
+                    <h3>20.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/es teh.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Es Teh</h2>
+                    <h3>5000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/kopi.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Kopi</h2>
+                    <h3>15.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+         
+                </div>
+
+            </div> 
+            
+        </div>
+
+    </div>
+
+
+
+        <!--Review-->
+
+    <div class="review" id="Review">
+        <h1>Customer<span>Review</span></h1>
+
+        <div class="review_box">
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/jepri.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Jefri Nichol</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        sangat enak sekali.....
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/repal.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Refal Haldy</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        ya enak lah masa enggak!
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/angga.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Angga Yunanda</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        pokoe enak
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/rizki.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Rizky Nazar</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                       gak bisa berkata kata pokoknya enak...
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Order-->
+
+    <div class="order" id="Order">
+        <h1><span>Order</span>Now</h1>
+
+        <div class="order_main">
+
+            <div class="order_image">
+                <img src="image/order_image.png">
+            </div>
+
+            <form action="#">
+
+                <div class="input">
+                    <p>Name</p>
+                    <input type="text" placeholder="you name">
+                </div>
+
+                <div class="input">
+                    <p>Email</p>
+                    <input type="email" placeholder="you email">
+                </div>
+
+                <div class="input">
+                    <p>Number</p>
+                    <input placeholder="you number">
+                </div>
+
+                <div class="input">
+                    <p>How Much</p>
+                    <input type="number" placeholder="how many order">
+                </div>
+
+                <div class="input">
+                    <p>You Order</p>
+                    <input placeholder="food name">
+                </div>
+
+                <div class="input">
+                    <p>Address</p>
+                    <input placeholder="you Address">
+                </div>
+
+                <a href="#" class="order_btn">Order Now</a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Lokasi</h2>
+                <p>Lamongan</p>
+                <p>Surabaya</p>
+                <p>Sidoarjo</p>
+                <p>Malang</p>
+                <p>Denpasar</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+62 85 6452 83617</p>
+                <p>johndeo123@gmail.com</p>
+                <p>LA_mania123@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> Amanda Aulia</span></p>
+
+    </footer>
+    
+</body>
+</html>
+

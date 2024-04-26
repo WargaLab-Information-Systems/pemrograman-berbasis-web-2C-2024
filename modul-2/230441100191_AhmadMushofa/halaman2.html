@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALAMAN 3</title>
+</head>
+<body bgcolor="#FDECD4">
+    <table align="center" width="100px">
+        <tr>
+            <td> <hr width="700px" size="4" noshade="">
+                <h1 align="center">ORDER</h1>
+                <hr width="600px">
+                <form id="orderForm" action="halaman3.html">
+                    <table cellpadding="10px" width="100%" border="5">
+                        <tr>
+                            <td><label for="nama">Nama pemesan:</label></td>
+                            <td><input type="text" id="nama" name="nama"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="alamat">Alamat pemesan:</label></td>
+                            <td><input type="text" id="alamat" name="alamat"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="makanan">Menu makanan:</label></td>
+                            <td>
+                                <select id="makanan" name="makanan">
+                                    <option value="nasi_goreng">Nasi Goreng</option>
+                                    <option value="mie_goreng">Mie Goreng</option>
+                                    <option value="Cap Cay">Cap Cay</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="minuman">Menu Minuman:</label></td>
+                            <td>
+                                <select id="minuman" name="minuman">
+                                    <option value="es_teh">Es Teh</option>
+                                    <option value="es_coklat">Es Coklat</option>
+                                    <option value="es_kelapa">Es kelapa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Submit">
+                                <input type="button" value="Refresh" onclick="location.reload();">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table> 
+</body>
+</html>

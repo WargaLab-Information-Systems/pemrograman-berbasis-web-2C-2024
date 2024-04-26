@@ -1,0 +1,124 @@
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+
+.logo {
+    text-align: center;
+    margin-top: 20px; /* Sesuaikan jarak logo dari bagian atas */
+}
+
+.logo img {
+    max-width: 200px; /* Sesuaikan lebar maksimum logo */
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #FF8C00;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Memastikan teks tengah di header */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.food-item,
+.drink-item {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #FFD700;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.food-item:hover,
+.drink-item:hover {
+    transform: translateY(-5px);
+}
+
+.food-item img,
+.drink-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.food-item h3,
+.drink-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.food-item p,
+.drink-item p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+footer {
+    background-color: #a2c816;
+    color: #040404;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animasi untuk teks di bawah tulisan "Resto Delight" */
+.animated-text {
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+}

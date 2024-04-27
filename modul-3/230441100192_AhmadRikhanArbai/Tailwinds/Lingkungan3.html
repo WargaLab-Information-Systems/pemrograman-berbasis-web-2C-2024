@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Berita Lingkungan</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    /* Gaya kustom untuk tema berita lingkungan */
+    .berita-item {
+      background-color: #EDF2F7;
+      border-radius: 8px;
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .berita-item:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Gaya untuk gambar berita */
+    .berita-item img {
+      width: 100%; /* Mengisi lebar kontainer */
+      height: auto; /* Menjaga proporsi aspek gambar */
+      border-radius: 8px; /* Membulatkan sudut gambar */
+      margin-bottom: 1rem; /* Jarak antara gambar dan teks */
+    }
+  </style>
+</head>
+<body class="bg-white font-sans antialiased">
+  <!-- Navigation Bar menggunakan Tailwind CSS -->
+  <nav class="bg-green-500 shadow-md">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <button class="block md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul class="hidden md:flex space-x-4">
+          <li><a href="#" class="text-white hover:text-blue-700">Beranda</a></li>
+          <!-- Tambahkan item menu lainnya jika diperlukan -->
+        </ul>
+        <!-- Form Cari menggunakan Tailwind CSS -->
+        <form class="hidden md:block">
+          <input class="border border-gray-300 rounded-md py-2 px-4" type="search" placeholder="Cari" aria-label="Search">
+          <button class="bg-white text-green-500 py-2 px-4 rounded-md ml-2">Cari</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bagian Konten menggunakan Tailwind CSS -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="berita-item">
+          <img src="Lingkungan 1.png" alt="Berita 1">
+          <h2 class="text-lg font-semibold text-green-500">Di Jamaika, buah sukun jadi makanan serba guna yang tahan cuaca ekstrem</h2>
+          <h3 class="text-gray-700 mt-2">Di Jamaika, buah sukun menjadi makanan serba guna yang tahan cuaca ekstrem, menyediakan sumber makanan dan pendapatan bagi banyak penduduk setempat. Namun, perubahan iklim dan pertanian modern mengancam kelangsungan hidup tanaman ini. Baca lebih lanjut untuk mengetahui dampaknya.</h3>
+          <p class="text-gray-500 mt-2">10 Maret 2024</p>
+          <a href="lingkungan 1.html" class="text-green-500 hover:text-blue-700">Berita selengkapnya</a>
+        </div>
+        <div class="berita-item">
+            <img src="Lingkungan 2.png" alt="Berita 2">
+            <h2 class="text-lg font-semibold text-green-500">Tambang emas ilegal di Pulau Sangihe 'makin masif beroperasi' - ‘Air laut dulunya jernih, sekarang keruh’</h2>
+            <h3 class="text-gray-700 mt-2">Tambang emas ilegal di Pulau Sangihe semakin berkembang pesat, mengancam lingkungan dan kehidupan masyarakat setempat. Air laut yang dulunya jernih kini menjadi keruh akibat limbah tambang. Pemerintah setempat berjuang untuk menanggulangi masalah ini. Baca selengkapnya untuk memahami dampaknya.</h3>
+            <p class="text-gray-500 mt-2">7 Maret 2024</p>
+            <a href="lingkungan 2.html" class="text-green-500 hover:text-blue-700">Berita selengkapnya</a>
+          </div>
+          <div class="berita-item">
+            <img src="Lingkungan 3.png" alt="Berita 3">
+            <h2 class="text-lg font-semibold text-green-500">'Penanaman pohon jadi solusi krisis air bersih', kisah Republik Dominika hadapi dampak perusakan lingkungan </h2>
+            <h3 class="text-gray-700 mt-2">Republik Dominika menghadapi krisis air bersih akibat perusakan lingkungan. Untuk mengatasi masalah ini, pemerintah dan masyarakat setempat mengadopsi solusi penanaman pohon. Bagaimana upaya ini berdampak pada krisis air dan lingkungan di negara ini? Temukan jawabannya di sini.</h3>
+            <p class="text-gray-500 mt-2">3 Maret 2024</p>
+            <a href="lingkungan 3.html" class="text-green-500 hover:text-blue-700">Berita selengkapnya</a>
+          </div>
+        <!-- Tambahkan berita lainnya -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer menggunakan Tailwind CSS -->
+  <footer class="bg-green-500 py-4 mt-4">
+    <div class="container mx-auto px-4">
+      <p class="text-center text-white">&copy; 2024 Website Berita Lingkungan</p>
+    </div>
+  </footer>
+
+  <!-- Tailwind CSS dan JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    // Tambahkan skrip kustom di sini jika diperlukan
+  </script>
+</body>
+
+</html>

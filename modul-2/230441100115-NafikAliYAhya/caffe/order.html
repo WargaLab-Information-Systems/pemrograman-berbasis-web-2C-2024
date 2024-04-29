@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="order.css">
+	
+</head>
+<body>
+	<div class="container"> 
+		<h1>MENU ARDAT CAFFE</h1>
+		<p>Silahkan Pilih Menu Anda!</p>
+		<div id="alerts"></div>
+	 <div class="productcont">
+			 <div class="product">
+				 <h3 class="productname">Burger</h3>
+				 <img src="./asset/burger.jpg" alt="">
+				 <p>Burger</p>
+				 <p class="price">Rp. 30.000</p>
+				 <button class="addtocart">Add To Cart</button>
+			 </div>
+			 <div class="product">
+				 <h3 class="productname">Toramoka</h3>
+				 <img src="./asset/es.jpg" alt="">
+				 <p> Toramoka</p>
+				 <p class="price">Rp. 10.000</p>
+				 <button class="addtocart">Add To Cart</button>
+			 </div>
+			 <div class="product">
+				 <h3 class="productname">Ekspresso3</h3>
+				 <img src="./asset/espreso.jpg" alt="">
+				 <p>Espresso</p>
+				 <p class="price">Rp. 15.000</p>
+				 <button class="addtocart">Add To Cart</button>
+			 </div>
+			 <div class="product">
+				 <h3 class="productname">Nugget</h3>
+				 <img src="./asset/nugget.jpg" alt="">
+				 <p>Nugget</p>
+				 <p class="price">Rp. 7.000</p>
+				 <button class="addtocart">Add To Cart</button>
+			 </div>
+			 <div class="product">
+				 <h3 class="productname">Sosis</h3>
+				 <img src="./asset/sausage.jpg" alt="">
+				 <p>Sosis</p>
+				 <p class="price">Rp. 5.000</p>
+				 <button class="addtocart">Add To Cart</button>
+			 </div>
+			 <div class="product">
+				 <h3 class="productname">Soup</h3>
+				 <img src="./asset/soup.jpg" alt="">
+				 <p>Soup</p>
+				 <p class="price">Rp. 10.000</p>
+				 <button class="addtocart">Add To Cart</button>
+			 </div>
+			 <div class="product">
+				 <h3 class="productname">Spageti</h3>
+				 <img src="./asset/spageti.jpg" alt="">
+				 <p>Spageti</p>
+				 <p class="price">Rp. 10.000</p>
+				 <button class="addtocart">Add To Cart</button>
+			 </div>
+			 </div>
+			 <div class="cart-container">
+			   <h2>Cart</h2>
+			   <table>
+				 <thead>
+				   <tr>
+				   <th><strong>Product</strong></th>
+				   <th><strong>Price</strong></th>
+				 </tr>
+				 </thead>
+				 <tbody id="carttable">
+				 </tbody>
+			   </table>
+			   <hr>
+			   <table id="carttotals">
+				 <tr>
+				   <td><strong>Items</strong></td>
+				   <td><strong>Total</strong></td>
+				 </tr>
+				 <tr>
+				   <td>x <span id="itemsquantity">0</span></td>
+				  
+				   <td>$<span id="total">0</span></td>
+				 </tr></table>
+	 
+				 
+			   <div class="cart-buttons">  
+				 <button id="emptycart">hapus</button>
+				 <button id="checkout"  onclick="window.location.href='succes.html'">beli</button>
+			   </div>
+			 </div>
+	 </div>
+
+<script src="order.js"></script>
+
+</body>
+</html>

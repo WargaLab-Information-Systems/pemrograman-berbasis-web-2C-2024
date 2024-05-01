@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teman Lingkungan 3R</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS */
+        .berita-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Bagian Header -->
+    <header class="bg-green-500 py-4 mb-8"> <!-- Tailwind: bg-green-500, py-4 -->
+        <div class="container mx-auto flex justify-between items-center"> <!-- Tailwind: container, mx-auto, flex, justify-between, items-center -->
+            <h1 class="text-white text-2xl font-bold">Teman Lingkungan 3R</h1> <!-- Tailwind: text-white, text-2xl, font-bold -->
+            <nav>
+                <ul class="flex space-x-4 text-white"> <!-- Tailwind: flex, space-x-4, text-white -->
+                    <li><a href="Beranda.html" class="hover:underline">Beranda</a></li> <!-- Tailwind: hover:underline -->
+                    <li><a href="Tentang_Kami.html" class="hover:underline">Tentang Kami</a></li> <!-- Tailwind: hover:underline -->
+                    <li><a href="Kontak.html" class="hover:underline">Kontak</a></li> <!-- Tailwind: hover:underline -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bagian Utama -->
+    <main class="container mx-auto mt-4 flex-grow"> <!-- Tailwind: container, mx-auto, mt-4 -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Tailwind: grid, grid-cols-1, md:grid-cols-3, gap-4 -->
+            <div class="bg-white p-4 shadow-md rounded-md flex flex-col justify-center items-center"> <!-- Tailwind: bg-white, p-4, shadow-md, rounded-md -->
+                <img src="Reduce.png" alt="reduce">
+                <h2 class="text-xl font-semibold mb-2">Reduksi</h2> <!-- Tailwind: text-xl, font-semibold, mb-2 -->
+                <p>Reduksi adalah langkah pertama dalam upaya melindungi lingkungan. Ini termasuk pengurangan penggunaan bahan-bahan berbahaya, penghematan energi, dan pengurangan limbah.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-md flex flex-col justify-center items-center"> <!-- Tailwind: bg-white, p-4, shadow-md, rounded-md -->
+                <img class="rounded-full w-44"  src="Reuse.png" alt="reuse">
+                <h2 class="text-xl font-semibold mb-2">Reuse</h2> <!-- Tailwind: text-xl, font-semibold, mb-2 -->
+                <p>Memanfaatkan kembali barang-barang yang masih dapat digunakan adalah cara efektif untuk mengurangi jumlah sampah yang masuk ke lingkungan. Dengan mendaur ulang, kita dapat memperpanjang umur barang dan mengurangi penggunaan sumber daya baru.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-md flex flex-col justify-center items-center"> <!-- Tailwind: bg-white, p-4, shadow-md, rounded-md -->
+                <img src="Recycle.png" alt="Berita 2">
+                <h2 class="text-xl font-semibold mb-2">Recycle</h2> <!-- Tailwind: text-xl, font-semibold, mb-2 -->
+                <p>Daur ulang adalah proses mengubah bahan bekas menjadi bahan baru yang dapat digunakan kembali. Ini membantu mengurangi limbah yang masuk ke tempat pembuangan sampah dan mengurangi dampak negatif terhadap lingkungan.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bagian Footer -->
+    <footer class="bg-gray-800 py-4 mt-8"> <!-- Tailwind: bg-gray-800, py-4, mt-8 -->
+        <div class="container mx-auto text-white text-center"> <!-- Tailwind: container, mx-auto, text-white, text-center -->
+            <p>Hak Cipta &copy; 2024 Teman Lingkungan 3R</p>
+        </div>
+    </footer>
+</body>
+</html>

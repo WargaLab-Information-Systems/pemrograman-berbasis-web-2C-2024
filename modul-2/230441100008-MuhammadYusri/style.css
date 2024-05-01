@@ -133,6 +133,40 @@ body {
   }
 }
 
+/* navbar search form start */
+
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.navbar .search-form.active {
+  transform: scaleY(1);
+  transition: 0.3s
+}
+.navbar .search-form input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  color: var(--bg);
+  padding: 1rem;
+}
+.navbar .search-form label{
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--bg);
+}
+
+/* navbar search form end */
+
 /* hero Setcion */
 .hero {
   min-height: 100vh;
@@ -207,3 +241,13 @@ body {
 .about h2 span {
   color: var(--primary);
 }
+
+
+
+
+
+
+
+
+
+

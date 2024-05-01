@@ -7,6 +7,16 @@ document.querySelector("#hamburger-menu").onclick = () => {
   navbarNav.classList.toggle("active");
 };
 
+// toggle class active untuk search form
+
+const searchForm = document.querySelector(".search-form");
+const searchBox = document.querySelector(".search-box");
+
+document.querySelector("#search-button").onclick = () => {
+  searchForm.classList.toggle("active");
+  searchBox.focus();
+};
+
 // Klik di luar sidebar akan menutup sidebar
 
 const hamburger = document.querySelector("#hamburger-menu");

@@ -1,0 +1,48 @@
+/* Style for header */
+header {
+    background-color: #005bbc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Style for main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for section titles */
+h2 {
+    color: #005bbc;
+    border-bottom: 2px solid #005bbc;
+    padding-bottom: 10px;
+}
+
+/* Style for paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Style for interests list */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Style for interests list items */
+li {
+    margin-bottom: 5px;
+}
+
+/* Style for contact link */
+a {
+    color: #005bbc;
+    text-decoration: none;
+}
+
+/* Style for contact link on hover */
+a:hover {
+    text-decoration: underline;
+}

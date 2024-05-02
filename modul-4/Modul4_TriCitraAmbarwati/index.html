@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/* CSS untuk variasi tampilan */
+body {
+  background-image: url('bgr.jpeg'); /* Gambar latar belakang */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif; /* Mengatur font */
+  color: white; /* Warna teks */
+}
+
+.dropdown {
+  margin-top: 50px; /* Jarak dropdown dari atas */
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang konten */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow */
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase; /* Huruf kapital */
+  letter-spacing: 2px; /* Spasi antar huruf */
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6; /* Tinggi baris */
+}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button onclick="toggleDropdown()" class="dropbtn">Click Me !!</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="todo.html">ToDo</a>
+    <a href="music.html">Music</a>
+    <a href="saya.html">About Me</a>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Welcome to My Website</h1>
+  <p>Thank you for visiting my website, where you will find pages for ToDo list, music, and About Me.</p>
+  <p>Before proceeding to the next page, it would be nice if we read a prayer according to our beliefs and convictions, let's start praying....</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

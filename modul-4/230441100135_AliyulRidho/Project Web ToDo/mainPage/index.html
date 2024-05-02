@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDhoooo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- NavBar -->
+      <nav>
+        <h1 class="logo">To-Dhoooo</h1>
+        <ul>
+          <li><a href="#music">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li>
+            <a href="../todo/todoIndex.html" target="_blank">Get Started</a>
+          </li>
+        </ul>
+        <p class="dropdown" onclick="toggleMenu()">
+          Our Features <span><i class="fa-solid fa-bars"></i></span>
+        </p>
+
+        <!-- sub menu -->
+        <div class="menu-wrap" id="menu">
+          <div class="sub-menu">
+            <div class="menu-info">
+              <h1>To-Dhooo</h1>
+              <p>Best To-Do Website</p>
+            </div>
+            <hr />
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-person"></i>
+              <p>Coming Soon!</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-person"></i>
+              <p>Coming Soon!</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-person"></i>
+              <p>Coming Soon!</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-person"></i>
+              <p>Coming Soon!</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="music" id="music">
+        <div class="desk">
+          <h1>Bosan ?</h1>
+          <p>Silahkan putar music nya</p>
+
+          <p style="margin-top: 30px">
+            <i> Littleroot Town-Pokemon</i>
+          </p>
+        </div>
+        <audio
+          src="Y2meta.app - Littleroot Town - Pokémon Omega Ruby & Alpha Sapphire Music Extended HD (128 kbps).mp3"
+          id="song"
+        ></audio>
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+
+      <main>
+        <div class="content">
+          <div class="bungkus" id="about">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Exercitationem sint pariatur velit error esse officiis ad,
+              delectus quis sed. Quasi odio molestiae id quis eos ratione
+              tenetur placeat voluptatum, itaque dolor, repellat dolorum?
+              Laudantium maiores officiis placeat nihil aspernatur, voluptatum
+              quis, earum odit pariatur itaque asperiores! Illo repudiandae
+              voluptatum accusantium.
+            </p>
+          </div>
+          <div class="kanan">
+            <img src="../assets/transparent logo.png" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="kanan">
+            <img src="../assets/beneefits.png" alt="" />
+          </div>
+          <div class="bungkus" id="about">
+            <h2>Benefits</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Exercitationem sint pariatur velit error esse officiis ad,
+              delectus quis sed. Quasi odio molestiae id quis eos ratione
+              tenetur placeat voluptatum, itaque dolor, repellat dolorum?
+              Laudantium maiores officiis placeat nihil aspernatur, voluptatum
+              quis, earum odit pariatur itaque asperiores! Illo repudiandae
+              voluptatum accusantium.
+            </p>
+            <div class="benefits-icon">
+              <div>
+                <i class="fa-solid fa-bell"></i>
+                <span>Reminder</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-user-nurse"></i>
+                <span>Productivity</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-clock"></i>
+                <span>Time</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-list"></i>
+                <span>Listing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>Copyright &copy;2024; Desaigned by ALIYUL RIDHO</p>
+      </div>
+    </footer>
+
+    <script>
+      let menu = document.getElementById("menu");
+      let progress = document.getElementById("progress");
+      let song = document.getElementById("song");
+      let ctrlIcon = document.getElementById("ctrlIcon");
+
+      song.onloadedmetadata = function () {
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+      };
+
+      function toggleMenu() {
+        menu.classList.toggle("open-menu");
+      }
+
+      function playPause() {
+        if (ctrlIcon.classList.contains("fa-pause")) {
+          song.pause();
+          ctrlIcon.classList.remove("fa-pause");
+          ctrlIcon.classList.add("fa-play");
+        } else {
+          song.play();
+          ctrlIcon.classList.add("fa-pause");
+          ctrlIcon.classList.remove("fa-play");
+        }
+      }
+
+      if (song.play()) {
+        setInterval(() => {
+          progress.value = song.currentTime;
+        }, 500);
+      }
+
+      progress.onchange = function () {
+        song.play();
+        song.currentTime = progress.value;
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+      };
+    </script>
+  </body>
+</html>

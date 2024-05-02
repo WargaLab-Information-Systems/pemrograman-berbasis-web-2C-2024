@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="drop.css" />
+    <title>Profile Dropdown</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="navbar-logo" alt="logo">Telegram</h1>
+        <ul class="navbar-list">
+            <li><a href="#">Personal</a></li>
+            <li><a href="#">Channels</a></li>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Bots</a></li>
+            <li><a href="#">Unread</a></li>
+            <li>
+                <button id="play">Play</button>
+            </li>
+            <li>
+                <button id="pause">Pause</button>
+            </li>
+        </ul>
+
+        <div class="profile-dropdown">
+            <div onclick="toggle()" class="profile-dropdown-btn">
+                <div class="profile-img">
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+
+                <span>Sakura Haruka
+                    <i class="fa-solid fa-angle-down"></i>
+                </span>
+            </div>
+
+            <ul class="profile-dropdown-list">
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        Edit Profile
+                    </a>
+                </li>
+
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user-group"></i>
+                        New Groups
+                    </a>
+                </li>
+
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa-solid fa-address-book"></i>
+                        Contacts
+                    </a>
+                </li>
+
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        Call
+                    </a>
+                </li>
+
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa-regular fa-bookmark"></i>
+                        Saved Messages
+                    </a>
+                </li>
+                <hr />
+
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Log out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        let play = document.getElementById("play");
+        let pause = document.getElementById("pause");
+
+        let audio;
+        function playMusic() {
+            audio = new Audio("wbk.mp3");
+            audio.play();
+        }
+
+        function pauseMusic() {
+            if (audio) {
+                audio.pause();
+            }
+        }
+
+        play.addEventListener("click", playMusic);
+        pause.addEventListener("click", pauseMusic);
+    </script>
+
+    <script src="drop.js"></script>
+</body>
+
+</html>

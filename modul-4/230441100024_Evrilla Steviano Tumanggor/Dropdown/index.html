@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal nomor 1</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            
+            <ul>
+                <li><a href="halaman2.html" target="_self">Halaman 2</a></li>
+                <li><a href="todo.html">Halaman 3</a></li>
+                <li><a href="music.html">Music</a></li>
+            </ul>
+            <img src="waduh.jpg" alt="" width="80px" class="user-pic" onclick="toggleMenu()">
+            
+            <!-- Submenu For Profile -->
+        
+            <div class="submenu-wrapper" id="submenu">
+                <div class="submenu">
+                    <div class="user-info">
+                        <img src="waduh.jpg" alt="" width="80px">
+                        <h3>Evrilla Steviano Tumanggor</h3>
+                    </div>
+                    <hr/>
+
+                    <a href="#" class="submenu-link">
+                        <img src="editProfile.png" alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="submenu-link">
+                        <img src="message.png" alt="">
+                        <p>Message</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="submenu-link">
+                        <img src="settings.png" alt="">
+                        <p>Settings</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="submenu-link">
+                        <img src="help.png" alt="">
+                        <p>Help</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="submenu-link">
+                        <img src="logout.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <br>
+        
+    </div>
+    <script>
+        let submenu=document.getElementById("submenu");
+
+        function toggleMenu(){
+            submenu.classList.toggle("openMenu");
+        }
+    </script>    
+    
+
+</body>
+</html>

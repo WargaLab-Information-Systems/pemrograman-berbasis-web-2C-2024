@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omega - Cars Outside</title>
+    <link rel="stylesheet" href="c.css" />
+  </head>
+  <body>
+    <!-- Isi dari tampilan website -->
+    <div class="container">
+      <div class="navbar">
+        <img src="omegalogo.png" class="logo" />
+        <ul>
+          <li>
+            <a href="#"> Home </a>
+          </li>
+          <li class="dropdown">
+            <a href="a.html" class="dropbtn"> Music </a>
+            <div class="dropdown-content">
+              <a href="b.html">End Of Beginning</a>
+              <a href="c.html">Cars Outside</a>
+            </div>
+          </li>
+          <!-- <li>
+            <a href="#"> Music </a>
+          </li> -->
+          <li>
+            <a href="index.html"> Web ToDo List </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left-col">
+        <h1>CARS<br />OUTSIDE</h1>
+      </div>
+      <div class="right-col">
+        <p>Click here to listen</p>
+        <br />
+        <img src="play.png" id="icon" /><br />
+      </div>
+      <!-- Music -->
+      <audio id="mySong">
+        <source
+          src="James Arthur - Car's Outside (Lyrics) (128).mp3"
+          type="audio/mp3"
+        />
+      </audio>
+
+      <script src="c.js"></script>
+    </div>
+  </body>
+</html>

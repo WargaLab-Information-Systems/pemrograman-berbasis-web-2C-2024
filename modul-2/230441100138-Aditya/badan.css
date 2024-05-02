@@ -1,0 +1,223 @@
+body{
+    background-color: rgb(0, 85, 6);
+    width: 100%;
+    margin: 0px;
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(53, 53, 53);
+    font-weight: 800;
+    padding: 8px;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+nav div img{
+    width: 60px;
+}
+
+nav ul li a:hover{
+    color: greenyellow;
+    border-bottom: 5px solid rgba(0, 255, 0, 0.37);
+}
+
+div.minuman1 img{
+    float: left;
+    height: 400px;
+    width: 290px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+div.isiminuman1{
+    float: left;
+    width: 470px;
+    margin-right: 380px;
+    margin-top: 180px;
+}
+
+div.isiminuman1 h1, p{
+    color: white;
+
+}
+
+div.isiminuman1 p{
+    font-size: 25px;
+    text-align: left;
+}
+div.makanan1 img{
+    float: right;
+    height: 390px;
+    width: 430px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+div.isimakanan1{
+    float: left;
+    width: 530px;
+    margin-left: 225px;
+    margin-top: 45px;
+}
+
+div.isimakanan1 h1, p{
+    color: white;
+    text-align: right;
+}
+
+div.isimakanan1 p{
+    font-size: 25px;
+}
+
+
+div.minuman2 img{
+    float: left;
+    height: 500px;
+    width: 500px;
+    margin-top: 90px;
+    margin-left: 0px;
+}
+
+div.isiminuman2{
+    float: left;
+    width: 470px;
+    margin-right: 10px;
+    margin-top: 180px;
+}
+
+div.isiminuman2 h1, p{
+    color: white;
+
+}
+
+div.isiminuman2 p{
+    font-size: 25px;
+    text-align: left;
+}
+div.makanan2 img{
+    float: right;
+    height: 300px;
+    width: 430px;
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+div.isimakanan2{
+    float: left;
+    width: 530px;
+    margin-left: 225px;
+    margin-top: 80px;
+    margin-bottom: 400px;
+}
+
+div.isimakanan2 h1, p{
+    color: white;
+    text-align: right;
+}
+
+div.isimakanan2 p{
+    font-size: 25px;
+}
+
+div.ahu{
+    clear: both;
+    height: 270px;
+    background-color: #5cbd73;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #e7e7e7;
+}
+.social-icons i:hover{
+    color: #c3ff9b;
+}
+.bottom-bar{
+    background: #f18930;
+    text-align: center;
+    margin-top: 0px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}

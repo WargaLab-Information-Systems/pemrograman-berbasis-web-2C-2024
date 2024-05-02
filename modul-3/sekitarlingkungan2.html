@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita Lingkungan</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <style>
+      /* Gaya kustom untuk tema berita lingkungan */
+      .berita-item {
+        background-color: #edf2f7;
+        border-radius: 8px;
+        padding: 1rem;
+        transition: transform 0.3s ease;
+      }
+
+      .berita-item:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Gaya untuk gambar berita */
+      .berita-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top text-white py-4 bg-black">
+      <div class="container mx-auto flex justify-between items-center">
+        <div>
+          <a href="#home" class="text-lg font-semibold">Home</a>
+        </div>
+        <div>
+          <ul class="flex space-x-4">
+            <li><a href="#about">About</a></li>
+            <li><a href="#masalah">Masalah</a></li>
+            <li><a href="#informasi">Informasi</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar End -->
+
+    <!-- Header -->
+    <section id="home" class="pt-36">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h1 class="text-4xl font-semibold">Berita Lingkungan</h1>
+          <img src="logo kab.png" alt="Logo Lamongan" class="w-50 h-40 mx-auto" />
+        </div>
+      </div>
+    </section>
+    <!-- Header End -->
+
+    <!-- About Section -->
+    <section id="about" class="py-12">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h2 class="text-2xl font-semibold">Tentang Kami</h2>
+          <p class="mt-4 text-gray-700">
+            Kabupaten Lamongan merupakan salah satu kabupaten yang terletak di pantai utara Jawa Timur. Dengan kondisi topografi yang beragam, Lamongan memiliki berbagai tantangan lingkungan yang perlu diperhatikan.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Masalah Section -->
+    <section id="masalah" class="py-12">
+      <div class="container mx-auto">
+        <div>
+          <center><h2 class="text-2xl font-semibold">Masalah</h2></center>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Artikel Pertama -->
+          <div class="berita-item">
+            <img src="jalan_berlubang.jpg" alt="Jalan Berlubang" />
+            <h2 class="text-lg font-semibold text-green-500">Jalan Berlubang di Lamongan</h2>
+            <h3 class="text-gray-700 mt-2">
+              Kondisi jalan berlubang di Lamongan semakin memprihatinkan. Warga sekitar mengeluhkan bahaya yang ditimbulkan oleh kondisi jalan yang rusak parah. Program perbaikan jalan yang dijanjikan pemerintah menjadi harapan bagi banyak
+              orang.
+            </h3>
+            <a href="jalan.html">Selengkapnya</a>
+            <p class="text-gray-500 mt-2">10 Maret 2024</p>
+          </div>
+          <!-- Artikel Kedua -->
+          <div class="berita-item">
+            <img src="banjir.jpg" alt="Banjir" />
+            <h2 class="text-lg font-semibold text-green-500">Banjir Mengancam Lamongan</h2>
+            <h3 class="text-gray-700 mt-2">Tingginya curah hujan menyebabkan potensi banjir di Lamongan semakin tinggi. Kawasan-kawasan rawan banjir harus lebih waspada dalam menghadapi ancaman bencana alam ini.</h3>
+            <p class="text-gray-500 mt-2">15 Maret 2024</p>
+          </div>
+          <!-- Artikel Ketiga -->
+          <div class="berita-item">
+            <img src="sampah.jpg" alt="Sampah Liar" />
+            <h2 class="text-lg font-semibold text-green-500">Permasalahan Sampah Liar di Lamongan</h2>
+            <h3 class="text-gray-700 mt-2">Pertumbuhan penduduk yang tidak terkendali di Lamongan mengakibatkan peningkatan volume sampah liar. Kondisi ini memicu berbagai masalah lingkungan yang perlu segera ditangani.</h3>
+            <p class="text-gray-500 mt-2">20 Maret 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Masalah Section End -->
+
+    <!-- Information -->
+    <section id="informasi" class="py-12">
+      <div class="container mx-auto">
+        <div>
+          <center><h2 class="text-2xl font-semibold">Informasi</h2></center>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="informasi-item">
+            <img src="jamula.jpg" alt="jamula" />
+            <h2 class="text-lg font-semibold text-green-500 text-center">Sebanyak 38 Ruas Jalan di Lamongan Tahun Ini Diperbaiki</h2>
+            <h3 class="text-gray-700 mt-2">
+              Pemerintah Kabupaten Lamongan optimis meningkatkan pembangunan infrastruktur khusunya jalan. Melalui program JAMULA (Jalan Mantap dan Alus Lamongan) secara bertahap dituntaskan pembangunannya. Khusus ditahun 2024, ditargetkan
+              akan ada 38 ruas jalan diperbaiki.
+            </h3>
+            <p class="text-gray-500 mt-2">10 Maret 2024</p>
+          </div>
+          <!-- Information Kedua -->
+          <div class="informasi-item">
+            <img src="ecenggondok.jpeg" alt="ecenggondok" />
+            <h2 class="text-lg font-semibold text-green-500 text-center">Kerahkan Backhoe, Eceng Gondok Penyebab Banjir Lamongan Dibersihkan</h2>
+            <h3 class="text-gray-700 mt-2">
+              Lebatnya eceng gondok yang tumbuh di sepanjang aliran Sungai Bengawan Jero menjadi salah satu penyebab banjir yang terjadi di beberapa kecamatan di Lamongan. Eceng gondok ini mengakibatkan terhambatnya arus air. Pemkab
+              Lamongan mengerahkan backhoe amphibi untuk membantu pengerukan eceng gondok.
+            </h3>
+            <p class="text-gray-500 mt-2">20 Maret 2024</p>
+          </div>
+          <!-- Information Ketiga -->
+          <div class="informasi-item">
+            <img src="TPST.jpg" alt="TPST" />
+            <h2 class="text-lg font-semibold text-green-500 text-center">Atasi Sampah, Dinas Lingkungan Hidup Lamongan Tambah TPST di Wilayah Pantura</h2>
+            <h3 class="text-gray-700 mt-2">
+              Pemerintah Lamongan membuat Tempat Pengelolaan Sampah Terpadu (TPST) yang mampu mengolah sampah hingga 50 ton per hari untuk mencegah terjadinya penumpukan sampah yang kalau di biarkan bisa mengakibatkan bencana banjir. "Di
+              atas tanah seluas 3 hektare itu akan dibangun TPST dan TPA," kata Kepala Dinas Lingkungan Hidup (DLH) Lamongan, Andhy Kurniawan kepada Surya.co.id, Kamis (8/6/2023).
+            </h3>
+            <p class="text-gray-500 mt-2">15 Maret 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Information End -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h2 class="text-2xl font-semibold">Hubungi Kami</h2>
+        </div>
+        <div class="flex justify-center mt-8">
+          <form class="w-full max-w-lg">
+            <!-- Formulir Kontak -->
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label for="nama" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Nama Lengkap</label>
+                <input id="nama" type="text" placeholder="Nama Anda" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label for="email" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Alamat Email</label>
+                <input id="email" type="email" placeholder="Alamat Email Anda" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label for="pesan" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Pesan</label>
+                <textarea id="pesan" rows="5" placeholder="Tulis pesan Anda di sini" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"></textarea>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Kirim</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/sesilia.febi/" class="font-semibold">Sesilia Febi</a></p>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>

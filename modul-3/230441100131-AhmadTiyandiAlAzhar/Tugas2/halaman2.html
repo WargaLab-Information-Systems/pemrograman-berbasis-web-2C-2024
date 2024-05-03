@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+</head>
+
+<body class="relative bg-cover bg-center bg-no-repeat" style="background-image: url('assettugas2/penghijauan.jpg');">
+
+    <!-- navbar -->
+    <nav class="bg-green-300 p-6">
+        <header class="bg-green-400">
+            <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex-1 md:flex md:items-center md:gap-12">
+                        <a class="block text-teal-600" href="#">
+                            <span class="sr-only">Beranda</span>
+                            <img class="h-20" src="assettugas2/logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="md:flex md:items-center md:gap-12">
+                        <nav aria-label="Global" class="hidden md:block">
+                            <ul class="flex items-center gap-6 text-sm">
+                                <li>
+                                    <a class="text-zinc-50 transition hover:text-green-700/75" href="tailwind.html">Beranda</a>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </nav>
+
+    <!-- header bawah nav -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold text-green-600 mb-3">Blog</h1>
+            <p class="text-lg text-zinc-50">
+                "Semua tergantung dari kemauan dan kesadaran diri masing masing,dan semua di mulai dari hal kecil.""
+            </p>
+        </div>
+    </section>
+    
+ <!-- blog card -->
+ <article class="flex bg-white transition hover:shadow-xl">
+    <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+      <time
+        datetime="2022-10-10"
+        class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+      >
+        <span>2024</span>
+        <span class="w-px flex-1 bg-gray-900/10"></span>
+        <span>april 28</span>
+      </time>
+    </div>
+  
+    <div class="hidden sm:block sm:basis-56">
+      <img
+        alt=""
+        src="assettugas2/reboisasi.jpg"
+        class="aspect-square h-full w-full object-cover"
+      />
+    </div>
+
+    <div class="flex flex-1 flex-col justify-between">
+      <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+        <a href="#">
+          <h3 class="font-bold uppercase text-gray-900">
+            Melakukan penghijauan / Reboisasi
+          </h3>
+        </a>
+  
+        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+          pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+          quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+          atque dignissimos. Molestias explicabo corporis voluptatem?
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <article class="flex bg-white transition hover:shadow-xl">
+    <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+      <time
+        datetime="2022-10-10"
+        class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+      >
+        <span>2024</span>
+        <span class="w-px flex-1 bg-gray-900/10"></span>
+        <span>april 28</span>
+      </time>
+    </div>
+  
+    <div class="hidden sm:block sm:basis-56">
+      <img
+        alt=""
+        src="assettugas2/bercocok tanam.jpg"
+        class="aspect-square h-full w-full object-cover"
+      />
+    </div>
+  
+    <div class="flex flex-1 flex-col justify-between">
+      <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+        <a href="#">
+          <h3 class="font-bold uppercase text-gray-900">
+            Bercocok tanam dengan bijak
+          </h3>
+        </a>
+  
+        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+          pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+          quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+          atque dignissimos. Molestias explicabo corporis voluptatem?
+        </p>
+      </div>
+    </div>
+  </article>
+ 
+    <!-- Footer -->
+    <footer class="bg-green-500 text-white text-center py-6">
+        <div class="container mx-auto">
+            <p>&copy; 2024 lingkungan ku_tiyandi. All rights reserved.</p>
+            <p><a href="tailwind.html" class="text-teal-200 hover:text-teal-400">Kembali ke Beranda</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

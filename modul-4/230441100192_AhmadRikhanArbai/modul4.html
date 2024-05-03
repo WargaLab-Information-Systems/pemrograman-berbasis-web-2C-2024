@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <!-- Tautan ke Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Tautan ke file CSS kustom -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Kontainer untuk seluruh daftar tugas -->
+  <div class="container">
+    <audio src="Don Omar - Danza Kuduro - REMIX - Long Version.mp3" id="myAudio"></audio> <!-- Ganti 'audio-file.mp3' dengan path file audio kamu -->
+    <center>
+        <button class="play-pause-button">Play/Pause</button>
+        <button class="stop-button">Stop</button> <!-- Tombol Stop -->
+    </center>
+    <h1>List For Today</h1>
+        <!-- Kontainer untuk bidang input dan tombol tambah -->
+    <div class="input-container">
+        <!-- Bidang input untuk menambahkan tugas baru -->
+      <input class="todo-input" placeholder="Add a new task...">
+      <!-- Tombol untuk menambahkan tugas baru -->
+      <button class="add-button">
+        <!-- Ikon tambah untuk menambahkan tugas -->
+        <i class="fa fa-plus-circle"></i>
+      </button>
+    </div>
+        <!-- Kontainer untuk filter (tugas selesai/belum selesai dan hapus semua) -->
+    <div class="filters">
+      <div class="filter" data-filter="completed">Complete</div>
+      <div class="filter" data-filter="pending">Incomplete</div>
+      <div class="delete-all">Delete All</div>
+    </div>
+     <!-- Kontainer untuk menampilkan daftar tugas -->
+    <div class="todos-container">
+      <ul class="todos"></ul>
+       <!-- Gambar placeholder untuk ketika tidak ada tugas -->
+      <img class="empty-image" src="empty.svg">
+    </div>
+  </div>
+  <script>
+    const audio = document.getElementById('myAudio');
+    
+    function togglePlayPause() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+    function stopMusic() {
+      audio.pause(); // Pause the audio
+      audio.currentTime = 0; // Set the audio time back to the beginning
+    }
+    
+    const playPauseButton = document.querySelector('.play-pause-button');
+    playPauseButton.addEventListener('click', togglePlayPause);
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

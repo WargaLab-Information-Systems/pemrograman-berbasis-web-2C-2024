@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>modul 4</title>
+
+</head>
+
+<style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #eac29d;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.box {
+    width: 500px; 
+    height: 500px;
+    background-color: #f0f0f0; 
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    margin: 20px; 
+    background-color: antiquewhite;
+}
+
+</style>
+<body>
+
+<div class="box">
+   <div class="container">
+  <h2>ToDo List</h2>
+  <input type="text" id="taskInput" placeholder="Enter task...">
+  <button onclick="addTask()">tambahkan teks</button>
+  <ul id="taskList"></ul>
+  <button onclick="toggleMusic()">music on/of</button>
+</div>
+
+<audio id="backgroundMusic" loop>
+  <source src="simple-acoustic-folk-138360.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script >
+   
+  
+function addTask() {
+  var input = document.getElementById("taskInput").value;
+  if (input === "") {
+    alert("tolong tambahkan teks!");
+    return;
+  }
+  var ul = document.getElementById("taskList");
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode(input));
+  
+  var editButton = document.createElement("button");
+  editButton.innerHTML = "Edit";
+  editButton.onclick = function() {
+    var newText = prompt(li.textContent);
+    if (newText !== null && newText !== "") {
+      li.textContent = newText;
+    }
+  };
+  li.appendChild(editButton);
+  
+  var deleteButton = document.createElement("button");
+  deleteButton.innerHTML = "hapus";
+  deleteButton.onclick = function() {
+    if (confirm("Apakah Anda yakin ingin menghapus tugas ini?")) {
+      li.parentNode.removeChild(li);
+    }
+  };
+  li.appendChild(deleteButton);
+  
+  var completeButton = document.createElement("button");
+  completeButton.innerHTML = "menyelesaikan";
+  completeButton.onclick = function() {
+    li.classList.toggle("menyelesaikan");
+  };
+  li.appendChild(completeButton);
+  
+  ul.appendChild(li);
+  
+ 
+  document.getElementById("taskInput").value = "";
+}
+
+
+function toggleMusic() {
+  var music = document.getElementById("backgroundMusic");
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slider-container img{
+    height: 550px;
+    object-fit: cover;
+}
+
+.header-card{
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: bold;
+}
+
+.card-parent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.img-card{
+    height: 4rem;
+    object-fit: cover;
+}

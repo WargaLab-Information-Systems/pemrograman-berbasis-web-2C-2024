@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan4</title>
+    <!-- JavaScript Eksternal -->
+    <!-- <script src="java.js"></script> -->
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <!-- JavaScript Inline -->
+    <button onclick="console.log('Saya Raja Iblis');">Summon Raja Iblis</button>
+    <!-- JavaScript dengan Tag Script -->
+    <script>
+      console.log("Selamat Pagi Raja Iblis");
+    </script>
+    <!-- document.getElementsById -->
+    <h1 id="nama">Nama teman saya adalah ALIYUL RIDHO</h1>
+    <h2>Temannya ALIYUL RIDHO adalah GUFRON</h2>
+    <script>
+      const myElement = document.getElementById("nama");
+      myElement.style.color = "orange";
+    </script>
+
+    <!-- document.getElementsByClassName -->
+    <div class="example">Selamat Datang Di Kerajaan Holfware</div>
+    <p>Hallo <span class="example">Raja Iblis</span>, Bagaimana Kabarmu?</p>
+    <script>
+      const contoh = document.getElementsByClassName("example");
+      for (let i = 0; i < contoh.length; i++) {
+        contoh[i].style.backgroundColor = "orange";
+      }
+    </script>
+    <!-- document.getElementsByTagName -->
+
+    <!-- document.querySelector() -->
+
+    <!-- Menambahkan audio -->
+    <button id="play">Play</button>
+    <script>
+      let play = document.getElementById("play");
+      function playMusic() {
+        let audio = new Audio("RemixThailand.mp3");
+        audio.play();
+      }
+      play.addEventListener("Click", playMusic);
+    </script>
+  </body>
+</html>

@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-include "service/database2.php";
+include "service/database.php";
 
 // Operasi CRD
 // Tambah data
@@ -64,6 +64,7 @@ $result = $db->query($sql);
             background-color: #f4f4f4;
             color: #333;
             padding: 20px;
+            margin:2rem;
         }
 
         /* Heading */

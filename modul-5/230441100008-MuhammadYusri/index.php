@@ -47,8 +47,8 @@
             $_SESSION["nama"] = $data["nama"];
             $_SESSION["username"] = $data["username"];
     
-            // Redirect ke halaman dashboard
-            header("Location:dashboard.php");
+            // Redirect ke halaman home
+            header("Location:home.php");
             exit();
         } else {
             $pesan = "Data tidak ditemukan";

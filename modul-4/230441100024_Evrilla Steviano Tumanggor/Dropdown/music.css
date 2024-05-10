@@ -7,6 +7,7 @@ body {
     margin: 0;
 }
 
+
 .player {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -15,30 +16,30 @@ body {
 }
 
 audio {
-    width: 100%; /* Full width */
-    margin-bottom: 10px; /* Space below the audio player */
+    width: 100%; 
+    margin-bottom: 10px; 
 }
 
 button {
     padding: 10px 20px;
     margin: 5px;
     border: none;
-    background-color: #007BFF;
-    color: white;
+    background-color: aqua;
+    color: black;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: white;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #007BFF;
-    color: white;
+    background-color: aqua;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -54,3 +55,18 @@ button:hover {
     margin-bottom: 5px;
 }
 
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #797979; 
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}

@@ -1,0 +1,280 @@
+/* Mengatur ulang tata letak elemen */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Gaya untuk body */
+  body {
+    font-family: 'Roboto', sans-serif; /* Jenis font untuk teks */
+    height: 100vh; /* Tinggi elemen sama dengan viewport */
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    align-items: center; /* Pusatkan secara vertikal */
+    justify-content: center; /* Pusatkan secara horizontal */
+    background: url(./background.jpg) no-repeat; /* Latar belakang dengan gambar */
+    background-position: center;
+    background-size: cover; /* Ukuran latar belakang mengisi seluruh area */
+  }
+  
+  /* Kontainer utama */
+  .container {
+    width: 400px; /* Lebar kontainer */
+    height: auto; /* Tinggi disesuaikan dengan kontennya */
+    min-height: 400px; /* Tinggi minimum */
+    padding: 30px; /* Padding di sekitar konten */
+    background: transparent; /* Latar belakang transparan */
+    border: 2px solid #e6b7eca1; /* Border dengan warna */
+    border-radius: 10px; /* Sudut lengkung */
+    backdrop-filter: blur(15px); /* Efek blur untuk konten di belakangnya */
+  }
+  
+  /* Judul */
+  h1 {
+    color: #eee; /* Warna teks */
+    text-align: center; /* Pusatkan teks */
+    margin-bottom: 36px; /* Ruang bawah */
+  }
+  
+  /* Kontainer untuk input dan tombol tambah */
+  .input-container {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Pemisahan antara input dan tombol */
+    margin-bottom: 25px; /* Ruang bawah */
+  }
+  
+  /* Input untuk menambahkan tugas */
+  .todo-input {
+    flex: 1; /* Menyesuaikan ukuran input */
+    outline: none; /* Hilangkan outline */
+    padding: 10px 10px 10px 20px; /* Padding */
+    background-color: transparent; /* Latar belakang transparan */
+    border: 2px solid #e6b7eca1; /* Border dengan warna */
+    border-radius: 30px; /* Sudut lengkung */
+    color: #eee; /* Warna teks */
+    font-size: 16px; /* Ukuran font */
+    margin-right: 10px; /* Ruang kanan */
+  }
+  
+  /* Placeholder untuk input */
+  .todo-input::placeholder {
+    color: #bfbfbf; /* Warna placeholder */
+  }
+  
+  /* Tombol tambah tugas */
+  .add-button {
+    border: none; /* Hilangkan border */
+    outline: none; /* Hilangkan outline */
+    background: #e6b7eca1; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    font-size: 35px; /* Ukuran font */
+    cursor: pointer; /* Kursor pointer */
+    border-radius: 40px; /* Sudut lengkung */
+    width: 40px; /* Lebar */
+    height: 40px; /* Tinggi */
+  }
+  
+  /* Gambar kosong */
+  .empty-image {
+    margin: 55px auto 0; /* Posisi dan ruang */
+    display: block; /* Menampilkan sebagai blok */
+  }
+  
+  /* Gaya untuk setiap tugas */
+  .todo {
+    list-style: none; /* Hilangkan bullet list */
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Pusatkan secara vertikal */
+    justify-content: space-between; /* Pemisahan antara elemen */
+    background-color: #463c7b; /* Warna latar belakang */
+    border-radius: 5px; /* Sudut lengkung */
+    margin: 10px 0; /* Ruang di atas dan bawah */
+    padding: 10px 12px; /* Padding */
+    border: 2px solid #e6b7eca1; /* Border dengan warna */
+    transition: all 0.2s ease; /* Transisi smooth */
+  }
+  
+  /* Tugas pertama tidak memiliki margin atas */
+  .todo:first-child {
+    margin-top: 0;
+  }
+  
+  /* Tugas terakhir tidak memiliki margin bawah */
+  .todo:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Saat tugas dihover */
+  .todo:hover {
+    background-color:#e6b7eca1; /* Warna latar belakang saat dihover */
+  }
+  
+  /* Label tugas */
+  .todo label {
+    cursor: pointer; /* Kursor pointer */
+    width: fit-content; /* Sesuaikan lebar */
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Pusatkan secara vertikal */
+    font-family: 'Roboto', sans-serif; /* Jenis font untuk teks */
+    color: #eee; /* Warna teks */
+  }
+  
+  /* Bagian span di dalam label */
+  .todo span {
+    padding-left: 20px; /* Padding kiri */
+    position: relative; /* Relatif terhadap posisinya */
+    cursor: pointer; /* Kursor pointer */
+  }
+  
+  /* Gambar checkbox sebelum span */
+  span::before {
+    content: ""; /* Tidak ada konten */
+    height: 20px; /* Tinggi */
+    width: 20px; /* Lebar */
+    position: absolute; /* Absolut */
+    margin-left: -30px; /* Margin kiri */
+    border-radius: 100px; /* Sudut lengkung */
+    border: 2px solid #e6b7eca1; /* Border dengan warna */
+  }
+  
+  /* Checkbox tidak terlihat */
+  input[type='checkbox'] {
+    visibility: hidden;
+  }
+  
+  /* Saat checkbox dicek, teks dipotong */
+  input:checked + span {
+    text-decoration: line-through; /* Garis melintang pada teks */
+  }
+  
+  /* Saat dihover, gambar checkbox berubah */
+  .todo:hover input:checked + span::before, input:checked + span::before {
+    background: url(icons8-check.svg) 50% 50% no-repeat #09bb21; /* Gambar centang */
+    border-color: #09bb21; /* Warna border */
+  }
+  
+  /* Saat dihover, warna border checkbox berubah */
+  .todo:hover span::before {
+    border-color: #eee; /* Warna border */
+  }
+  
+  /* Tombol hapus tugas */
+  .todo .delete-btn {
+    background-color: transparent; /* Latar belakang transparan */
+    border: none; /* Hilangkan border */
+    cursor: pointer; /* Kursor pointer */
+    color: #eee; /* Warna teks */
+    font-size: 24px; /* Ukuran font */
+  }
+
+  .edit-btn{
+    background-color: transparent; /* Latar belakang transparan */
+    border: none; /* Hilangkan border */
+    cursor: pointer; /* Kursor pointer */
+    color: #eee; /* Warna teks */
+    font-size: 13px; /* Ukuran font */
+  }
+  
+  /* Kontainer daftar tugas */
+  .todos-container {
+    height: 300px; /* Tinggi kontainer */
+    overflow: overlay; /* Efek overlay */
+  }
+  
+  /* Gaya untuk scrollbar di daftar tugas */
+  .todos-container::-webkit-scrollbar-track {
+    background: rgb(247, 247, 247); /* Warna latar belakang */
+    border-radius: 20px; /* Sudut lengkung */
+  }
+  
+  .todos-container::-webkit-scrollbar {
+    width: 0; /* Lebar scrollbar */
+  }
+  
+  .todos-container:hover::-webkit-scrollbar {
+    width: 7px; /* Lebar scrollbar saat dihover */
+  }
+  
+  .todos-container::-webkit-scrollbar-thumb {
+    background: #d5d5d5; /* Warna scrollbar */
+    border-radius: 20px; /* Sudut lengkung */
+  }
+  
+  /* Kontainer untuk filter */
+  .filters {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Pemisahan antara elemen */
+    margin-bottom: 25px; /* Ruang bawah */
+  }
+  
+  /* Filter untuk daftar tugas */
+  .filter {
+    color: #eee; /* Warna teks */
+    padding: 5px 15px; /* Padding */
+    border-radius: 100px; /* Sudut lengkung */
+    border: 2px solid #e6b7eca1; /* Border dengan warna */
+    transition: all 0.2s ease; /* Transisi smooth */
+    cursor: pointer; /* Kursor pointer */
+  }
+  
+  /* Filter aktif atau dihover */
+  .filter.active, .filter:hover {
+    background-color: #e6b7eca1; /* Warna latar belakang */
+  }
+  
+  /* Tombol hapus semua */
+  .delete-all {
+    display: flex; /* Menggunakan flexbox */
+    color: #eee; /* Warna teks */
+    padding: 7px 15px; /* Padding */
+    cursor: pointer; /* Kursor pointer */
+    transition: all 0.2s ease; /* Transisi smooth */
+  }
+
+  .edit-all{
+    display: flex; /* Menggunakan flexbox */
+    color: #eee; /* Warna teks */
+    padding: 7px 15px; /* Padding */
+    cursor: pointer; /* Kursor pointer */
+    transition: all 0.2s ease; /* Transisi smooth */
+  }
+  
+  /* Saat dihover, efek transparansi pada tombol hapus semua */
+  .delete-all:hover {
+    border-radius: 5px; /* Sudut lengkung */
+    background-color: #e6b7eca1; /* Warna latar belakang */
+  }
+
+  .edit-all:hover{
+    border-radius: 5px; /* Sudut lengkung */
+    background-color: #e6b7eca1; /* Warna latar belakang */
+  }
+  
+  .play-pause-button  {
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Kursor pointer saat diarahkan */
+    background-color: #007bff00; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks */
+    border: none; /* Hilangkan border */
+    border-radius: 5px; /* Sudut lengkung */
+  }
+
+  .stop-button{
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Kursor pointer saat diarahkan */
+    background-color: #007bff00; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks */
+    border: none; /* Hilangkan border */
+    border-radius: 5px; /* Sudut lengkung */
+  }
+  
+  .play-pause-button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat dihover */
+  }
+
+  .stop-button:hover{
+    background-color: #0056b3; /* Warna latar belakang saat dihover */
+}
+  

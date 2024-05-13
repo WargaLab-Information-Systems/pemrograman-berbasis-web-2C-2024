@@ -2,14 +2,13 @@
 session_start();
 
 // Cek apakah user sudah login
-if (!isset($_SESSION["username"])) {
-    header("Location: index.php");
-    exit();
-}
+// if (!isset($_SESSION["username"])) {
+//     header("Location: index.php");
+//     exit();
+// }
 
 // Ambil data user dari session
 $nama = $_SESSION["nama"];
-$username = $_SESSION["username"];
 ?>
 
 <!DOCTYPE html>

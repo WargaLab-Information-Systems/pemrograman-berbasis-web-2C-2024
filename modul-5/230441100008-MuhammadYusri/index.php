@@ -1,51 +1,25 @@
 <!-- php buat registrasi -->
  <?php
-    include "service/database.php";
-    $pesan_registrasi ="";
-    if (isset($_POST["register"])){
-        $nama     = $_POST["nama"];
-        $username = $_POST["username"];
-        $password = $_POST["password"];
-        
-        try {
-        $sql = "INSERT INTO users (nama,username, password) VALUES
-            ('$nama','$username', '$password')"; // jangan ada kutip 2 di dalam kutip 2
-
-            if ($db->query($sql)){
-            $pesan_registrasi = "Registrasi berhasil silahkan login";
-            }
-            else{
-            echo "yah gagal";
-            }
-        }catch(mysqli_sql_excaption){
-           echo $pesan_registrasi ="username sudah digunkan";
-        }
-       
-    
-}
+$akun = array(
+  "username"=>"muhammadyusri121",
+  "password" => "1234"
+);
 ?>
 
 <!-- php buat login -->
 <?php
 
-    include "service/database.php";
     $pesan ="";
     
     session_start();
     if(isset($_POST["login"])){
         $username = $_POST["username"];
         $password = $_POST["password"];
+        $_SESSION["nama"]=$username;
+        if($username==$akun['username'] && $password==$akun["password"]){
+
         
-        $sql = "SELECT * FROM users  WHERE username='$username' AND password= '$password'";
         
-        $result = $db->query($sql);
-        if ($result->num_rows > 0) {
-            $data = $result->fetch_assoc();
-    
-            // Menyimpan data user ke dalam session
-            $_SESSION["user_id"] = $data["id"];
-            $_SESSION["nama"] = $data["nama"];
-            $_SESSION["username"] = $data["username"];
     
             // Redirect ke halaman home
             header("Location:home.php");
@@ -53,7 +27,8 @@
         } else {
             $pesan = "Data tidak ditemukan";
         }
-    }
+      }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +44,6 @@
       <div class="button-box">
         <div id="btn"></div>
         <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-        <button type="button" class="toggle-btn" onclick="register()">Register</button>
       </div>
       <!-- form login -->
         <i><?= $pesan?></i>
@@ -78,15 +52,6 @@
         <input type="password" class="input-field" placeholder="Enter Password" name="password">
         <input type="checkbox" class="check-box"><span>Remember Password</span>
         <button type="submit" class="submit-btn" name="login">Log in</button>
-      </form>
-
-        <!-- form register -->
-        <i><?= $pesan_registrasi?></i>
-      <form id="register" class="input-group" action="index.php" method="post">
-        <input type="text" class="input-field" placeholder="Full Name" name="nama">
-        <input type="text" class="input-field" placeholder="Username" name="username">
-        <input type="password" class="input-field" placeholder="Enter Password" name="password">
-        <button type="submit" class="submit-btn" name="register">Register</button>
       </form>
     </div>
   </div>
@@ -100,12 +65,6 @@
       x.style.left = "50px";
       y.style.left = "450px";
       z.style.left = "0";
-    }
-
-    function register(){
-      x.style.left = "-400px";
-      y.style.left = "50px";
-      z.style.left = "110px";
     }
   </script>
 </body>

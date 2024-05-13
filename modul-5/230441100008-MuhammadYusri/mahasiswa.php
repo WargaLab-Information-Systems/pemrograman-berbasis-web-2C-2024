@@ -1,15 +1,30 @@
 <?php
-session_start();
+session_start();  //session adalah
 
 //Cek apakah user sudah login
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['nama'])) {
     header("Location: index.php");
     exit();
 }
 
-include "service/database.php";
+// Inisialisasi array mahasiswa jika belum ada di session
+if (!isset($_SESSION['mahasiswa'])) {
+    $_SESSION['mahasiswa'] = array();
+}
 
-// Operasi CRD
+// Ambil data mahasiswa dari session
+    $mahasiswa = $_SESSION['mahasiswa'];
+// Hapus data
+if (isset($_GET['hapus'])) {
+    $nimHapus = $_GET['hapus'];
+
+    foreach ($mahasiswa as $key => $data) { //foreach adalah perulangan yang digunakan untuk array, key karena array seperti dictionary python jadi ada key dan value 
+        if ($data['nim'] == $nimHapus) {
+            unset($mahasiswa[$key]);
+            unset($_SESSION['mahasiswa'][$key]);
+            break;
+        }}}
+
 // Tambah data
 if (isset($_POST['tambah'])) {
     $nim = $_POST['nim'];
@@ -17,31 +32,19 @@ if (isset($_POST['tambah'])) {
     $alamat = $_POST['alamat'];
     $angkatan = $_POST['angkatan'];
 
-    $sql = "INSERT INTO mahasiswa (nim, nama, alamat, angkatan) VALUES ('$nim', '$nama', '$alamat', '$angkatan')";
+    $data = array(
+        'nim' => $nim,
+        'nama' => $nama,
+        'alamat' => $alamat,
+        'angkatan' => $angkatan
+    );
 
-    if ($db->query($sql) === TRUE) {
-        $pesan = "Data berhasil ditambahkan";
-    } else {
-        $pesan = "Error: " . $sql . "<br>" . $db->error;
-    }
+    $mahasiswa[] = $data;
+    $_SESSION['mahasiswa'] = $mahasiswa; // Simpan data baru ke dalam session
+    $pesan = "Data berhasil ditambahkan";
 }
 
-// Hapus data
-if (isset($_GET['hapus'])) {
-    $id = $_GET['hapus'];
 
-    $sql = "DELETE FROM mahasiswa WHERE id=$id";
-
-    if ($db->query($sql) === TRUE) {
-        $pesan = "Data berhasil dihapus";
-    } else {
-        $pesan = "Error: " . $sql . "<br>" . $db->error;
-    }
-}
-
-// Tampilkan data
-$sql = "SELECT * FROM mahasiswa";
-$result = $db->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -147,7 +150,9 @@ $result = $db->query($sql);
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
-    <?php if (isset($pesan)) echo "<p>$pesan</p>"; ?>
+    <?php
+    // print_r($_SESSION["mahasiswa"]);
+    if (isset($pesan)) echo "<p>$pesan</p>"; ?>
 
     <!-- Form tambah data -->
     <h2>Tambah Data</h2>
@@ -178,20 +183,18 @@ $result = $db->query($sql);
             <th>Aksi</th>
         </tr>
         <?php
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
+            $i = 0;
+            foreach ($mahasiswa as $row) { //foreach adalah perulangan khusus array
                 echo "<tr>";
-                echo "<td>" . $row['nim'] . "</td>";
+                echo "<td>" . $row['nim'] . "</td>"; //row adalah variabel yang dipakai untuk menampung data dari array mahasiswa
                 echo "<td>" . $row['nama'] . "</td>";
                 echo "<td>" . $row['alamat'] . "</td>";
                 echo "<td>" . $row['angkatan'] . "</td>";
-                echo "<td><a href='?hapus=" . $row['id'] . "'>Hapus</a></td>";
+                echo "<td><a href='?hapus=" . $row["nim"] . "'>Hapus</a></td>";
                 echo "</tr>";
+                $i++;
             }
-        } else {
-            echo "<tr><td colspan='5'>Tidak ada data</td></tr>";
-        }
-        ?>
+            ?>
     </table>
 
     <a href="home.php">Kembali ke Halaman Home</a>

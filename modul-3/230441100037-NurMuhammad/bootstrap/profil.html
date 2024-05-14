@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UTM 2.0</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="z-2 navbar bg-dark">
+        <div class="container">
+            <a class="navbar-brand">
+                <img class="me-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg/2048px-Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="" height="45">
+                <img class="me-3" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Logo_Kampus_Merdeka_Kemendikbud.png" alt="" height="45">
+                <img class="me-3" src="https://www.kemdikbud.go.id/main/files/large/1ec3304b7d4b803" alt="" height="45">
+                <img class="me-3" src="https://www.upnjatim.ac.id/wp-content/uploads/2023/07/Logo-BLU-Speed.png" alt="" height="45">
+            </a>
+            <form class="d-md-flex d-none me-4" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <nav class="z-3 navbar border-bottom navbar-expand-lg bg-biru border-light position-sticky top-0 text-white navbar-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="logo-navbar" href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/UTM_DIKBUDRISTEK.png" alt="" height="45">
+                </a>
+                <a href="index.html" class="text-decoration-none text-light" style="padding-left: 85px;"><h1 class="fs-6 d-none d-md-inline">UNIVERSITAS TRUNOJOYO MADURA</h1></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="profil.html">Profil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Fakultas</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://hukum.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Hukum</a></li>
+                                <li><a href="https://feb.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Ekonomi dan Bisni</a></li>
+                                <li><a href="https://pertanian.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Pertanian</a></li>
+                                <li><a href="http://teknik.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Teknik</a></li>
+                                <li><a href="https://fisib.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Ilmu Sosial dan Ilmu Budaya</a></li>
+                                <li><a href="https://fip.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Ilmu Pendidikan</a></li>
+                                <li><a href="https://fik.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Keislaman</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Unit Pelayanan</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Unit Pelayanan/BAK.html">Biro Akademik dan Kemahasiswaan</a></li>
+                                <li><a class="dropdown-item" href="Unit Pelayanan/BUK.html">Biro Umum dan Keuangan</a></li>
+                                <li><a class="dropdown-item" href="https://lp3mp.trunojoyo.ac.id/">LP3MP</a></li>
+                                <li><a class="dropdown-item" href="Unit Pelayanan/LPPM.html">LPPM</a></li>
+                                <li><a class="dropdown-item" href="Unit Pelayanan/UPT-Perpustakaan.html">UPT Perpustakaan</a></li>
+                                <li><a class="dropdown-item" href="Unit Pelayanan/UPT-TIK.html">UPT TIK</a></li>
+                                <li><a class="dropdown-item" href="Unit Pelayanan/UPT-Laboratorium-Terpadu.html">UPT Laboratorium Terpadu</a></li>
+                                <li><a class="dropdown-item" href="Unit Pelayanan/UPT-Pusat-Bahasa.html">UPT Pusat Bahasa</a></li>
+                                <li><a class="dropdown-item" href="https://spi.trunojoyo.ac.id/">Satuan Pengawas Internal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Kemahasiswaan</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Kemahasiswaan/Profil-Mahasiswa.html">Profil Mahasiswa</a></li>
+                                <li><a class="dropdown-item" href="Kemahasiswaan/Layanan-Kemahasiswa.html">Layanan Kemahasiswa</a></li>
+                                <li><a class="dropdown-item" href="Kemahasiswaan/UKM.html">UKM</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Kerjasama.html">Kerjasama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PDDIKTI.html">PDDIKTI</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PPID</a>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="https://www.lapor.go.id/">Layanan Aspirasi Dan Pengaduan<br>Online Masyarakat</a></li>
+                                <li><a class="dropdown-item" href="http://ppid.trunojoyo.ac.id/">Pusat Layanan Informasi<br>Dan Dokumentasi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- MAIN -->
+    <main  style="min-height: 480px;">
+        <div class="nyantol">
+            <div class="container">
+                <div class="border-bottom border-secondary mb-3 pt-5">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Profil</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Sub menu -->
+        <div class="sub-menu col-3">
+            <div class="card overflow-hidden">
+                <div class="card-head bg-biru text-light p-2">
+                    <h4>Sub Menu</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Profil</li>
+                        <ul>
+                            <li><a href="#Sejarah" class="text-decoration-none text-dark">Sejarah</a></li>
+                            <li><a href="#Visi-dan-Misi" class="text-decoration-none text-dark">Visi dan Misi</a></li>
+                            <li><a href="#Struktur-Organisasi" class="text-decoration-none text-dark">Struktur Organisasi</a></li>
+                            <li><a href="#Tugas-&-Fungsi-PT" class="text-decoration-none text-dark">Tugas & Fungsi PT</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12" style="text-align: justify;">
+                    <div id="Sejarah" class="mb-3">
+                        <h1>SEJARAH</h1>
+                        <p style="text-indent: 50px;">Universitas Trunojoyo Madura merupakan kelanjutan dari Universitas Bangkalan Madura (Unibang) yang "berubah statusnya" dari Perguruan Tinggi Swasta menjadi Perguruan Tinggi Negeri berdasarkan Keputusan Presiden (Keppres) RI Nomor 85 Tahun 2001 Tertanggal 5 Juli 2001. Peresmian berlangsung pada tanggal 23 Juli 2001. Dalam sambutannya KH. Abdurrahman Wahid sebagai Presiden Republik Indonesia pada waktu itu, mengatakan bahwa salah satu keinginan Masyarakat Madura untuk memiliki Universitas Negeri telah tercapai. Keinginan lainnya agar pulau Madura dihubungkan dengan pulau Jawa juga telah tercapai dengan diresmikannya Jembatan Suramadu pada tanggal 10 Juli 2009 oleh Presiden Republik Indonesia Susilo Bambang Yudhoyono.</p>
+                        <p style="text-indent: 50px;">Keberadaan Universitas Trunojoyo Madura seperti kondisinya yang ada saat ini, masih dalam tahap pembenahan-pembenahan mendasar, seperti renovasi gedung perkuliahan, kantor administrasi, kantor pusat maupun fakultas, dan prasarana kampus seperti instalasi listrik dan air serta sarana olahraga dalam kampus. Saat ini dilakukan pula upaya untuk melengkapi sarana laboratorium yang ada di semua fakultas.</p>
+                        <p style="text-indent: 50px;">Universitas Trunojoyo Madura dibangun di atas lahan seluas 30 hektar, yang terletak 5 kilometer dari pelabuhan Kamal dan sekitar 15 kilometer dari Kota Bangkalan. Pengembangan kampus di masa yang akan datang diarahkan menjadi lingkungan yang nyaman untuk kegiatan belajar mengajar. Pohon-pohon direncanakan akan lebih banyak ditanam untuk meghilangkan kesan kekeringan dan kegersangan pulau Madura. Selain itu, lokasi Universitas Trunojoyo Madura akan berada dalam lingkungan pusat pengembangan Bangkalan sebagai perluasan kota Surabaya dalam satuan wilayah pengembangan Gerbang kertasusila (Gresik, Bangkalan, Mojokerto, Surabaya, Sidoarjo, Lamongan).</p>
+                    </div>
+
+                    <div id="Visi-dan-Misi" class="mb-3">
+                        <h1>Visi dan Misi</h1>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Visi
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Visi UTM adalah "Pada tahun 2030 menjadi institusi yang mampu mewujudkan lulusan yang cerdas, berdaya saing, berakhlakul karimah dan unggul dalam pendidikan serta riset berdasarkan potensi Madura ".</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Misi
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Untuk mencapai visi yang telah ditetapkan, UTM menetapkan misi sebagai berikut:</p>
+                                        <ul>
+                                            <li style="list-style: lower-alpha;"><p>Menyelenggarakan layanan pendidikan yang berkualitas, relevan dan kompeten untuk penguatan ilmu pengetahuan, teknologi serta iman dan takwa</p></li>
+                                            <li style="list-style: lower-alpha;"><p>Menyelenggarakan kegiatan penelitian dan pengabdianmasyarakat berdasarkan potensi Madura secara berkesinambungan dalam mendukung proses pembelajaran dan publikasi ilmiah</p></li>
+                                            <li style="list-style: lower-alpha;"><p>Meningkatkan jejaring kerja sama dengan pemerintah, swasta, industri, pondok pesantren, alumni dan lembaga pendidikan di dalam dan luar negeri yang dapat menunjang pengembangan potensi Madura</p></li>
+                                            <li style="list-style: lower-alpha;"><p>Meningkatkan tata kelola perguruan tinggi menggunakan prinsip kredibel, transparan, akuntabel, tanggung jawab, dan adil</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Tujuan
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Selaras dengan Misi yang telah ditetapkan, maka tujuan UTM adalah:</p>
+                                        <ul>
+                                            <li style="list-style: lower-alpha;"><p>Menghasilkan layanan pendidikan yang berkualitas, dan kompeten untuk penguatan ilmu pengetahuan  dan teknologi serta keimanan dan ketakwaan.</p></li>
+                                            <li style="list-style: lower-alpha;"><p>Menghasilkan penelitian dan pengabdian kepadaberdasarkan potensi Madura secara berkesinambungan dalam mendukung proses pembelajaran dan publikasi ilmiah.</p></li>
+                                            <li style="list-style: lower-alpha;"><p>Menghasilkan jejaring kerja sama dengan instansi pemerintah, swasta, industri, pondok pesantren, alumni dan pendidikan di dalam dan luar negeri yang dapat menunjang pengembangan potensi Madura.</p></li>
+                                            <li style="list-style: lower-alpha;"><p>Menghasilkan sistem tata kelola perguruan tinggi yang kredibel, transparan, akuntabel, tanggung jawab, dan adil.</p></li>
+                                        </ul>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Struktur-Organisasi" class="mb-3">
+                        <h1>Struktur Organisasi</h1>
+                        <img src="https://www.trunojoyo.ac.id/images/stories/gambar/struktur-organisasi-utm-2023.jpg" alt="" style="width: 100%;">
+                        <ul>
+                            <li style="list-style: decimal;">
+                                <h6>REKTOR</h6>
+                                <p>Dr. Safi', S.H, M.H.</p>
+                                <p>NIP. 197409252003121002</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6>WAKIL REKTOR BIDANG AKADEMIK</h6>
+                                <p>Dr. Achmad Amzeri, S.P., M.P.,</p>
+                                <p>NIP. 197408132006041002</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6>WAKIL REKTOR BIDANG UMUM DAN KEUANGAN</h6>
+                                <p>Ari Basuki, ST., MT,</p>
+                                <p>NIP. 197801202003121002</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6>WAKIL REKTOR BIDANG KEMAHASISWAAN</h6>
+                                <p>Surokim, S.Sos., SH., M.Si.</p>
+                                <p>NIP. 197406222008011007</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6>DEKAN FAKULTAS HUKUM</h6>
+                                <p>Dr. Erma Rusdiana, S.H., M.H.</p>
+                                <p>NIP. 196912312001122002</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6>DEKAN FAKULTAS EKONOMI DAN BISNIS</h6>
+                                <p>Dr. Sutikno, S.E., M.E.</p>
+                                <p>NIP. 197508092008121003</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6>DEKAN FAKULTAS PERTANIAN</h6>
+                                <p>Dr. Mohammad Fuad Fauzul Mu'tamar, S.TP., M.Si.</p>
+                                <p>NIP. 197402152006041001</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6>DEKAN FAKULTAS TEKNIK</h6>
+                                <p>Faikul Umam, S.Kom., M.T.</p>
+                                <p>NIP. 198301182008121001</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6>DEKAN FAKULTAS ILMU SOSIAL DAN ILMU BUDAYA</h6>
+                                <p>Dr. Dinara Maya Julijanti, M.Si. </p>
+                                <p>NIP. 197007222005012001</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6> DEKAN FAKULTAS ILMU PENDIDIKAN</h6>
+                                <p>Dr. Hani'ah, S.Pd., M.Pd.</p>
+                                <p>NIP. 197609082006042001</p>
+                            </li>
+                            <li style="list-style: decimal;">
+                                <h6> DEKAN FAKULTAS KEISLAMAN</h6>
+                                <p>Shofiyun Nahidloh, S.Ag., M.H.I</p>
+                                <p>NIP. 197605162000032003</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="Tugas-&-Fungsi-PT" class="mb-3">
+                        <h1>Tugas & Fungsi PT</h1>
+                        <p>UTM mempunyai tugas menyelenggarakan pendidikan akademik dan dapat menyelenggarakan pendidikan vokasi dalam berbagai rumpun ilmu pengetahuan dan/atau teknologi dan jika memenuhi syarat dapat menyelenggarakan pendidikan profesi.</p>
+                        <p>Fungsi Pendidikan tinggi menurut Undang-Undang Nomor 12 tahun 2012 tentang Pendidikan Tinggi adalah:</p>
+                        <ul>
+                            <li style="list-style: decimal;">mengembangkan kemampuan dan membentuk watak serta peradaban bangsa yang bermartabat dalam rangka mencerdaskan kehidupan bangsa</li>
+                            <li style="list-style: decimal;">mengembangkan Sivitas Akademika yang inovatif, responsif, kreatif, terampil, berdaya saing, dan kooperatif melalui pelaksanaan Tridharma</li>
+                            <li style="list-style: decimal;">mengembangkan Ilmu Pengetahuan dan Teknologi dengan memperhatikan dan menerapkan nilai Humaniora</li>
+                        </ul>
+                        <p>Tujuan Pendidikan tinggi menurut Undang-Undang Nomor 12 tahun 2012 tentang Pendidikan Tinggi adalah:</p>
+                        <ul>
+                            <li style="list-style: decimal;">berkembangnya potensi Mahasiswa agar menjadi manusia yang beriman dan bertakwa kepada Tuhan Yang Maha Esa dan berakhlak mulia, sehat, berilmu, cakap, kreatif, mandiri, terampil, kompeten, dan berbudaya untuk kepentingan bangsa</li>
+                            <li style="list-style: decimal;">dihasilkannya lulusan yang menguasai cabang Ilmu Pengetahuan dan/atau Teknologi untuk memenuhi kepentingan nasional dan peningkatan daya saing bangsa</li>
+                            <li style="list-style: decimal;">dihasilkannya Ilmu Pengetahuan dan Teknologi melalui Penelitian yang memperhatikan dan menerapkan nilai Humaniora agar bermanfaat bagi kemajuan bangsa, serta kemajuan peradaban dan kesejahteraan umat manusia</li>
+                            <li style="list-style: decimal;">terwujudnya Pengabdian kepada Masyarakat berbasis penalaran dan karya Penelitian yang bermanfaat dalam memajukan kesejahteraan umum dan mencerdaskan kehidupan bangsa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main -->
+
+    <!-- FOOTER -->
+    <div class="mt-5 p-3 pb-0 bg-dark" style="width: 100%;">
+        <div class="container">
+            <div class="row text-light mt-5" style="width: 100%;">
+                <div class="col-4">
+                    <h6>Berita</h6>
+                    <ul>
+                        <li><a href="" class="link" target="_blank">Dunia Mahasiswa</a></li>
+                        <li><a href="" class="link" target="_blank">Berita Unit</a></li>
+                        <li><a href="" class="link" target="_blank">Kegiatan</a></li>
+                        <li><a href="" class="link" target="_blank">Informasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h6>Fakultas</h6>
+                    <ul>
+                        <li><a href="https://hukum.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Hukum</a></li>
+                        <li><a href="https://feb.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Ekonomi dan Bisni</a></li>
+                        <li><a href="https://pertanian.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Pertanian</a></li>
+                        <li><a href="http://teknik.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Teknik</a></li>
+                        <li><a href="https://fisib.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Ilmu Sosial dan Ilmu Budaya</a></li>
+                        <li><a href="https://fip.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Ilmu Pendidikan</a></li>
+                        <li><a href="https://fik.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Keislaman</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h6>Unit Kerja</h6>
+                    <ul>
+                        <li><a href="https://spi.trunojoyo.ac.id/" class="link" target="_blank">Satuan Pengawas Internal</a></li>
+                        <li><a href="Unit Pelayanan/UPT-Perpustakaan.html" class="link">UPT Perpustakaan</a></li>
+                        <li><a href="Unit Pelayanan/UPT-Laboratorium-Terpadu.html" class="link">UPT Laboratorium Terpadu</a></li>
+                        <li><a href="Unit Pelayanan/UPT-Pusat-Bahasa.html" class="link">UPT Pusat Bahasa</a></li>
+                        <li><a href="Unit Pelayanan/UPT-TIK.html" class="link">UPT TIK</a></li>
+                        <li><a href="Unit Pelayanan/LPPM.html" class="link">LPPM</a></li>
+                        <li><a href="https://lp3mp.trunojoyo.ac.id/" class="link" target="_blank">LP3MP</a></li>
+                        <li><a href="https://io.trunojoyo.ac.id/" class="link" target="_blank">International Relation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row text-light">
+                <div class="col-7 d-flex justify-content-center me-5">
+                    <div class="logo text-center me-3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/UTM_DIKBUDRISTEK.png" alt="" height="140">
+                    </div>
+                    <div class="mt-4">
+                        <h5>UNIVERSITAS TRUNOJOYO MADURA</h5>
+                        <a class="text-decoration-none text-light"><i class="fa-solid fa-envelope me-3"></i>humas@trunojoyo.ac.id</a><br>
+                        <a class="text-decoration-none text-light"><i class="fa-solid fa-phone me-3"></i>031-3011146</a><br>
+                        <a target="_blank" href="https://www.youtube.com/@universitastrunojoyomadura2433" class="text-decoration-none text-light me-1"><i class="fa-brands fa-youtube"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/universitastrunojoyomadura/" class="text-decoration-none text-light me-1"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/universitastrunojoyomadura/" class="text-decoration-none text-light me-1"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-4 border-start border-light ps-5 pt-4">
+                    <h5>Alamat</h5>
+                    <p>Jl. Raya Telang,PO BOX 02 Kecamatan Kamal, Bangkalan Jawa Timur 69162 Indonesia</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-light text-center py-3 mt-5 border-top border-secondary" style="width: 100%;">
+            <p>2024 Hak Cipta, Universitas Trunojoyo Madura</p>
+        </div>
+    </div>
+    <!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>

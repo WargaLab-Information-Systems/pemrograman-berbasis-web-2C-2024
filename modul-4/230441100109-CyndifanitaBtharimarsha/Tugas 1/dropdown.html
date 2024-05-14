@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: brown;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar a {
+            float: left; /* Menggunakan float agar menu tetap dalam satu baris */
+            font-size: 16px;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown {
+            float: left; /* Menggunakan float agar menu tetap dalam satu baris */
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #f9f9f9;
+            color: black;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none; /* Mengatur float menjadi none agar dropdown tidak terpengaruh */
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container{
+            font: 1em sans-serif;
+            font-size: large;
+            color: #810707;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(241, 239, 239);">
+    <header>
+        <div class="navbar">
+            <a href="About us.html">ABOUT US</a>
+            <a href="Kritik&Saran.html">KRITIK&SARAN</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">MENU
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="abaai">
+                    <a href="menubakso.html">BAKSO</a>
+                    <a href="menutambahan.html">MENU TAMBAHAN</a>
+                    <a href="menuminuman.html">MINUMAN</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main class="grid flex-center">
+            <article>
+                <center><img src="bakso-removebg-preview.png" width="430px" height="470px" class="img"></center>
+                <div class="konten">
+                    <center><h1>BAKSO SOLO</h1></center>
+                    <audio  src="Abang+Tukang+Bakso+-+Daffa+&+Khalista+feat+Kak+Nunuk.mp3" id="myAudio"></audio>
+                    <center><button class="play-pause-button">Play Audio&Pause Audio</button></center> 
+                    <!-- mendapatkan akses langsung ke tombol yang bertanggung jawab untuk memainkan atau menghentikan audio. -->
+                </div>
+                <script>
+                const audio = document.getElementById('myAudio');
+
+                function togglePlayPause(){
+                    if(audio.paused)
+                    audio.play();
+                    else
+                    audio.pause();
+                }
+
+                const PlayPauseButton = document.querySelector('.play-pause-button')
+                PlayPauseButton.addEventListener('click',togglePlayPause)
+
+
+                </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <script>
+    const audio = document.getElementById('myAudio');
+
+    function togglePlayPause(){
+        if(audio.paused)
+        audio.play();
+        else
+        audio.pause();
+    }
+
+    const PlayPauseButton = document.querySelector('.play-pause-button')
+    PlayPauseButton.addEventListener('click',togglePlayPause)
+
+
+
+
+
+ -->

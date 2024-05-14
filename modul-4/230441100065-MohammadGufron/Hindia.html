@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Hindia</title>
+    <style>
+
+    </style>
+</head>
+<body>
+        <!-- NAVBAR -->
+        <section class="menu">
+        <div class="nav">
+            <div class="logo"><h1>Web<b>To</b>and<b>So</b></h1></div>
+            <ul>
+                <li><a class="home" href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="music" href="#">Album Music</a>
+                    <div class="dropdown-content">
+                        <a href="ThePanturas.html">The Panturas</a>
+                        <a href="Hindia.html">Hindia</a>
+                    </div>
+                </li>
+                <li><a class="tentangkami" href="#tentangkami">About us</a></li>                
+            </ul>
+            <div>
+                    <input class="singin" type="submit" value="Sign In" id="singin">
+                    <input class="singup" type="submit" value="Sign Up" id="singup">
+                </div>
+            </div>          
+        </section>
+        <!-- navbar -->
+        <div class="container">
+            <div class="playlistMusic">
+                <ul id="playlist">
+                    <li>
+                        <div class="namalagu" data-musicsrc="lagu/Hindia - Evaluasi.mp3">
+                            <p><button id="play"><i class="fa-solid fa-play"></i></button>
+                                <button id="pause"><i class="fa-solid fa-pause"></i></button>
+                                Hindia - Evaluasi </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!-- <script src="main js"></script> -->
+<script>
+    var music = new Audio();
+    music.src = "lagu/Hindia - Evaluasi.mp3";
+    music.loop = true;
+
+    function mulaiAudio() {
+        var play = document.getElementById("play");
+        var pause = document.getElementById("pause");
+
+        play.addEventListener('click', fplay);
+        pause.addEventListener('click', fpause);
+
+        function fplay() {
+            if (music.paused) {
+                music.play();
+            }
+        }
+
+        function fpause() {
+            if (!music.paused) {
+                music.pause();
+            }
+        }
+    }
+    mulaiAudio(); // Panggil fungsi mulaiAudio untuk menginisialisasi event listener
+    </script>
+</body>
+</html>

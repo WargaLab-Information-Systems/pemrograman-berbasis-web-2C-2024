@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta value="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web ToDo</title>
+</head>
+<body>
+        <!-- NAVBAR -->
+        <section class="menu">
+            <div class="nav">
+                <div class="logo"><h1>Web<b>To</b>and<b>So</b></h1></div>
+                <ul>
+                    <li><a class="home" href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="music" href="#">Album Music</a>
+                        <div class="dropdown-content">
+                            <a href="Hindia.html">Hindia</a>
+                            <a href="ThePanturas.html">The Panturas</a>
+                        </div>
+                    </li>                
+                    <li><a class="tentangkami" href="#tentangkami">About us</a></li>
+                </ul>
+                <div>
+                    <input class="singin" type="submit" value="Sign In" id="singin">
+                    <input class="singup" type="submit" value="Sign Up" id="singup">
+                </div>
+            </div>          
+        </section>
+        <!-- navbar -->
+    <div class="container1">
+        <h1>ToDo List</h1>
+        <input type="text" id="taskInput" placeholder="Tambahkan tugas...">
+        <button onclick="addTask()">Tambah tugas</button>
+        <ul id="taskList">
+            <!-- Task items will be added dynamically here -->
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

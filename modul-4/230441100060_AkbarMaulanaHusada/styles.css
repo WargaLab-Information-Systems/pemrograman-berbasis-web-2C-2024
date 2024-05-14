@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Background.png);
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 30px;
+    font-weight: bold;
+    margin-right: 30px;
+    font-size: larger;
+    color: rgb(240, 248, 255);
+    z-index: 10;
+}
+
+.to-do-list .navbar ul {
+    display: flex;
+    margin-right: 100px;
+    
+    
+    
+}
+.to-do-list .navbar ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.to-do-list .navbar ul li .dropdown {
+    position: relative;
+    display: flex;
+}
+.to-do-list .navbar ul li .dropdown ul {
+    position: absolute;
+    padding: 10px;
+    background: rgb(49, 61, 128);
+    border-radius: 5px;
+    z-index: 20;
+    border: 1px solid #000;
+    top: 25px;
+    left: -25px;
+    margin: 5px;
+    display: none;
+    
+}
+.to-do-list .navbar ul li .dropdown ul li {
+    padding-left: 15px;
+}
+
+.form-input {
+    width: 500px ;
+    /* height: 300px; */
+    background: rgb(13, 21, 65);
+    margin: 0px auto;
+    border-radius: 5px;
+    margin-top: 50px;
+    /* margin-bottom: 150px; */
+    text-align: center;
+    color: aliceblue;
+    font-weight : bolder;
+    font-size: large;
+}
+
+.form-input p {
+    padding: 20px;
+}
+
+.form-input input {
+    margin-bottom: 25px;
+}
+.form-input .input #text {
+    margin-top: 10px;
+    width: 280px;
+}
+
+.form-input .tambah {
+    /* margin-top: 10px; */
+    /* padding-top: 10px; */
+    margin-left: 5px;
+    height: 25px;
+    width: 70px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: rgb(49, 61, 128);
+    border-radius: 5px;
+    border: 0px;
+} 
+.form-input .cancel {
+    /* margin-top: 10px; */
+    /* padding-top: 10px; */
+    margin-left: 2px;
+    height: 25px;
+    width: 70px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: rgb(194, 27, 52);
+    border-radius: 5px;
+    border: 0px;
+} 
+
+.form-input #list-todo {
+    list-style: none;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.form-input #list-todo li {
+    background-color:rgb(49, 61, 128);
+    padding: 10px;
+    width: 440px;
+    border-radius: 5px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-input #list-todo p {
+    padding: 0px;
+    width: 320px;
+    text-align: left;
+}
+.form-input #list-todo .hapus {
+    height: 30px;
+    width: 50px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: rgb(214, 12, 12);
+    border-radius: 5px;
+    border: 0px;
+}
+.form-input #list-todo .edit {
+    height: 30px;
+    width: 50px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: rgb(215, 235, 60);
+    border-radius: 5px;
+    border: 0px;
+    margin-right: 5px;
+}

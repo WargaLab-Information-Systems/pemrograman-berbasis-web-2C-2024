@@ -16,17 +16,21 @@
         </div>
         <div class="menu">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li class="dropdown">
-              <a href="#">Services</a>
-              <div class="dropdown-menu">
-                <a href="#">Web Design</a>
-                <a href="todo.html">web To-Do</a>
-                <a href="#">Profil</a>
+            <div class="navbar">
+              <a href="#home">Home</a>
+              <a href="#news">Services</a>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  Dropdown
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="todo.html">Web To-Do</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
               </div>
-            </li>
-            <li><a href="#">Contact</a></li>
+            </div>
           </ul>
         </div>
       </nav>
@@ -35,10 +39,9 @@
       <section class="hero">
         <h1>Welcome to My Website</h1>
         <p>Untuk memenuhi tugas Praktikum PBW.</p>
-        <a href="#" class="btn">Get Started</a>
         <div>
-          <button id="playBtn">Play</button>
-          <button id="pauseBtn">Pause</button>
+          <button class="btn" id="playBtn">Play</button>
+          <button class="btn" id="pauseBtn">Pause</button>
         </div>
       </section>
     </main>

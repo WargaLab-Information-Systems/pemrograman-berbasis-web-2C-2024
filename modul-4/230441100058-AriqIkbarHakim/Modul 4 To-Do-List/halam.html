@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Todo List 2022 with LocalStorage</title>
+	<link rel="stylesheet" href="por.css" />
+	<script src="script.js"></script>
+</head>
+<body>
+	<main class="app">
+		<section class="greeting">
+			<input type="text" id="name"/>
+		</section>
+		<section class="create-todo">
+			<h3><a href="DROP.html" style="text-decoration: none; color: black; font-weight: bold;">KEMBALI HALAMAN 1</a></h3>
+			<h3>LIST-TO-DO</h3>
+			<form id="new-todo-form">
+				<input 
+					type="text" 
+					placeholder="Ketikan disini"
+					name="content"
+					id="content" />
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="business" /> 
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="personal" />
+					</label>
+				</div>
+
+				<input type="submit" value="Add todo" />
+			</form>
+		</section>
+		<section class="todo-list">
+			<h3>LIST HASIL</h3>
+			<div class="list" id="todo-list"></div>
+		</section>
+
+	</main>
+</body>
+</html>

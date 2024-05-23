@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(/230441100055-AbdBased/image/dekstop.jpg);
+  background-size: cover;
+  background-position: calc(45px);
+}
+
+.container {
+  max-width: 450px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgb(6, 175, 175);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(3, 1, 12, 0.1);
+}
+
+.judul {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.input-data {
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-data input[type="text"],
+.input-data input[type="password"] {
+  width: 90%;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-left: 0;
+}
+
+.input-data input[type="submit"] {
+  width: 20%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-top: 10px;
+  background-color: darkcyan;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-data input[type="submit"]:hover {
+  background-color: darkolivegreen;
+}

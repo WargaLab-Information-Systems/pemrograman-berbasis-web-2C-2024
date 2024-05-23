@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <h1>M</h1>
+        </a>
+        <div class="nav-items">
+            <div class="list-nav">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a id="dropdown-toggle-menu">Music</a>
+                    <ul id="dropdown-items-menu">
+                        <li><a href="metal.html">Metal</a></li>
+                        <li><a href="">Pop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search....">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+
+    <div class="container">
+        <div class="playlistMusic">
+            <ul id="playlist">
+                <li><p>Avenged Sevenfold - Bat Country</p><button onclick="playMusic(this, 'Avenged-Sevenfold-Bat-Country.mp3')"><i class="fa-solid fa-play"></i></button></li>
+                <li><p>Avenged Sevenfold - Unbound</p><button onclick="playMusic(this, 'Avenged-Sevenfold-Unbound.mp3')"><i class="fa-solid fa-play"></i></button></li>
+                <li><p>Dream Theater -  The Spirit Carries On</p><button onclick="playMusic(this, 'Dream-Theater-The-Spirit-Carries-On.mp3')"><i class="fa-solid fa-play"></i></button></li>
+                <li><p>Firehouse - When I Look Into Your Eyes</p><button onclick="playMusic(this, 'Firehouse-When-I-Look-Into-Your-Eyes.mp3')"><i class="fa-solid fa-play"></i></button></li>
+                <li><p>Metallica - Nothing Else Matters</p><button onclick="playMusic(this, 'Metallica-Nothing-Else-Matters.mp3')"><i class="fa-solid fa-play"></i></button></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

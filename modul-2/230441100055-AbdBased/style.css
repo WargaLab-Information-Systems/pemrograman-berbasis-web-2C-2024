@@ -1,0 +1,204 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0ox;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  background: #fdaf7b;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+.wrapper-atas {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+  position: sticky;
+  z-index: 100000;
+}
+
+.logo a {
+  font-size: 50px;
+  font-weight: 800;
+  float: left;
+  color: #940b0b;
+}
+.logo a span {
+  color: white;
+}
+
+.menu {
+  float: right;
+}
+.img-menu {
+  margin-top: 30px;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  background-color: #00224d;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 10px;
+  padding: 5px auto;
+}
+a.tmbl {
+  background: #5d0e41;
+  border-radius: 30px;
+  margin: 10px 10px;
+  padding: 12px;
+  color: white;
+}
+
+a.tmbl:hover {
+  background: #a0153e;
+}
+
+section {
+  margin-top: 5px;
+  padding-top: 70px;
+  display: flex;
+  margin-bottom: 180px;
+  float: left;
+}
+
+.kolom {
+  margin: auto;
+  margin-left: 30px;
+  float: right;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #5d0e41;
+}
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #5d0e41;
+  width: 100%;
+  line-height: 50px;
+}
+h2 span {
+  color: #401f71;
+}
+
+.kolom p {
+  font-size: 16px;
+  font-family: "comic sans ms";
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.tengah.kolom2 p {
+  text-align: center;
+  width: 100%;
+}
+.menu-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+
+.card-menu {
+  width: 20%;
+  margin: 60px 45px 10px 10px;
+}
+
+.card-menu img {
+  width: 75%;
+  border-radius: 50%;
+}
+p.deskripsi-menu {
+  margin-bottom: 50px;
+  border-radius: 45px;
+  background: #5d0e41;
+  margin: 20px 20px;
+  color: white;
+  font-family: "comic sans ms";
+  padding: 10px;
+}
+
+.card-menu p {
+  color: white;
+}
+
+footer {
+  background-color: #a34343;
+  width: 100%;
+  clear: both;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  margin-top: 100px;
+  width: 100%;
+}
+.media-social {
+  display: flex;
+  justify-content: center;
+}
+.media-social a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px;
+  color: white;
+}
+.media-social a i:hover {
+  color: #e9c874;
+  transform: scale(1.2) translateY(-5px);
+  transition: 0.5s;
+}
+
+.nav-footer {
+  margin: 30px 0;
+}
+
+.footer-bottom {
+  color: black;
+  text-align: center;
+}
+
+.footer-bottom p span {
+  color: white;
+}

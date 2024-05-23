@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Dropdown</title>
+</head>
+<body>
+  <nav class="navbar">
+    <img src="C:\Users\Lenovo\Downloads\javascript_horizontal_logo_icon_170553.png" class="navbar-logo" alt="logo" />
+    <ul class="navbar-list">
+      <li><a href="dropdown.html">Home</a></li>
+      <li><a href="todo.html">ToDo</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="https://wa.me/6289616625255">Contact</a></li>
+    </ul>
+  
+    <div class="profile-dropdown">
+      <div onclick="toggle()" class="profile-dropdown-btn">
+        <div class="profile-img">
+
+          <img src="C:\Users\Lenovo\Downloads\WhatsApp Image 2024-04-27 at 16.55.33_6abb6567.jpg" alt="Profile Picture">
+        </div>
+        <span>Arnogee<i class="fa-solid fa-angle-down"></i></span>
+      </div>
+
+      <ul class="profile-dropdown-list">
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-regular fa-user"></i>
+            Edit Profile
+          </a>
+        </li>
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-regular fa-envelope"></i>
+            Inbox
+          </a>
+        </li>
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-solid fa-chart-line"></i>
+            Analytics
+          </a>
+        </li>
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-solid fa-sliders"></i>
+            Settings
+          </a>
+        </li>
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-regular fa-circle-question"></i>
+            Help & Support
+          </a>
+        </li>
+        <hr />
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Log out
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+/* Basic CSS Reset */
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 100px;
+    background-color: #ffeae0;
+}
+
+.container1 h1{
+    margin-bottom: 5px;
+}
+/* Navbar */
+.menu {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #ffeae0;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    padding: 0px 100px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav .logo h1 {
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+.nav .logo b {
+    color: #ff511c;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 45px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 19px;
+    transition: ease 0.5s;
+}
+
+.nav ul li a:hover {
+    color: #ff511c;
+}
+
+.nav ul .home::after,
+.nav ul .music::after,
+.nav ul .tentangkami::after {
+    content: '';
+    width: 64%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+/* Input */
+input {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.singin {
+    background: transparent;
+    border: none;
+}
+
+.singup {
+    background-color: #ff511c;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Content */
+.grid {
+    padding-top: 10px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .content-left .info h2 {
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.content .content-left .info p {
+    font-size: 20px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.content .content-left button {
+    padding: 10px 23px;
+    background-color: #ff511c;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.content .content-right img {
+    width: 400px;
+    height: auto;
+    position: relative;
+    border-radius: 55px;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #ffeae0;
+    color: #000000;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.footer-bottom {
+    background-color: #ffeae0;
+    padding: 10px 20px;
+    right: 0;
+    left: 0;
+    text-align: right;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffeae0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #ffeae0;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 200px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+input#taskInput {
+    padding: 10px;
+    width: 88.2%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff511c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.container1 #taskList {
+    padding: 10px 15px;
+}
+
+.container1 #taskList li{
+    margin: 15px 15px;
+}
+.container1{
+    padding: 10px;
+
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+div .namalagu{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.audio#audioPlayer{
+    background-color: #ff511c;
+}
+p {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff511c;
+    text-align: left;
+}

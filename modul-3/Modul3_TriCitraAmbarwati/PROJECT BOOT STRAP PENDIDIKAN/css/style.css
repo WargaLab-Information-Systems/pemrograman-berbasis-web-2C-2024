@@ -1,0 +1,17 @@
+* {
+  color: white;
+  font-family: "Poppins";
+}
+body {
+  height: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.card img {
+  transition: ease 0.5s;
+}
+
+.card img:hover {
+  transform: translateY(-10px);
+}

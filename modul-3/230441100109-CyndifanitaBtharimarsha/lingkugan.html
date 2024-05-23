@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Berita Lingkungan</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Styles -->
+  <style>
+    /* Gaya kustom untuk tema berita lingkungan */
+    .berita-item {
+      background-color: #edf6f7;
+      border-radius: 8px;
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .berita-item:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Gaya untuk gambar berita */
+    .berita-item img {
+      width: 100%; /* Mengisi lebar kontainer */
+      height: auto; /* Menjaga proporsi aspek gambar */
+      border-radius: 8px; /* Membulatkan sudut gambar */
+      margin-bottom: 1rem; /* Jarak antara gambar dan teks */
+    }
+
+    /* Style all font awesome icons */
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .{
+
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.9;
+  }
+
+  .logo img{
+    width: 90px; 
+    height: 80px; 
+    border-radius: 90px;
+    margin-bottom: 1rem; 
+  }
+/* Set a specific color for each brand */
+
+ 
+  </style>
+</head>
+<body class="bg-white font-sans antialiased">
+  <!-- Navigation Bar menggunakan Tailwind CSS -->
+  <nav class="bg-green-500 shadow-md">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <button class="block md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul class="hidden md:flex space-x-4">
+          <div class="logo">
+            <img src="KAB_BOJONEGORO-removebg.png" alt="logo">
+          </div>
+          <h1 class="mt-5"><strong>PEMKAB BOJONEGORO</strong></h1>
+      </div>
+    </div>
+  </nav>
+  <!-- Bagian Konten menggunakan Tailwind CSS -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="berita-item">
+          <img src="bnjr bojonergoro.jpeg" alt="Berita 1">
+          <h2 class="text-lg font-semibold text-green-500">Banjir</h2>
+          <h3 class="text-gray-700 mt-2">Puluhan desa di Kabupaten Bojonegoro, Jawa Timur, terendam banjir luapan Sungai Bengawan Solo setinggi 50 cm hingga 1 meter. Kepala Badan Penanggulangan Bencana Daerah (BPBD) Kabupaten Bojonegoro, Laela Noer Ainy mengatakan, ada sekitar 36 Desa saat ini terdampak banjir luapan Sungai Bengawan Solo.</h3>
+          <p class="text-gray-500 mt-2">11 Maret 2024</p>
+        </div>
+        <div class="berita-item">
+            <img src="https___kompas.id_wp-content_uploads_2018_04_20180427acia.jpg" alt="Berita 2">
+            <h2 class="text-lg font-semibold text-green-500">Tambang minyak ilegal</h2>
+            <h3 class="text-gray-700 mt-2">Pengeboran dan penambangan ilegal dari sumur-sumur minyak yang dikelola secara tradisional oleh warga di Bojonegoro, Jawa Timur, diduga marak. Seharusnya sumur yang ditambang warga sebanyak 222 titik sumur, tetapi saat ini terdata 494 sumur.
+
+                Selain menambang sumur minyak, warga juga ada yang menyuling minyak mentah diolah menjadi bahan bakar solar. Pengeboran dan penyulingan ilegal tanpa izin rawan memicu bahaya kebakaran ataupun pencemaran lingkungan.</h3>
+            <p class="text-gray-500 mt-2">7 Maret 2018</p>
+          </div>
+          <div class="berita-item">
+            <img src="potong-pohon-bjn.webp" alt="Berita 3">
+            <h2 class="text-lg font-semibold text-green-500">Penebangan 718 Pohon di Kota Bojonegoro Untuk Enam Titik Proyek, Begini Kata Pegiat SUKET</h2>
+            <h3 class="text-gray-700 mt-2">Penebangan Pohon yang beradat di trotoar atau pinggir jalan seputaran Kota Bojonegoro karena akan dilakukannya pembangunan proyek trotoar dan drainase, sehingga sebanyak 718 pohon peneduh harus ditebang
+
+                Kepala Dinas Lingkungan Hidup (DLH) Bojonegoro Dandy Suprayitno kepada awak media mengatakan, bahwa semua pohon tersebut sudah dilakukan lelang berdiri, dan setelah ditebang pohon tersebut dibawa oleh pembelinya.</h3>
+            <p class="text-gray-500 mt-2">21 juli 2023</p>
+          </div>
+        <!-- Tambahkan berita lainnya -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer menggunakan Tailwind CSS -->
+  <footer class="bg-green-500 py-4 mt-4">
+    <div class="container mx-auto px-4">
+      <p class="text-center text-white">&copy; 2024 Website Berita Lingkungan Bojonegoro</p>
+    </div>
+  </footer>
+
+  <!-- Tailwind CSS dan JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    // Tambahkan skrip kustom di sini jika diperlukan
+  </script>
+</body>
+</html>

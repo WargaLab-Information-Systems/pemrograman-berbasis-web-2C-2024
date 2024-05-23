@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://w.wallhaven.cc/full/o5/wallhaven-o5m52p.jpg);
+  background-size: cover;
+}
+
+.card {
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.card-header {
+  background-color: #1f4172;
+  color: snow;
+}
+
+.card-body {
+  background-color: aqua;
+}
+
+th,
+td {
+  color: black;
+  border: 1px solid;
+  text-align: center;
+}
+
+.btn-back {
+  margin-top: 20px;
+  width: 10%;
+}

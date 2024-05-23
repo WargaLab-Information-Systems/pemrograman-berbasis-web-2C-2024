@@ -1,0 +1,203 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid #000; */
+}
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    height: 55px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar .logo {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
+    background: #ffffff;
+    margin-left: 5%;
+    height: 90px;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar .logo img {
+    margin: 10px 0px 5px 0px;
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.navbar .logo p {
+    font-style: italic;
+}
+.navbar .nav-items {
+    margin-right: 10%;
+    width: 600px;
+    height: 55px;
+    display: flex;
+}
+.navbar .nav-items .list-nav {
+    height: 55px;
+    width:  400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar .nav-items .list-nav a {
+    text-decoration: none;
+    font-size: 21px;
+    align-self: center;
+    color: #000;
+    font-weight: 600;
+}
+.navbar .nav-items .list-nav a:hover {
+    color: #ca0101;
+}
+.navbar .nav-items form {
+    width: 100%;
+    display: flex;
+}
+.navbar .nav-items .search {
+    height: 55px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .nav-items .search input[type="text"] {
+    height: 32px;
+    width: 250px;
+    border: #ca0101 solid 1.5px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.navbar .nav-items .search button {
+    height: 32px;
+    width: 30px;
+    border: #ca0101 solid 1.5px;
+    color: #ca0101;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-left: -1.5px;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+.navbar .nav-items .search button:hover {
+    border: #000 solid 1.5px;
+    color: #000;
+}
+/* navbar */
+
+/* ATAS */
+.atas {
+    height: 100vh;
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipMNkUM5dj1BIcsRogk9FNVvHVNmuGoyJ0pA1sgy=s1360-w1360-h1020);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #000 solid 5px;
+}
+.atas .text {
+    width: 500px;
+    height: 200px;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.atas .text p {
+    color: #ffffff;
+    font-size: 150px;
+}
+.atas .text p span {
+    color: #ca0101;
+}
+/* atas */
+
+/* MENU */
+.menu {
+    background-image: url(https://e0.pxfuel.com/wallpapers/1003/263/desktop-wallpaper-red-paper-ultra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: #000 solid 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .list-menu {
+    margin: 15px;
+    height: 80%;
+    width: 100%;
+    background: #ffffff;
+    color: #000000;
+    border: #000000 1.5px solid;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menu .list-menu .apa {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu .list-menu .card-menu {
+    width: 46%;
+    padding: 10px;
+    background: #EEEEEE;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    margin: 10px 10px;
+}
+.menu .list-menu .card-menu img {
+    border-radius: 8px;
+    width: 100%;
+}
+.menu .list-menu .card-menu .data-menu {
+    width: 100%;
+    border-top: #000 solid 1px;
+    text-align: center;
+}
+/* menu */
+
+/* CONTACT */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 25vh;
+    background: #1f1f1f;
+}
+.contact .info {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 90%;
+    border-bottom: #fff solid 1px;
+}
+.contact .info p {
+    margin-bottom: 10px;
+}
+.contact .info strong {
+    margin-right: 30px;
+}
+/* contact */

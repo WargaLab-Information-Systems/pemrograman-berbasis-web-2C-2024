@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index2.html">Web To Do</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index2.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="#" id="tombol-dropdown">Music</a>
+                    <ul id="items-dropdown">
+                        <li><a href="pop.html">pop</a></li>
+                        <li><a href="dangdut.html">dangdut</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>PlayMusic</h1>
+                <li><p>For Revenge - Serana</p><button onclick="playMusic(this, 'For Revenge - Serana.mp3')"><i class="fa-solid fa-play"></i><i class="fa-solid fa-play"></i></button></li>
+                <li><p>NIDJI - Sumpah & Cinta Matiku</p><button onclick="playMusic(this, 'NIDJI - Sumpah & Cinta Matiku.mp3')"><i class="fa-solid fa-play"></i><i class="fa-solid fa-play"></i></button></li>
+                <li><p>nadhif basalamah - penjaga hati</p><button onclick="playMusic(this, 'nadhif basalamah - penjaga hati.mp3')"><i class="fa-solid fa-play"></i><i class="fa-solid fa-play"></i></button></li>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

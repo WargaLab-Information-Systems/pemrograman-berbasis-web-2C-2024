@@ -1,0 +1,74 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h4 {
+    color: #343a40;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Form styles */
+  form {
+    background-color: #ffffff;
+    border: 1px solid #ff4193;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 8000px; 
+    margin: 0 auto; 
+  }
+  
+  .form-label {
+    font-weight: bold;
+    color: #495;
+  }
+  
+  .form-control {
+    border-radius: 0.25rem;
+    width: 100%; /
+  }
+  
+  .btn-success {
+    background-color: #28a;
+    border-color: #28a745;
+    width: 100%; /
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  /* Table styles */
+  .table {
+    background-color: #fafafa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%; /* Make the table take full width */
+    max-width: 800px; /* Set the maximum width for the table */
+    margin: 20px auto; /* Center the table */
+  }
+  
+  .table th,
+  .table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .table th {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #e9ecef;
+  }

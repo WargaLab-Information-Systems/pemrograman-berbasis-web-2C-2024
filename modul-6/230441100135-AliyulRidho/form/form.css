@@ -1,0 +1,62 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://w.wallhaven.cc/full/0w/wallhaven-0wlqeq.jpg);
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  position: relative;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+}
+.kanan form {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+}
+.kanan form input {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #1b87e4;
+}
+.kanan form input::placeholder {
+  color: black;
+}
+.kanan form select {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 344px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #1b87e4;
+}
+.kiri {
+  color: white;
+  text-align: center;
+  min-width: 350px;
+  background: url(orang.png);
+  min-height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.simpan {
+  width: 70px;
+}

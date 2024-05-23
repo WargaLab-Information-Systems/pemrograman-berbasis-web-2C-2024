@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - PeduliLingkungan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-50">
+    <nav class="bg-green-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">PeduliLingkungan.</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-white hover:text-green-300">Beranda</a></li>
+                <li><a href="tentang.html" class="text-white hover:text-green-300">Tentang</a></li>
+                <li><a href="kontak.html" class="text-white hover:text-green-300">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="py-16 text-center h-44" style="background-image: url(gambar/lingkungan.jpeg);">
+        <div class="container mx-auto">
+            <h2 class="text-4xl text-white font-bold mb-4">Hubungi Kami</h2>
+            <p class="text-white text-lg">Jika Anda memiliki pertanyaan atau ingin berkontribusi, silakan hubungi kami.</p>
+        </div>
+    </header>
+
+    <section class="py-12">
+        <div class="container mx-auto">
+            <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-green-900 font-medium">Nama</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-green-400 rounded-lg focus:outline-none focus:border-green-900" placeholder="Masukan nama anda" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-green-900 font-medium">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-green-400 rounded-lg focus:outline-none focus:border-green-900" placeholder="Masukan email anda" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-green-900 font-medium">Pesan</label>
+                        <textarea id="message" name="message" class="w-full px-3 py-2 border border-green-400 rounded-lg focus:outline-none focus:border-green-900" rows="2" placeholder="Masukan pesan anda" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-green-900 text-white px-6 py-2 rounded-lg hover:bg-green-600">Kirim Pesan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-green-900 text-center py-8 text-white">
+        <div class="container mx-auto">
+            <p>&copy; 2024 PeduliLingkungan. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

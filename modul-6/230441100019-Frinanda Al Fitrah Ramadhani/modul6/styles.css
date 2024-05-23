@@ -1,0 +1,215 @@
+:root{
+    --primary: #088d36;
+    --bg: #121212;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #181818;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar .navbar-logo span{
+    color: var(--primary);   
+}
+
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+    transition: 0.2s linear;
+}
+.form_biodata {
+    width: 100%;
+    padding: 2rem 7%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form_biodata .content h1{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+.form_biodata .content h1 span{
+    color: var(--primary);
+}
+
+.form_biodata .content input {
+    border: 1px solid #010101;
+    margin-top: 1rem;
+    width: 50%;
+    height: 4rem;
+    padding-left: 1rem;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.form_biodata .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--primary);
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
+}
+.form_biodata .content .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+.form_biodata .content .btn:hover {
+    background: #033a16;
+    padding: 1.1rem 3.1rem;
+}
+.beranda {
+    min-height: 88vh;
+    padding-top: 200px;
+    text-align: center;
+    background-image: url(gambar/bg_hitam.jpg);
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.beranda .content h1{
+    font-size:3em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 2.5);
+    line-height: 1;
+}
+
+.beranda .content h1 span{
+    color: var(--primary);
+}
+
+.beranda .content p{
+    font-size: 1.2rem;
+    color: #ffffffde;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    margin: 1rem 20rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+}
+
+.beranda .content .cta{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--primary);
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 2.5);
+}
+
+.beranda .content .cta:hover{
+    background: #033a16;
+    padding: 1.2rem 3.2rem;
+}
+
+.beranda .content .container li{
+    margin-left: 20px;
+    background-color: var(--primary);
+}
+
+.data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    margin: auto;
+    margin-top: 80px;
+    min-height: 75vh;
+    padding-top: 60px;
+    background-image: url(gambar/bg_hitam.jpg);
+}
+
+.data h1 span{
+    color: var(--primary);
+}
+
+.data #tabel{
+    margin-top: 20px;
+    margin-bottom: 130px;
+}
+
+.data th {
+    padding: 8px;
+    border: #fff 3px solid;
+    background-color: #033a16;
+    color: #fff;
+}
+
+.data td {
+    padding: 8px;
+    border: #fff 3px solid;
+    background: var(--primary);
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 2.5);
+}
+.data td form .btn {
+    background-color:var(--primary); 
+    color:#fff;
+    cursor: pointer;
+}
+.data td:nth-child(1) {
+    text-align: center;
+}
+
+footer{
+    background-color: var(--primary);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+}
+
+footer .kredit{
+    font-size: 1rem;
+}
+
+footer .kredit a{
+    color: var(--bg);
+}

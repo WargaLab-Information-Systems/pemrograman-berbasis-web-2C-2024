@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary: #1ed760;
+    --bg: #121212;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #555555;
+    background-image: url(gambar/bg-gitar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: var(--bg);
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav .logo a span{
+    color: var(--primary);
+}
+
+nav .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-right: 20px;
+}
+nav .nav-links li .dropdown {
+    position: relative;
+}
+nav .nav-links li .dropdown ul {
+    position: absolute;
+    padding: 5px;
+    left: -35px;
+    list-style: none;
+    background: var(--bg);
+    border: 2px solid var(--primary);
+    display: none;
+    width: 120px;
+}
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .nav-links li a:hover {
+    color: var(--primary);
+}
+
+nav .content {
+    padding: 20px;
+    text-align: center;
+}
+
+nav h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: var(--bg);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.container h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.container h1 span{
+    color: var(--primary);
+}
+
+.container input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.container button {
+    height: 40px;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #088d36;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    list-style: none;
+}
+
+.container li:hover {
+    background-color: #f0f0f0;
+}
+
+.container .completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.selesai {
+    text-decoration: line-through;
+    color: #888;
+}
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#taskList li button {
+    margin-left: 10px;
+}
+#taskList li p {
+    width: 400px;
+}
+.container li {
+    display: flex;
+    justify-content: space-between;
+}

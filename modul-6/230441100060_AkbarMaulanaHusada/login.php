@@ -1,46 +1,51 @@
 <?php
-    if(!isset($_SESSION)) {
-        session_start();
-    }
-    if(isset($_SESSION['user'])) {
-        for ($i=0; $i < count($_SESSION['user']); $i++) { 
-            if($_SESSION['user'][$i]['isLogin']) {
-                header('Location: index.php');
-            }
-        }
-    } 
-    
-    if (isset($_POST['register'])) {
-        if (!empty($_POST['nama']) AND !empty($_POST['username']) AND !empty($_POST['password'])) {
-            $_SESSION['user'][] = [
-                'nama' => $_POST['nama'],
-                'username' => $_POST['username'],
-                'password' => $_POST['password'],
-                'isLogin' => false  
-            ];
-            echo "<script>alert('Registrasi Berhasil...');</script>";
-        }
-    }
-    if (isset($_POST['login'])) {
-        if (empty($_SESSION['user'])){
-            echo "<script>alert('Login Gagal..!');</script>";
-        } else {
-            for ($i=0; $i < count($_SESSION['user']); $i++) { 
-                if($_POST['username'] == $_SESSION['user'][$i]['username'] AND $_POST['password'] == $_SESSION['user'][$i]['password']) {
-                    $_SESSION['user'][$i]['isLogin'] = true;
-                    $_SESSION['userLogin'] =  $_SESSION['user'][$i];
-                    header('Location: index.php');
-                }
-                else {
-                    $loginFalse = false;
-                }
-            }
-            if($loginFalse == false){
-                echo "<script>alert('Login Gagal..!');</script>";
-            }
-        }
+  include ("Service/conn.php");
+  session_start();
+  if (isset($_SESSION["isLogin"])) {
+    header("Location: index.php");
+  }
 
+  if (isset($_POST["login"])) {
+      $username = $_POST["username"];
+      $password = $_POST["password"];
+  
+      $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
+  
+      $result = $db->query($sql);
+  
+      if ($result->num_rows > 0) {
+          $data = $result->fetch_assoc();
+          $_SESSION["nama"] = $data["nama"];
+          $_SESSION["username"] = $data["username"];
+          $_SESSION["isLogin"] = true;
+          header("Location: index.php");
+      } else {
+          echo "<script>alert('Login Gagal..!');
+          window.location.href = 'login.php';
+          </script>";
+          // header("Location: ../login.php");
+      }
+  }
+
+  if (isset($_POST["register"])) {
+    $nama = $_POST["nama"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    $sql = "INSERT INTO user (nama, username, password) VALUES ('$nama', '$username ', '$password')";
+    if ($db->query($sql)) {     
+        echo "<script>
+            alert('Registrasi Berhasil...');
+            window.location.href = 'login.php';
+            </script>";
+    } else {
+        echo "<script>alert('Registrasi Gagal..!');
+        window.location.href = 'login.php';
+        </script>";       
     }
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +69,7 @@
         body {
             margin: 0;
             font-family: Roboto, -apple-system, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
-            background: url('Background.png') no-repeat;
+            background: url('img/Background.png') no-repeat;
             background-position: center;
             background-size: cover;
         }
@@ -359,14 +364,14 @@
 <body>
     
     <section class="forms-section">
-        <h1 class="section-title" style="margin-top: 70px;">Form Login & Sign up</h1>
+        <h1 class="section-title" style="margin-top: 70px;">Form Login & Register</h1>
         <div class="forms">
             <div class="form-wrapper is-active">
                 <button type="button" class="switcher switcher-login">
                     Login
                     <span class="underline"></span>
                 </button>
-                <form class="form form-login" method="post" action="#">
+                <form class="form form-login" method="post" action="login.php">
                     <fieldset>
                         <div class="input-block">
                             <label for="login-username">Username</label>
@@ -382,10 +387,10 @@
             </div>
             <div class="form-wrapper">
                 <button type="button" class="switcher switcher-signup">
-                    Sign Up
+                    Register
                     <span class="underline"></span>
                 </button>
-                <form class="form form-signup" method="post" action="#">
+                <form class="form form-signup" method="post" action="login.php">
                     <fieldset>
                         <div class="input-block">
                             <label for="signup-name">Nama</label>
@@ -400,7 +405,7 @@
                             <input id="signup-confirm" type="password" name="password" placeholder="Masukkan Password" required>
                         </div>
                     </fieldset>
-                    <button type="submit" name="register" class="btn-signup">Continue</button>
+                    <button type="submit" name="register" class="btn-signup">Register</button>
                 </form>
             </div>
         </div>

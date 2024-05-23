@@ -20,10 +20,7 @@ if (!isset($_SESSION['data'])) {
     $_SESSION['data'] = [];
 }
 if (isset($_POST['tambah'])) {
-    if (
-        !empty($_POST['nim']) and !empty($_POST['nama']) and !empty($_POST['alamat']) and
-        !empty($_POST['angkatan'])
-    ) {
+    if (!empty($_POST['nim']) and !empty($_POST['nama']) and !empty($_POST['alamat']) and !empty($_POST['angkatan'])) {
         $_SESSION['data'][] = [
             "nim" => $_POST['nim'],
             "nama" => $_POST['nama'],
@@ -32,7 +29,7 @@ if (isset($_POST['tambah'])) {
         ];
         header('Location: crud.php');
     } else {
-        echo "<script>alert('Logout Berhasil...');</script>";
+        echo "<script>alert('Tambah Data Gagal...');</script>";
     }
 }
 if (isset($_POST['delete'])) {
@@ -75,7 +72,7 @@ if (isset($_POST['delete'])) {
     </div>
     <div class="mx-auto w-50">
         <div class="card">
-            <h5 class="card-header" style="background-color: #5847b6; color: #fff;">Tambah / Edit Data</h5>
+            <h5 class="card-header" style="background-color: #5847b6; color: #fff;">Tambah Data Mahasiswa</h5>
             <div class="card-body">
                 <form action="" method="POST">
                     <div class="mb-3">

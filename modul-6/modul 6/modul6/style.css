@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://jagalaut.id/wp-content/uploads/2022/04/1-1-1015x675.png);
+    background-color: #f4f4f4;
+    background-size: cover ;
+    margin: 0;
+    padding: 0;
+}
+/* navbar */
+nav {
+    background-color: #18bada;
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/22/15/29/blue-1273089_1280.jpg);
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-right: 20px;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav .nav-links a:hover {
+    background: #0056b3;
+    padding: 5px;
+    color: #fff;
+    font-size: large;
+}
+nav .content {
+    padding: 20px;
+    text-align: center;
+}
+
+nav h1 {
+    margin-bottom: 20px;
+}
+
+/* FORM */
+form {
+    width: 100%;
+}
+.form-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin-bottom:5px;
+}
+.form-input input[type="text"],
+.form-input input[type="password"] {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #18bada;
+}
+.form-input input[type="text"]:focus ,
+.form-input input[type="password"]:focus  {
+    outline:2px solid #18bada(158, 157, 36, .5);
+}
+.form-input button {
+    margin: 0px auto;
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    border: 0px;
+    background: #ffffff;
+    color: #000000;
+}
+.form-input button:hover {
+    background: #011d23;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login h1 {
+    margin: 0%;
+}
+
+.login {
+    margin: 100px auto 0px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background: #18bada;
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/22/15/29/blue-1273089_1280.jpg);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    color: #fff;
+}
+
+/* TABEL */
+.data {
+    margin: 0px auto;
+    width: 70%;
+}
+form.tambah h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+button.tambah {
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    border: 0px;
+    background: #18bada;
+    color: #fff;
+    margin-bottom: 20px;
+}
+button.tambah:hover {
+    background: #18bada;
+    color: #fff;
+    cursor: pointer;
+}
+form.tambah {
+    width: 50%;
+    background: #18bada;
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/22/15/29/blue-1273089_1280.jpg);
+    padding: 20px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    
+}
+table {
+    width: 100%;
+    border: #18bada 3px solid;
+    border-collapse: collapse;
+    background: #18bada;
+    margin-bottom: 50px;
+}
+table th {
+    padding: 8px;
+    border: #18bada 3px solid;
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/22/15/29/blue-1273089_1280.jpg);
+    background-color: #18bada;
+    color: #fff;
+}
+table th:nth-child(1),
+table th:nth-child(5) {
+    width: 100px;
+}
+table th:nth-child(8) {
+    width: 0px;
+}
+table td:nth-child(8) {
+    width: 63px;
+}
+table td:nth-child(8) .btn {
+    padding: 7px;
+    border: 0px;
+    background: #18bada;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+}
+table td:nth-child(8) .btn:hover {
+    background: #18bada;
+    color: #fff;
+    cursor: pointer;
+}
+table td:nth-child(8) .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+table td {
+    padding: 8px;
+    border: #18bada 3px solid;
+    background-color: #ffffff;
+    color: #18bada;
+}
+table td:nth-child(1) {
+    text-align: center;
+}
+
+/* tabel */
+
+.container {
+    margin-top: 50px;
+}

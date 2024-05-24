@@ -33,20 +33,20 @@
         $nama_fakultas = $_POST['nama'];
 
         $query = mysqli_query($koneksi, "INSERT INTO fakultas VALUES ('', '$nama_fakultas')");
-        header('Location: index.php?fakultas');
+        header('Location: dashboard/index.php?fakultas');
     }
     if (isset($_POST['EditFakultas'])) {
         $id_fakultas = $_POST['EditFakultas'];
         $nama_fakultas = $_POST['nama'];
 
         $query = mysqli_query($koneksi, "UPDATE fakultas SET nama_fakultas = '$nama_fakultas' WHERE id_fakultas = '$id_fakultas'");
-        header('Location: index.php?fakultas');
+        header('Location: dashboard/index.php?fakultas');
     }
     if (isset($_POST['HapusFakultas'])) {
         $id_fakultas = $_POST['HapusFakultas'];
 
         $query = mysqli_query($koneksi, "DELETE FROM fakultas WHERE id_fakultas = '$id_fakultas'");
-        header('Location: index.php?fakultas');
+        header('Location: dashboard/index.php?fakultas');
     }
 
     // Jurusan
@@ -58,20 +58,20 @@
         // exit;
 
         $query = mysqli_query($koneksi, "INSERT INTO jurusan VALUES ('', '$nama_jurusan','$id_fakultas')");
-        header('Location: index.php?fakultas');
+        header('Location: dashboard/index.php?fakultas');
     }
     if (isset($_POST['EditJurusan'])) {
         $id_jurusan = $_POST['EditJurusan'];
         $nama_jurusan = $_POST['nama'];
 
         $query = mysqli_query($koneksi, "UPDATE jurusan SET nama_jurusan = '$nama_jurusan' WHERE id_jurusan = '$id_jurusan'");
-        header('Location: index.php?fakultas');
+        header('Location: dashboard/index.php?fakultas');
     }
     if (isset($_POST['HapusJurusan'])) {
         $id_jurusan = $_POST['HapusJurusan'];
 
         $query = mysqli_query($koneksi, "DELETE FROM jurusan WHERE id_jurusan = '$id_jurusan'");
-        header('Location: index.php?fakultas');
+        header('Location: dashboard/index.php?fakultas');
     }
 
     // Prodi
@@ -80,19 +80,19 @@
         $nama_prodi = $_POST['nama'];
 
         $query = mysqli_query($koneksi, "INSERT INTO prodi VALUES ('', '$nama_prodi','$id_jurusan')");
-        header('Location: index.php?fakultas');
+        header('Location: dashboard/index.php?fakultas');
     }
     if (isset($_POST['EditProdi'])) {
         $id_prodi = $_POST['EditProdi'];
         $nama_prodi = $_POST['nama'];
 
         $query = mysqli_query($koneksi, "UPDATE prodi SET nama_prodi = '$nama_prodi' WHERE id_prodi = '$id_prodi'");
-        header('Location: index.php?fakultas');
+        header('Location: dashboard/index.php?fakultas');
     }
     if (isset($_POST['HapusProdi'])) {
         $id_prodi = $_POST['HapusProdi'];
 
         $query = mysqli_query($koneksi, "DELETE FROM prodi WHERE id_prodi = '$id_prodi'");
-        header('Location: index.php?fakultas');
+        header('Location: dashboard/index.php?fakultas');
     }
 ?>

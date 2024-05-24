@@ -1,6 +1,6 @@
 <div class="container sidebar-active">
     <div class="data">
-        <form action="koneksi.php" method="POST" enctype="multipart/form-data">
+        <form action="./../koneksi.php" method="POST" enctype="multipart/form-data">
             <div class="isi">
                 <h2>Tambah Data Mahasiswa</h2>
                 <div class="form-input">

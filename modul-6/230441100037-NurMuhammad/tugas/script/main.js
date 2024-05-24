@@ -72,7 +72,32 @@ function validasiLogin(isLogin) {
 
 // FAKULTAS JURUSAN PRODI
 
-// show toggle
+// show toggle select
+document.getElementById('fakultas').addEventListener("change", function() {
+    var id_fakultas = this.value;
+    console.log(id_fakultas);
+    document.querySelectorAll('.jurusan').forEach(function(option) {
+        var jurusan_id_fakultas = option.getAttribute('data-fakultas');
+        if (jurusan_id_fakultas === id_fakultas) {
+            option.style.display = "block";
+        } else {
+            option.style.display = "none";
+        }
+    })
+})
+document.getElementById('jurusan').addEventListener("change", function() {
+    var id_jurusan = this.value;
+    document.querySelectorAll('.prodi').forEach(function(option) {
+        var prodi_id_jurusan = option.getAttribute('data-jurusan');
+        if (prodi_id_jurusan === id_jurusan) {
+            option.style.display = "block";
+        } else {
+            option.style.display = "none";
+        }
+    });
+});
+
+// show toggle table
 document.querySelectorAll('.fakultas-row .info').forEach(function(infoButton) {
     infoButton.addEventListener('click', function() {
         var btn = this;

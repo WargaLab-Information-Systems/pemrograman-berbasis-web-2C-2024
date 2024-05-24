@@ -5,7 +5,7 @@
         session_start(); 
     }
     if(isset($_SESSION['user'])) {
-        header('Location: index.php?halaman1');
+        header('Location: dashboard/index.php');
     }
     $username = $email = $password = "";
 ?>
@@ -44,6 +44,6 @@
             </div>
         </form>
     </div>
-    <script src="script/script.js"></script>
+    <script src="script/main.js"></script>
 </body>
 </html>

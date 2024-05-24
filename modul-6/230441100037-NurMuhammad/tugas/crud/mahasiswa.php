@@ -26,7 +26,8 @@
         $query = mysqli_query($koneksi,
         "SELECT * FROM mahasiswa 
         INNER JOIN prodi ON prodi.id_prodi = mahasiswa.id_prodi
-        INNER JOIN jurusan ON jurusan.id_jurusan = prodi.id_jurusan 
+        INNER JOIN jurusan ON jurusan.id_jurusan = prodi.id_jurusan
+        INNER JOIN fakultas ON fakultas.id_fakultas = jurusan.id_fakultas
         WHERE nim = '$nim'
         ");
         
@@ -52,9 +53,9 @@
         "INSERT INTO mahasiswa VALUES 
         ('$nim','$nama','$tgl_lahir','$jenis_kelamin','$id_prodi','$alamat','$foto')
         ");
-        move_uploaded_file($_FILES['foto']['tmp_name'], 'img/'.$foto);
+        move_uploaded_file($_FILES['foto']['tmp_name'], './../img/'.$foto);
 
-        header('Location: index.php?mahasiswa');
+        header('Location: dashboard/index.php?mahasiswa');
     }
 
     if(isset($_POST['EditMahasiswa'])) {
@@ -91,20 +92,25 @@
             foto='$foto'
             WHERE nim = '$nim'
             ");
-            move_uploaded_file($_FILES['foto']['tmp_name'], 'img/'.$foto);
+            move_uploaded_file($_FILES['foto']['tmp_name'], './../img/'.$foto);
         }
 
-        header('Location: index.php?mahasiswa');        
+        header('Location: dashboard/index.php?mahasiswa');        
     }
     
     if(isset($_POST['HapusMahasiswa'])) {
         $nim = $_POST['HapusMahasiswa'];
         mysqli_query($koneksi, "DELETE FROM mahasiswa WHERE nim = '$nim'");
-        header('Location: index.php?mahasiswa');
+        header('Location: dashboard/index.php?mahasiswa');
     }
 
-    $nim = $nama = $tgl_lahir = $jenis_kelamin = $fakultas = $jurusan = $prodi = $alamat = "";
+    $nim = $nama = $tgl_lahir = $jenis_kelamin = 
+    $id_fakultas = $fakultas = 
+    $id_jurusan = $jurusan = 
+    $id_prodi = $prodi = 
+    $alamat = "";
     $btn = "Tambah";
+
     if(isset($_GET['nim'])) {
         $btn = "Edit";
         $data = mahasiswaByNim($_GET['nim']);
@@ -113,6 +119,7 @@
         $tgl_lahir = $data['tgl_lahir'];
         $jenis_kelamin = $data['jenis_kelamin'];
         $id_fakultas = $data['id_fakultas'];
+        $fakultas = $data['nama_fakultas'];
         $id_jurusan = $data['id_jurusan'];
         $jurusan = $data['nama_jurusan'];
         $id_prodi = $data['id_prodi'];

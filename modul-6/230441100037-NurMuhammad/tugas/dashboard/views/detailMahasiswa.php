@@ -35,6 +35,11 @@
                 <td><?= $data['jenis_kelamin']; ?></td>
             </tr>
             <tr>
+                <td>Fakultas</td>
+                <td> : </td>
+                <td><?= $data['nama_fakultas']; ?></td>
+            </tr>
+            <tr>
                 <td>Jurusan</td>
                 <td> : </td>
                 <td><?= $data['nama_jurusan']; ?></td>

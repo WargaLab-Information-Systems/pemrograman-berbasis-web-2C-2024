@@ -44,7 +44,7 @@
     <div class="notif">
         <div class="kotak">
             <h2>Yakin ingin menghapus data ini?</h2>
-            <form action="koneksi.php" method="POST">
+            <form action="./../koneksi.php" method="POST">
                 <button type="submit" name="HapusMahasiswa" class="iya" value="<?= $_GET['hapus'];?>">Iya</button>
                 <a href="index.php?mahasiswa" class="btn cancel">Cancel</a>
             </form>

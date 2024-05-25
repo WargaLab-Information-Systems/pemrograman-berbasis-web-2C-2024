@@ -1,0 +1,104 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url('https://i.pinimg.com/564x/1c/d0/98/1cd0982716709847c6909cb99e300022.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.item:hover {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 0 5px; 
+    transform: scale(0.8); 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.menu-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.menu {
+    display: flex;
+    overflow-x: auto;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 0 5px; 
+    transform: scale(0.8); 
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 5; 
+    border-bottom-right-radius: 15;
+}
+
+.item h3 {
+    margin: 5px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.item p {
+    color: #666;
+    font-size: 14px;
+}
+
+.item span {
+    font-weight: bold;
+}
+
+.contact-icons {
+    position: absolute;
+    top: 20px; /* Ubah posisi vertikal sesuai kebutuhan */
+    right: 20px; /* Ubah posisi horizontal sesuai kebutuhan */
+}
+
+.contact-icons a {
+    display: inline-block;
+    width: 30px; /* Ubah ukuran ikon sesuai kebutuhan */
+    height: 30px; /* Ubah ukuran ikon sesuai kebutuhan */
+    margin-left: 10px;
+}
+
+.contact-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Untuk membuat ikon bulat */
+}

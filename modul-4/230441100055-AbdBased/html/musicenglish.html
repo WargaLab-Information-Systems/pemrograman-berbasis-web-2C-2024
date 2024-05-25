@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music English</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="/modul-4/230441100055-AbdBased/css/musicenglish.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-cloud-rain"></i>
+          </div>
+        </nav>
+        <img
+          src="/modul-4/230441100055-AbdBased/image/henry moodie.jpg"
+          class="song-img"
+        />
+        <h1>Drunk Text</h1>
+        <p>-Henry Moodie-</p>
+
+        <audio id="song">
+          <source
+            src="/modul-4/230441100055-AbdBased/music/Henry Moodie - drunk text.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="proggress" />
+
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="/modul-4/230441100055-AbdBased/javascript/musicenglish.js"></script>
+  </body>
+</html>

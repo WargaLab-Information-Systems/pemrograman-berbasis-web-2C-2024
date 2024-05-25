@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.body{
+    background-color: #fff;
+}
+.banner{
+    height: 90vh;
+    background-color: #fdc029;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner :after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.banner h2{
+    color: #fff;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid #fff;
+}
+section{
+    padding: 50px 0;
+}
+section h3{
+    text-align: center;
+    padding: 20px 0;
+    color: #fdc029;
+}
+.container{
+    color: #fdc029;
+    word-spacing: 2px;
+    line-height: 25px;
+    background-color: #000;
+}
+.kuliner-khs{
+    padding-block: 20px;
+    /* margin: 25px 250px; */
+    padding-inline: 40px;
+    /* border-radius: 15px 15px 0 0; */
+    /* border-left: 15px 15px 0 0; */
+    display: grid;
+    padding: 30px 20px;
+    background-color: #fdc029;
+    
+}
+.kuliner-khs img{
+    width: 50%;
+    height: 300px;
+    /* object-fit: cover; */
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+    content: center;
+}
+.kuliner-khs h5{
+    padding: auto;
+    border: none;
+    outline: none;
+    background-color: #aa3d01;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+

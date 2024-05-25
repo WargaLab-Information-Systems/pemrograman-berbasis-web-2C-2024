@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UTM 2.0</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../style.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="z-2 navbar bg-dark">
+        <div class="container">
+            <a class="navbar-brand">
+                <img class="me-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg/2048px-Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="" height="45">
+                <img class="me-3" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Logo_Kampus_Merdeka_Kemendikbud.png" alt="" height="45">
+                <img class="me-3" src="https://www.kemdikbud.go.id/main/files/large/1ec3304b7d4b803" alt="" height="45">
+                <img class="me-3" src="https://www.upnjatim.ac.id/wp-content/uploads/2023/07/Logo-BLU-Speed.png" alt="" height="45">
+            </a>
+            <form class="d-md-flex d-none me-4" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <nav class="z-3 navbar border-bottom navbar-expand-lg bg-biru border-light position-sticky top-0 text-white navbar-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="logo-navbar" href="./../index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/UTM_DIKBUDRISTEK.png" alt="" height="45">
+                </a>
+                <a href="./../index.html" class="text-decoration-none text-light" style="padding-left: 85px;"><h1 class="fs-6 d-none d-md-inline">UNIVERSITAS TRUNOJOYO MADURA</h1></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../profil.html">Profil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Fakultas</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://hukum.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Hukum</a></li>
+                                <li><a href="https://feb.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Ekonomi dan Bisni</a></li>
+                                <li><a href="https://pertanian.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Pertanian</a></li>
+                                <li><a href="http://teknik.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Teknik</a></li>
+                                <li><a href="https://fisib.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Ilmu Sosial dan Ilmu Budaya</a></li>
+                                <li><a href="https://fip.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Ilmu Pendidikan</a></li>
+                                <li><a href="https://fik.trunojoyo.ac.id/" class="dropdown-item" target="_blank">Fakultas Keislaman</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Unit Pelayanan</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./../Unit Pelayanan/BAK.html">Biro Akademik dan Kemahasiswaan</a></li>
+                                <li><a class="dropdown-item" href="./../Unit Pelayanan/BUK.html">Biro Umum dan Keuangan</a></li>
+                                <li><a class="dropdown-item" href="https://lp3mp.trunojoyo.ac.id/">LP3MP</a></li>
+                                <li><a class="dropdown-item" href="./../Unit Pelayanan/LPPM.html">LPPM</a></li>
+                                <li><a class="dropdown-item" href="./../Unit Pelayanan/UPT-Perpustakaan.html">UPT Perpustakaan</a></li>
+                                <li><a class="dropdown-item" href="./../Unit Pelayanan/UPT-TIK.html">UPT TIK</a></li>
+                                <li><a class="dropdown-item" href="./../Unit Pelayanan/UPT-Laboratorium-Terpadu.html">UPT Laboratorium Terpadu</a></li>
+                                <li><a class="dropdown-item" href="./../Unit Pelayanan/UPT-Pusat-Bahasa.html">UPT Pusat Bahasa</a></li>
+                                <li><a class="dropdown-item" href="https://spi.trunojoyo.ac.id/">Satuan Pengawas Internal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Kemahasiswaan</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Profil-Mahasiswa.html">Profil Mahasiswa</a></li>
+                                <li><a class="dropdown-item" href="Layanan-Kemahasiswa.html">Layanan Mahasiswa</a></li>
+                                <li><a class="dropdown-item" href="UKM.html">UKM</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../Kerjasama.html">Kerjasama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../PDDIKTI.html">PDDIKTI</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PPID</a>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="https://www.lapor.go.id/">Layanan Aspirasi Dan Pengaduan<br>Online Masyarakat</a></li>
+                                <li><a class="dropdown-item" href="http://ppid.trunojoyo.ac.id/">Pusat Layanan Informasi<br>Dan Dokumentasi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- MAIN -->
+    <main  style="min-height: 760px;">
+        <div class="nyantol">
+            <div class="container">
+                <div class="border-bottom border-secondary mb-3 pt-5">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="./../index.html" class="text-dark text-decoration-none">Home</a></li>
+                            <li class="breadcrumb-item">Kemahasiswaan</li>
+                            <li class="breadcrumb-item active" aria-current="page">Layanan Mahasiswa</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Sub menu -->
+        <div class="sub-menu col-3">
+            <div class="card overflow-hidden">
+                <div class="card-head bg-biru text-light p-2">
+                    <h4>Sub Menu</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Kemahasiswaan</li>
+                        <ul>
+                            <li><a href="Profil-Mahasiswa.html" class="text-decoration-none text-dark">Profil Mahasiswa</a></li>
+                            <li><a href="Layanan-Kemahasiswa.html" class="text-decoration-none text-dark">Layanan Mahasiswa</a></li>
+                            <li><a href="UKM.html" class="text-decoration-none text-dark">UKM</a></li>
+                            <ul>
+                                <li><a href="UKM/Tripel-C.html" class="text-decoration-none text-dark">Tripel C</a></li>
+                                <li><a href="UKM/Tiga-Serangkai.html" class="text-decoration-none text-dark">Tiga Serangkai</a></li>
+                                <li><a href="UKM/Seni-Naggala.html" class="text-decoration-none text-dark">Seni Naggala</a></li>
+                                <li><a href="UKM/Menwa.html" class="text-decoration-none text-dark">Menwa</a></li>
+                                <li><a href="UKM/Paduan-Suara-Golden.html" class="text-decoration-none text-dark">Paduan Suara Golden</a></li>
+                                <li><a href="UKM/LPM-Spirit-Mahasiswa.html" class="text-decoration-none text-dark">LPM Spirit Mahasiswa</a></li>
+                                <li><a href="UKM/Capoeira.html" class="text-decoration-none text-dark">Capoeira</a></li>
+                                <li><a href="UKM/Taruna-Jaya.html" class="text-decoration-none text-dark">Taruna Jaya</a></li>
+                                <li><a href="UKM/MPA-Ghubatras.html" class="text-decoration-none text-dark">MPA Ghubatras</a></li>
+                                <li><a href="UKM/LDK-MKMI.html" class="text-decoration-none text-dark">LDK MKMI</a></li>
+                                <li><a href="UKM/UK3.html" class="text-decoration-none text-dark">UK3</a></li>
+                                <li><a href="UKM/PSHT.html" class="text-decoration-none text-dark">PSHT</a></li>
+                                <li><a href="UKM/Korps-Sukarela-PMI.html" class="text-decoration-none text-dark">Korps Sukarela PMI</a></li>
+                                <li><a href="UKM/Gerakan-Pramuka.html" class="text-decoration-none text-dark">Gerakan Pramuka</a></li>
+                                <li><a href="UKM/B-Sing.html" class="text-decoration-none text-dark">B-Sing</a></li>
+                                <li><a href="UKM/UKM-Ihfadz.html" class="text-decoration-none text-dark">UKM Ihfadz</a></li>
+                                <li><a href="UKM/Pencak-Silat-Pagar-Nusa.html" class="text-decoration-none text-dark">Pencak Silat Pagar Nusa</a></li>
+                            </ul>
+                            <li><a href="Trunojoyo-Career-Center.html" class="text-decoration-none text-dark">Trunojoyo Career Center</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12" style="text-align: justify;">
+                    <h1>Layanan Mahasiswa</h1>
+                    <ul>
+                        <li style="list-style: decimal;"><a target="_blank" href="https://www.trunojoyo.ac.id/images/stories/baak_file/Form_Keterangan_Aktif_Kuliah.pdf">Form Surat Keterangan Aktif kuliah</a> (Khusus Untuk Tunjangan Gaji Orang Tua)</li>
+                        <li style="list-style: decimal;"><a target="_blank" href="https://www.trunojoyo.ac.id/images/stories/baak_file/Form_BSS_CUTI.pdf">Form BSS CUTI</a></li>
+                        <li style="list-style: decimal;"><a target="_blank" href="https://www.trunojoyo.ac.id/images/stories/1_FORM_PERMOHONAN_Aktif_kembali.pdf">Form Permohonan Aktif kembali</a></li>
+                        <li style="list-style: decimal;"><a target="_blank" href="https://www.trunojoyo.ac.id/images/stories/2_Permohonan_Pindah_Program_Studi_Eksternal_Fakultas.docx">Form Permohonan Pindah Program Studi (Eksternal Fakultas)</a></li>
+                        <li style="list-style: decimal;"><a target="_blank" href="https://www.trunojoyo.ac.id/images/stories/3_Permohonan_Pindah_Program_Studi_Internal_Fakultas.docx">Form Permohonan Pindah Program Studi (Internal Fakultas)</a></li>
+                        <li style="list-style: decimal;"><a target="_blank" href="https://www.trunojoyo.ac.id/images/stories/4_Permohonan_Pindah_Universitas.docx">Form Permohonan Pindah Universitas</a></li>
+                        <li style="list-style: decimal;"><a target="_blank" href="https://www.trunojoyo.ac.id/images/stories/5_Form_Alih_jenjang.doc">Form Alih jenjang D3 ke S1</a></li>
+                        <li style="list-style: decimal;"><a target="_blank" href="https://www.trunojoyo.ac.id/images/stories/6_Surat_Permohonan_KTM_Hilang.docx">Form Permohonan (KTM Hilang)</a></li>
+                        <li style="list-style: decimal;"><a target="_blank" href="https://www.trunojoyo.ac.id/images/stories/7._Form_Ijazah_Hilang_Rusak.docx">Form Surat Keterangan Pengganti Ijazah </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main -->
+
+    <!-- FOOTER -->
+    <div class="mt-5 p-3 pb-0 bg-dark" style="width: 100%;">
+        <div class="container">
+            <div class="row text-light mt-5" style="width: 100%;">
+                <div class="col-4">
+                    <h6>Berita</h6>
+                    <ul>
+                        <li><a href="" class="link" target="_blank">Dunia Mahasiswa</a></li>
+                        <li><a href="" class="link" target="_blank">Berita Unit</a></li>
+                        <li><a href="" class="link" target="_blank">Kegiatan</a></li>
+                        <li><a href="" class="link" target="_blank">Informasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h6>Fakultas</h6>
+                    <ul>
+                        <li><a href="https://hukum.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Hukum</a></li>
+                        <li><a href="https://feb.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Ekonomi dan Bisni</a></li>
+                        <li><a href="https://pertanian.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Pertanian</a></li>
+                        <li><a href="http://teknik.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Teknik</a></li>
+                        <li><a href="https://fisib.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Ilmu Sosial dan Ilmu Budaya</a></li>
+                        <li><a href="https://fip.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Ilmu Pendidikan</a></li>
+                        <li><a href="https://fik.trunojoyo.ac.id/" class="link" target="_blank">Fakultas Keislaman</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h6>Unit Kerja</h6>
+                    <ul>
+                        <li><a href="https://spi.trunojoyo.ac.id/" class="link" target="_blank">Satuan Pengawas Internal</a></li>
+                        <li><a href="./../Unit Pelayanan/UPT-Perpustakaan.html" class="link">UPT Perpustakaan</a></li>
+                        <li><a href="./../Unit Pelayanan/UPT-Laboratorium-Terpadu.html" class="link">UPT Laboratorium Terpadu</a></li>
+                        <li><a href="./../Unit Pelayanan/UPT-Pusat-Bahasa.html" class="link">UPT Pusat Bahasa</a></li>
+                        <li><a href="./../Unit Pelayanan/UPT-TIK.html" class="link">UPT TIK</a></li>
+                        <li><a href="./../Unit Pelayanan/LPPM.html" class="link">LPPM</a></li>
+                        <li><a href="https://lp3mp.trunojoyo.ac.id/" class="link" target="_blank">LP3MP</a></li>
+                        <li><a href="https://io.trunojoyo.ac.id/" class="link" target="_blank">International Relation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row text-light">
+                <div class="col-7 d-flex justify-content-center me-5">
+                    <div class="logo text-center me-3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/UTM_DIKBUDRISTEK.png" alt="" height="140">
+                    </div>
+                    <div class="mt-4">
+                        <h5>UNIVERSITAS TRUNOJOYO MADURA</h5>
+                        <a class="text-decoration-none text-light"><i class="fa-solid fa-envelope me-3"></i>humas@trunojoyo.ac.id</a><br>
+                        <a class="text-decoration-none text-light"><i class="fa-solid fa-phone me-3"></i>031-3011146</a><br>
+                        <a target="_blank" href="https://www.youtube.com/@universitastrunojoyomadura2433" class="text-decoration-none text-light me-1"><i class="fa-brands fa-youtube"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/universitastrunojoyomadura/" class="text-decoration-none text-light me-1"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/universitastrunojoyomadura/" class="text-decoration-none text-light me-1"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-4 border-start border-light ps-5 pt-4">
+                    <h5>Alamat</h5>
+                    <p>Jl. Raya Telang,PO BOX 02 Kecamatan Kamal, Bangkalan Jawa Timur 69162 Indonesia</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-light text-center py-3 mt-5 border-top border-secondary" style="width: 100%;">
+            <p>2024 Hak Cipta, Universitas Trunojoyo Madura</p>
+        </div>
+    </div>
+    <!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>

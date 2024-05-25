@@ -1,0 +1,343 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 100px;
+    background-color: #ffeae0;
+}
+
+/*menu*/
+.menu {
+    background-color: #ffeae0;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    padding: 0px 100px;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav .logo h1{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+.nav .logo b{
+    color: #ff511c;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 45px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 19px;
+    transition: ease 0.5s;
+}
+
+.nav ul li a:hover{
+    color:  #ff511c;
+}
+
+/*aktiv*/
+
+.nav ul .home::after{
+    content: '';
+    width: 60%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+.nav ul .makanan::after{
+    content: '';
+    width: 69%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+.nav ul .minuman::after{
+    content: '';
+    width: 70%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+.nav ul .tentangkami::after{
+    content: '';
+    width: 65%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+/*input*/
+
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.singin{
+    background: transparent;
+    border: none;
+}
+
+.singup{
+    background-color: #ff511c;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+/*content*/
+.grid {
+    padding-top: 10px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.content .content-left .info p{
+    font-size: 20px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+/*content*/
+/*==button==*/
+
+.content .content-left button{
+    padding: 10px 23px;
+    background-color: #ff511c;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/*content image*/
+/*==right-side==*/
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+
+.content .content-right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    border-radius: 55px;
+}
+
+/*content*/
+/*==animation==*/
+
+/*
+animation: rotate 10s linear infinite;
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*==card==*/
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 200px;
+}
+
+.category .list-items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+.category .list-items .card-list{
+    margin-top: 12%;
+    margin-bottom: 20%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category .card-list .card{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #ffffff;
+    outline: 2px solid #faad96;
+    transition: all 0.3s ease;
+}
+
+.category .card-list .card:hover{
+    transform:translateY(-10px);
+}
+
+.category .card-list .card img{
+    width: 100px;
+    height: auto;
+    bottom: 125px;
+    left: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 20px 20px #faad96;
+    border-radius: 100%;
+}
+
+.category .card-list .card .food-title{
+    padding: 40px 0 10px;
+}
+
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.category .card .desc-food p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+/*==ini bisa==*/
+
+.category .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*==ini bisa==*/
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+/* footer */
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #ffeae0;
+    color: #000000;
+    padding: 20px; 
+    width: 100%;     
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px; 
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.footer-bottom {
+    background-color:#ffeae0;
+    padding: 10px 20px;
+    right: 0;
+    left: 0; 
+    text-align: right;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    margin: 0;
+    text-align: right;
+}
+

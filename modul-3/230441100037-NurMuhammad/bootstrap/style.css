@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid #ff0000; */
+}
+.bg-biru {
+    background: #283593;
+}
+.text-biru {
+    color: #283593;
+}
+.logo-navbar {
+    top:0px;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
+    background: #ffffff;
+    height: 90px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.logo-navbar img {
+    margin: 10px 0px 5px 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(https://fik.trunojoyo.ac.id/wp-content/uploads/2019/02/44.-Universitas-Trunojoyo-Madura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.container .row .col-4 ul li a.link {
+    text-decoration: none;
+    color: #767676;
+}
+.container .row .col-4 ul li a.link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.nyantol {
+    position: sticky;
+    top:50px;
+    z-index: 1;
+}
+.nyantol .border-bottom.border-secondary.mb-3 {
+    background: #ffffff;
+}
+main .sub-menu {
+    float: right;
+    margin-right: 80px;
+    position: sticky;
+    top: 150px;
+}
+@media (max-width: 1024px) {
+    .banner {
+        height: 600px;
+    }
+}
+@media (max-width: 360px) {
+    .banner {
+        height: 200px;
+    }
+}

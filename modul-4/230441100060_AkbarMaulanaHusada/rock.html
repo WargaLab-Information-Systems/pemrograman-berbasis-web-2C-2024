@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="to-do-list">
+        <div class="navbar">
+            <p><span style= "color:rgb(104, 115, 177)";>To do list </span>and Music</p>
+            <ul>
+                <li><a href="index.html">To do list</a><li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" onclick="munculdropdown()">Music</a>
+                        <ul>
+                            <li><a href="all.html">ALL</a></li>
+                            <li><a href="pop.html">POP</a></li>
+                            <li><a href="rock.html">ROCK</a></li>
+                            <li><a href="jazz.html">JAZZ</a></li>
+                            <li><a href="dangdut.html">DANGDUT</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="list-music">
+            <p>Music-Dangdut</p>
+            <ul>
+                <audio id="myAudio"></audio>
+                <li><p>A Little Piece Of Heaven.mp3</p><i class="fa-solid fa-play" onclick="playMusic(0)"></i></li>
+                <li><p>Gunslinger.mp3</p><i class="fa-solid fa-play" onclick="playMusic(1)"></i></li>
+                <li><p>So Far Away.mp3</p><i class="fa-solid fa-play" onclick="playMusic(2)"></i></li>
+            </ul>
+        </div> -->
+        <div class="list-music">
+            <p>Music-Rock</p>
+            <ul id="playlist">
+                <li><p>Avenged Sevenfold - A Little Piece Of Heaven.mp3</p><i class="fa-solid fa-play" onclick="playMusic(this, 'A Little Piece Of Heaven.mp3')"></i></li>
+                <li><p>Avenged Sevenfold - Gunslinger.mp3</p><i class="fa-solid fa-play" onclick="playMusic(this, 'Gunslinger.mp3')"></i></li>
+                <li><p>Avenged Sevenfold - So Far Away.mp3</p><i class="fa-solid fa-play" onclick="playMusic(this, 'So Far Away.mp3')"></i></li>
+                
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

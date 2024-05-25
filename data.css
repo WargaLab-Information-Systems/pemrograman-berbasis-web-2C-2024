@@ -1,0 +1,154 @@
+header {
+    background-color: #483D8B;
+    color: #ce965e;
+    padding: 28px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+nav ul li:last-child {
+    margin-left: 73%; 
+}
+
+
+nav ul li a {
+    margin-top: 8px;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0FFFF;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #87CEEB;
+    color: white;
+}
+
+form {
+    margin-top: 20px;
+    
+}
+
+
+.delete-link {
+    margin-left: 10px; 
+    font-color: #483D8B;
+}
+
+
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    padding: 10px 20px; 
+    background-color: #6495ED; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue; 
+}
+
+.delete-link {
+    font-color: blue;
+}

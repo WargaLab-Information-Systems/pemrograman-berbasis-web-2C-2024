@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown <menu></menu>
+    </title>
+
+    <link rel="stylesheet" href="new.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="select-menu">
+        <div class="select">
+            <span>PILIH BAHASA</span>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="options-list">
+            <div class="option">indonesia</div>
+            <div class="option">Arabi</div>
+            <div class="option">Hindi</div>
+            <div class="option">Spanish</div>
+            <div class="option">French</div>
+            <div class="option">Japanese</div>
+            <div class="option">Korean</div>
+            <div class="option">American</div>
+            <div class="option">yunani</div>
+            <div class="option">mandarin</div>
+            <div class="option">africa</div>
+            <div class="option">china</div>
+        </div>
+    </div>
+
+
+    <script>
+        const select = document.querySelector(".select");
+        const options_list = document.querySelector(".options-list");
+        const options = document.querySelectorAll(".option");
+
+        //melihat dan membaca
+        select.addEventListener("click", () => {
+            options_list.classList.toggle("active");
+            select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+        });
+
+        //penyeleksi 
+        options.forEach((option) => {
+            option.addEventListener("click", () => {
+                options.forEach((option) => { option.classList.remove('selected') });
+                select.querySelector("span").innerHTML = option.innerHTML;
+                option.classList.add("selected");
+                options_list.classList.toggle("active");
+                select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+            });
+
+        });
+    </script>
+</body>
+<footer>
+    <div class="footer">
+        <h2><a href="todo.html" target="_self">TODO LIST</a></h2>
+        <h2><a href="music.html" target="_self">MUSIC</a></h2>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/dist/output.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../asset/logo.png" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ZEN.id</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                    aria-expanded="false"
+                    class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </button>
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                        <span class="sr-only">Search icon</span>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <button data-collapse-toggle="navbar-search" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-search" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-3 md:hidden">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center"><span
+            class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">WORLD OF ZEN</span>
+        NETHERLAND</h1>
+
+    <!-- slide bar -->
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../asset/gambar1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../asset/gambar2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../asset/gambar3.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../asset/gambar4.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../asset/gedung6.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+    <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="sm:hidden">
+            <label for="tabs" class="sr-only">Select tab</label>
+            <select id="tabs"
+                class="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option>Statistics</option>
+                <option>Services</option>
+                <option>FAKTA</option>
+            </select>
+        </div>
+        <ul class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+            id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
+            <li class="w-full">
+                <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab" aria-controls="stats"
+                    aria-selected="true"
+                    class="inline-block w-full p-4 rounded-ss-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Statistics</button>
+            </li>
+            <li class="w-full">
+                <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about"
+                    aria-selected="false"
+                    class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Area</button>
+            </li>
+            <li class="w-full">
+                <button id="faq-tab" data-tabs-target="#faq" type="button" role="tab" aria-controls="faq"
+                    aria-selected="false"
+                    class="inline-block w-full p-4 rounded-se-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">FAKTA</button>
+            </li>
+        </ul>
+        <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
+            <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="stats" role="tabpanel"
+                aria-labelledby="stats-tab">
+                <dl
+                    class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
+                    <div class="flex flex-col items-center justify-center">
+                        <dt class="mb-2 text-3xl font-extrabold">73M+</dt>
+                        <dd class="text-gray-500 dark:text-gray-400">Plant</dd>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <dt class="mb-2 text-3xl font-extrabold">100M+</dt>
+                        <dd class="text-gray-500 dark:text-gray-400">Public repositories</dd>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <dt class="mb-2 text-3xl font-extrabold">1000s</dt>
+                        <dd class="text-gray-500 dark:text-gray-400">Open source projects</dd>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <dt class="mb-2 text-3xl font-extrabold">1B+</dt>
+                        <dd class="text-gray-500 dark:text-gray-400">Contributors</dd>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <dt class="mb-2 text-3xl font-extrabold">90+</dt>
+                        <dd class="text-gray-500 dark:text-gray-400">Top Forbes companies</dd>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <dt class="mb-2 text-3xl font-extrabold">4M+</dt>
+                        <dd class="text-gray-500 dark:text-gray-400">Organizations</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel"
+                aria-labelledby="about-tab">
+                <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">services in their
+                    respective fields</h2>
+                <!-- List -->
+                <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
+                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <span class="leading-tight">mountain region</span>
+                    </li>
+                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <span class="leading-tight">sea ​​area</span>
+                    </li>
+                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <span class="leading-tight">airspace</span>
+                    </li>
+                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <span class="leading-tight">desert region</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden p-4 bg-white rounded-lg dark:bg-gray-800" id="faq" role="tabpanel"
+                aria-labelledby="faq-tab">
+                <div id="accordion-flush" data-accordion="collapse"
+                    data-active-classes="bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                    data-inactive-classes="text-gray-500 dark:text-gray-400">
+                    <h2 id="accordion-flush-heading-1">
+                        <button type="button"
+                            class="flex items-center justify-between w-full py-5 font-medium text-left rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                            data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
+                            aria-controls="accordion-flush-body-1">
+                            <span>Apa penting nya melakukan reboisasi?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Dengan melakukan reboisasi akan didapatkan
+                                manfaat seperti berikut ini: Mencegah terjadinya erosi tanah yang bisa disebabkan oleh
+                                angin dan juga air hujan yang berturut-turut. Melestarikan kesuburan tanah yang bisa
+                                dijadikan sebagai lahan pertanian. Menjaga struktur tanah agar tidak rusak..</p>
+                            <p class="text-gray-500 dark:text-gray-400">chek lebih lanjut <a
+                                    href="/docs/getting-started/introduction/"
+                                    class="text-blue-600 dark:text-blue-500 hover:underline"></a></p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-2">
+                        <button type="button"
+                            class="flex items-center justify-between w-full py-5 font-medium text-left rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                            data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                            aria-controls="accordion-flush-body-2">
+                            <span>Apa akibat reboisasi?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Dengan menanam pohon di kawasan yang telah
+                                terdegradasi atau gundul, reboisasi membantu lingkungan dengan menjamin, atau
+                                mempercepat pembentukan kembali struktur hutan yang sehat dengan menumbuhkan kembali
+                                kanopi hutan dan melestarikan keanekaragaman hayati dalam ekosistem.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out the <a
+                                    href="https://flowbite.com/figma/"
+                                    class="text-blue-600 dark:text-blue-500 hover:underline">Check lebih lengkap .</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-3">
+                        <button type="button"
+                            class="flex items-center justify-between w-full py-5 font-medium text-left rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                            data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                            aria-controls="accordion-flush-body-3">
+                            <span>Apa dampak negatif industrialisasi dalam bidang lingkungan hidup?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Dampak negatif yang seringkali terjadi
+                                yaitu pencemaran lingkungan. Keberadaan industri apabila tidak dikelola dengan baik
+                                seringkali mengakibatkan polusi air, udara, tanah yang berbahaya bagi makhluk hidup di
+                                sekitar kawasan industri.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Telusuri lebih lanjut:</p>
+                            <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                                <li><a href="https://library.iblam.ac.id/index.php?p=show_detail&id=21895#:~:text=Selain%20menimbulkan%20dampak%20yang%20baik,dan%20pembagian%20kelas%20yang%20merugikan."
+                                        class="text-blue-600 dark:text-blue-500 hover:underline">Dampak negatif revolusi
+                                        industri</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="konsul flex justify-center flex-col items-center text-base">
+            <h1 class="font-bold py-12 text-4xl">Evironmental Consulting And Engineering</h1>
+            <p>over the year. greenworld has contributed to many succesfull project
+            <p>throught innovative approaches and our brand of knowlegde and expertise</p>
+            <div class="grid-col-3 flex gap-6 py-6">
+                <div><img src="../src/asset/drops.jpg" alt=""></div>
+                <div><img src="../src/asset/forest.png" alt=""></div>
+                <div><img src="../src/asset/computer.png" alt=""></div>
+                <div><img src="../src/asset/calendar.png" alt=""></div>
+                <div><img src="../src/asset/drilling-rig.png" alt=""></div>
+                <div><img src="../src/asset/search.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- service -->
+
+    <div class="container">
+        <div class="servis bg-slate-400 text-4xl ">
+            <h1 class="font-bold py-3 text-center">Our Service</h1>
+        </div>
+        <div class="servis-item py-6 flex gap-6">
+            <div
+                class="max-w-sm bg-white border  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="../asset/gedung8.jpg" alt="" style="height: 20rem;" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            technology acquisitions 2021</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="max-w-sm bg-white border  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="../asset/gedung2.jpg" alt="" style="height: 20rem;" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            technology acquisitions 2021</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="max-w-sm bg-white border  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="../asset/gedung7.jpg" alt="" style="height: 20rem;" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            technology acquisitions 2021</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="max-w-sm bg-white border  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="../asset/gedung3.jpg" alt="" style="height: 20rem;" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            technology acquisitions 2021</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <label for="message" class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Your message</label>
+    <textarea id="message" rows="4"
+        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-2000 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Write your thoughts here..."></textarea>
+
+    <div
+        class="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Work fast from anywhere</h5>
+        <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">keep abreast of technological developments
+            with our best service</p>
+        <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+            <a href="#"
+                class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple"
+                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path fill="currentColor"
+                        d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
+                    </path>
+                </svg>
+                <div class="text-left rtl:text-right">
+                    <div class="mb-1 text-xs">Download on the</div>
+                    <div class="-mt-1 font-sans text-sm font-semibold">Mac App Store</div>
+                </div>
+            </a>
+            <a href="#"
+                class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play"
+                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z">
+                    </path>
+                </svg>
+                <div class="text-left rtl:text-right">
+                    <div class="mb-1 text-xs">Get in on</div>
+                    <div class="-mt-1 font-sans text-sm font-semibold">Google Play</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"
+                    class="hover:underline">ZENMASTER</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- preline -->
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <!-- flowbite -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+ -->

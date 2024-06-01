@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'raleway';
+}
+:root {
+    --main-color:black ;
+    --text-color:black;
+    --bg-color:#a5ffd6 ;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    color: #222;
+    background-color: #222;
+}
+.navbar a{
+    font-size: 20px;
+
+}
+.navbar ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rempx;
+}
+nav{
+    background: #f8f69f;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    width: 60px;
+}
+.user-pic{
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+nav ul{
+    list-style: none;
+    width:100%;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #222;
+    font-weight: 200px;
+    text-decoration: none;
+}
+
+.submenu-wrapper{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 300px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.submenu-wrapper.openMenu{
+    max-height: 400px;
+}
+
+.submenu{
+    background-color: #fff;
+    padding: 1.1rem;
+    margin: 10px;
+    border-radius: 5px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+    font-weight: 400;
+}
+.user-info img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.submenu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    margin: 15px 0 10px;
+    background-color: #ccc;
+}
+
+.submenu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    counter-reset: #444;
+    margin: 12px 0;
+}
+.submenu-link p{
+    width: 80%;
+    font-size: 15px;
+}
+.submenu-link img{
+    margin-right: 15px;
+    width: 20px;
+}
+.submenu-link span{
+    font-size: 15px;
+    color: #333;
+    transition: 0.5s;
+}
+.submenu-link:hover span{
+    transform: translateX(5px);
+}
+.submenu-link:hover p{
+    font-weight: 600;
+} 
+
+section{
+    padding: 70px 17%;
+}
+.home{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.home-img img{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    border-radius: 50%;
+}
+.home-text h1{
+    font-size: 45px;
+    color: var(--main-color);
+    text-align: center;
+}
+.home-text h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color-main);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    transform: scale(1.2) translate(10px);
+    transition: .4s;
+}
+.musik {
+    text-align: center; /* Membuat tombol musik berada di tengah */
+    margin-top: 20px; /* Meninggikan sedikit margin atas */
+    background-color:  #ffc09f; /* Mengubah latar belakang menjadi putih */
+    padding: 20px; /* Menambahkan ruang di sekitar tombol musik */
+}
+
+.musik-header {
+    font-size: 200px; /* Ukuran teks diubah */
+    color: black; /* Warna teks diubah */
+    margin-bottom: 20px; /* Meninggikan sedikit margin bawah */
+}
+
+.musik-buttons button {
+    margin: 0 10px; /* Menambahkan jarak antara tombol */
+}
+
+.section-title {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+} 
+.menu button a{
+    color:#fff;
+    padding: 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.menu button{
+    padding:10px;   
+    color:#fff;
+    background-color:red;
+}
+.food-item,
+.drink-item {
+    margin: 0 20px;
+    text-align: center;
+    background-color: #6495ED; /* Warna latar belakang item makanan/minuman */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(95, 10, 10, 0.1);
+    transition: transform 0.3s ease;
+} */
+
+.food-item:hover,
+.drink-item:hover {
+    transform: translateY(-5px);
+}
+
+.food-item img,
+.drink-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.food-item h3,
+.drink-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333333; /* Warna teks judul item */
+}
+.drink-item button{
+    padding:10px;
+    
+}
+section{
+    width: 50%;
+    float: right;;
+    padding: 40px;
+    background-color: #ffc09f;
+    height: auto;
+}
+
+.food-item p,
+.drink-item p {
+    color: hsl(0, 0%, 0%); /* Warna teks deskripsi item */
+    margin: 0;
+    padding: 0 20px 20px 20px;
+} 
+/* CSS untuk tombol */
+
+h2{
+    font-size:20px; 
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    textt-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; 
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+} 
+
+button:hover {
+    background-color: #45a049; 
+}
+
+button:active {
+    background-color: #3e8e41; 
+} 
+
+footer{
+    display: block;
+    clear: both;
+    background-color: #ffee93; 
+    text-align: center; 
+    padding: 0px;   
+} 
+footer h4{
+    padding-top: 15px;
+    margin: auto;
+} 
+footer p{
+    padding-bottom: 15px;
+}

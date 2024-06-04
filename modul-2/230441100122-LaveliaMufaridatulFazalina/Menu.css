@@ -1,0 +1,142 @@
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f5af21;
+}
+
+header {
+    background-color: #333;
+    color: #ce965e;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: #040605;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu h1 {
+    margin-bottom: 20px;
+}
+
+#menu {
+    text-align: center;
+}
+
+
+.menu-item {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    align-items: center;
+}
+
+.menu-item-image img {
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    background-color:rgb(74, 2, 2);
+}
+
+
+.menu-item-details {
+    background-color: #f6ec82;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    color: #060303;
+}
+
+.menu-item p {
+    color: #282727;
+}
+
+.menu-title {
+    font-family: "Arial", sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    margin-bottom: 40px; 
+}
+
+form {
+    width: 20%;
+    background-color: #9e0000;
+    padding: 10px;
+    margin-top: 10px;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    
+}
+
+form input[type="submit"] {
+    font-family: Arial, sans-serif;
+    color: #9e0000;;
+    font-size: 20px;
+    border-radius: 10px;
+   
+}
+
+
+.menu-title:nth-of-type(1) {
+    margin-top: 30px;
+    text-decoration: underline;
+    color: rgb(97, 14, 14)
+}
+
+
+.menu-title:nth-of-type(2) {
+    margin-top: 30px;
+    text-decoration: underline;
+    color: rgb(97, 14, 14); 
+}
+
+/* Untuk judul "MENU MINUMAN" */
+.menu-title:nth-of-type(3) {
+    margin-top: 30px;
+    text-decoration: underline;
+    color: rgb(97, 14, 14); 
+}
+

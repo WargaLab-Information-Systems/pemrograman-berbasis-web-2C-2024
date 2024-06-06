@@ -7,15 +7,6 @@
 .bg-color{
     background: pink;
 }
-.home{
-    background: aqua;
-}
-.menu{
-    background: tomato;
-}
-.box{
-    background: grey;
-}
 .container {
     display: flex;
     height: 100vh;

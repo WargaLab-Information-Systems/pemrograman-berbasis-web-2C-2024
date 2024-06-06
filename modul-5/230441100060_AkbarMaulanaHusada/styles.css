@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("Background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 65px 20px 35px;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo i {
+  margin-right: 15px;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  height: 40px;
+  text-align: center;
+  width: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: rgb(38, 38, 176);
+  border-radius: 20px;
+}
+
+.welcome {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.heading {
+	text-align: center;
+	color: #fff;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+.heading h2 {
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+table {
+  background: #5847b6;
+  border-radius: 5px;
+  border-collapse: collapse;
+  width: 50%;
+  overflow: hidden;
+  margin: 0px auto;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #5847b6;
+  background-color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4f5f64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+
+/* .del  {
+  color: #fff;
+  background-color: #5847b6;
+  border-width: 0px;
+}
+
+.del p {
+  color: #fff;
+} */
+

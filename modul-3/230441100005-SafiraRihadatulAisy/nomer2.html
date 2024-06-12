@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Environment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animated {
+        animation: fadeInUp 0.5s ease-out;
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #48bb78;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .feature-icon img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <body class="bg-red-100">
+    <header class="bg-red-500 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-xl font-semibold">Lingkungan Sehat</h1>
+      </div>
+    </header>
+
+    <main class="container mx-auto py-8">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow-md animated">
+          <div class="feature-icon mb-4">
+            <img src="Tanaman.jpg" alt="Reuse Icon" />
+          </div>
+          <h2 class="text-xl font-semibold mb-4">Tanaman</h2>
+          <p class="text-gray-700">
+            Tanaman adalah organisme yang hidup di permukaan bumi dan memiliki
+            peran penting dalam menjaga keseimbangan lingkungan. Mereka
+            menghasilkan oksigen, menyediakan habitat bagi berbagai makhluk
+            hidup, serta memperbaiki kualitas tanah.
+          </p>
+        </div>
+
+        <div class="p-6 bg-white rounded-lg shadow-md animated">
+          <div class="feature-icon mb-4">
+            <img src="Daur ulang.png" alt="Reduce Icon" />
+          </div>
+          <h2 class="text-xl font-semibold mb-4">Daur Ulang</h2>
+          <p class="text-gray-700">
+            Daur ulang adalah proses mengubah limbah menjadi bahan yang dapat
+            digunakan kembali. Praktik daur ulang sangat penting dalam menjaga
+            keberlanjutan lingkungan dengan mengurangi jumlah sampah yang masuk
+            ke tempat pembuangan akhir (TPA) dan mengurangi penggunaan sumber
+            daya alam baru.
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md animated">
+          <div class="feature-icon mb-4">
+            <img src="energi terbarukan.jpg" alt="Recycle Icon" />
+          </div>
+          <h2 class="text-xl font-semibold mb-4">Energi terbarukan</h2>
+          <p class="text-gray-700">
+            Energi terbarukan adalah sumber energi yang diperoleh dari sumber
+            alam yang dapat diperbaharui, seperti matahari, angin, air, dan
+            biomassa. Pemanfaatan energi terbarukan membantu mengurangi emisi
+            gas rumah kaca dan ketergantungan pada sumber energi fosil yang
+            tidak terbarukan.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-red-500 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>Hak Cipta &copy; 2024 Web Lingkungan Sehat</p>
+      </div>
+    </footer>
+  </body>
+</html>

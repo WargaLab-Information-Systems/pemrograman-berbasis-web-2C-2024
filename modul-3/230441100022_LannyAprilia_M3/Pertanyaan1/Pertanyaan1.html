@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Pertanyaan1.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 shadow-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">BOOK UPGRADE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ser">Service</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#MI">More Information</a></li>
+                  <li><a class="dropdown-item" href="#AU">About Us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid banner">
+        <div class="container text-center">
+            <h4 class="display-6">WELCOME TO BOOK UPGRADE</h4>
+            <h3 class="display-1">Reading is a Window to Science</h3>
+            <a href="#service">
+                <button type="button" class="btn btn-danger btn-lg">Service</button>
+            </a>
+        </div>
+      </div>
+      <div class="container-fluid service pt-5 pb-5">
+        <div class="container text-center">
+            <h2 class="display-3" id="ser">Service</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, alias!</p>
+        
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <span class="lingkaran"><i class="fa-solid fa-book fa-5x"></i></span>
+                    <h3 class="mt-3">Book Lending</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, nemo!</p>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="lingkaran"><i class="fa-solid fa-list-check fa-5x"></i></i></span>
+                    <h3 class="mt-3">Book returns</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, nemo!</p>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="lingkaran"><i class="fa-solid fa-newspaper fa-5x"></i></i></span>
+                    <h3 class="mt-3">Book Information</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, nemo!</p>
+                </div>
+            </div>
+      </div>
+      <div class="container-fluid pt-5 pb-5 bg-light">
+        <div class="container text-center">
+            <h2 class="display-3" id="MI">More Information</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore natus facilis soluta! Veritatis error id quam quibusdam officiis dolor.</p>
+            <div class="row pt-4 gx-4 gy-4">
+                <div class="col-md-4">
+                    <div class="card crop-img">
+                        <img src="vc2.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Book Lending</h5>
+                            <p class="card-text">Peminjaman buku dapat dilakukan dengan menunjukkan kartu anggota perpustakaan.</p>
+                            <a href="#" class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card crop-img">
+                        <img src="vc1.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Book Returns</h5>
+                            <p class="card-text">Perpustakaan memiliki sistem pengembalian buku yang mudah dan efisien.</p>
+                            <a href="#" class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card crop-img">
+                        <img src="vc3.png" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Book Information</h5>
+                            <p class="card-text">Perpustakaan menyediakan layanan untuk membantu pengunjung mendapatkan</p>
+                            <a href="#" class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container-fluid pt-5 pb-5">
+        <div class="container">
+            <h2 class="display-3 text-center" id="AU"> About Us</h2>
+            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ipsam, magnam at dolorem mollitia debitis aut. Doloremque aliquam officia ducimus, maxime mollitia quasi praesentium eligendi optio possimus blanditiis est perferendis!</p>
+        </div>
+        <div class="clearfix pt-5 ">
+            <img src="au2.jpg" class="col-md-5 float-md-end mb-3 crop-img" width="100">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, nemo inventore consequatur velit ratione delectus iure repellat itaque consectetur quis odio sit eos necessitatibus tempore praesentium mollitia. Nulla, distinctio nostrum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, nemo inventore consequatur velit ratione delectus iure repellat itaque consectetur quis odio sit eos necessitatibus tempore praesentium mollitia. Nulla, distinctio nostrum?</p>
+      </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "comic sans ms";
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #1e0342;
+}
+
+header h1 {
+  color: aqua;
+  margin-top: -80px;
+  margin-bottom: 100px;
+}
+
+header h1 span {
+  color: darkgoldenrod;
+}
+
+div img {
+  width: 200px;
+  margin-top: -70px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.container {
+  margin-top: 160px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  text-decoration: none;
+  color: #33ffff;
+  padding: 1em;
+}
+.container h2 {
+  margin-top: 10px;
+  color: snow;
+}
+
+.container h2 span {
+  color: darkgoldenrod;
+}
+
+.social-links {
+  color: snow;
+  margin: 10px;
+}
+.social-links :hover {
+  color: #bacd92;
+}
+a {
+  color: #33ffff;
+  text-decoration: none;
+}

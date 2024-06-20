@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Dropdown Menu</title>
+</head>
+<body>
+    <section class="bg-color">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="halam.html">Halaman 2</a>
+                    </li>
+                    <li class="nav-link services">
+                        <a href="#" id="dropdown-trigger">AKU
+                            <span class="material-icons dropdown-icon">
+                                arrow_drop_down
+                            </span>
+                        </a>
+                        <ul class="drop-down" id="dropdown-menu">
+                            <li><a href="#home"> Tombol 1</a></li>
+                            <li><a href="#menu">Tombol 2</a></li>
+                            <li><a href="#box">Tombol 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <audio id="myAudio" src="alarm.mpeg"></audio>
+                <ul class="nav-links audio-controls">
+                    <li class="nav-link">
+                        <button onclick="playAudio()" class="material-icons">play_arrow</button>
+                        <button onclick="pauseAudio()" class="material-icons">pause</button>
+                        <button onclick="stopAudio()" class="material-icons">stop</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div>
+    </div>
+</body>
+<script>
+var audio = document.getElementById("myAudio");
+
+function playAudio() {
+  audio.play();
+}
+
+function pauseAudio() {
+  audio.pause();
+}
+  
+function stopAudio() {
+  audio.pause();
+  audio.currentTime = 0;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var dropdownTrigger = document.getElementById("dropdown-trigger");
+    var dropdownMenu = document.getElementById("dropdown-menu");
+
+    dropdownTrigger.addEventListener("click", function(event) {
+        event.preventDefault();
+        dropdownMenu.classList.toggle("active");
+    });
+});
+</script>
+</html>

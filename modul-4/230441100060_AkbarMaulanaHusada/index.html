@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="to-do-list">
+        <div class="navbar">
+            <p><span style= "color:rgb(104, 115, 177)";>To do list </span>and Music</p>
+            <ul>
+                <li><a href="#">To do list</a><li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" onclick="munculdropdown()">Music</a>
+                        <ul>
+                            <li><a href="all.html">ALL</a></li>
+                            <li><a href="pop.html">POP</a></li>
+                            <li><a href="rock.html">Rock</a></li>
+                            <li><a href="jazz.html">JAZZ</a></li>
+                            <li><a href="dangdut.html">DANGDUT</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-input">
+            <p>To do list</p>
+            <form action="" class="input">
+                <input type="text" id="text" placeholder="Masukkan text">
+                <button class="tambah" onclick="add()">Add</button>
+                <button class="cancel" onclick="cancel()">Cancel</button>
+            </form>
+            <ul id="list-todo">
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

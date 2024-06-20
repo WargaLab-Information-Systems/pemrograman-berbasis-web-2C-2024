@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #00215e;
+}
+
+.container {
+  width: 700px;
+}
+
+.card {
+  width: 700px;
+}
+
+.card-body {
+  width: 700px;
+  background-image: url(https://w.wallhaven.cc/full/l8/wallhaven-l8vp7y.jpg);
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.card-header {
+  background-color: #7aba78;
+  color: snow;
+}
+
+.form-label {
+  color: snow;
+}
+
+.form-control {
+  background-color: rgba(212, 202, 202, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.form-select {
+  background-color: rgba(212, 202, 202, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.btn {
+  margin-top: 1px;
+}

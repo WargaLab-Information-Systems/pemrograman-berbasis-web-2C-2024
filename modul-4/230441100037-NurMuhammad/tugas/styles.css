@@ -1,0 +1,204 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+/* NAVBAR */
+.navbar {
+    z-index: 10;
+    width: 100%;
+    background: #ffffff;
+    height: 65px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar .logo {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
+    background: #E6EE9C;
+    margin-left: 10%;
+    height: 100px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.navbar .logo h1 {
+    color: #827717;
+    font-size: 60px;
+}
+.navbar .nav-items {
+    margin-right: 10%;
+    width: 600px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-items .list-nav {
+    height: 65px;
+    width:  400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar .nav-items .list-nav a {
+    text-decoration: none;
+    font-size: 21px;
+    align-self: center;
+    color: #9E9D24;
+    font-weight: 600;
+}
+.navbar .nav-items .list-nav a:hover {
+    color: #827717;
+}
+.navbar .nav-items .list-nav .dropdown {
+    position: relative;
+} 
+.navbar .nav-items .list-nav .dropdown ul {
+    display: none;
+    z-index: 20;
+    background: #ffffff;
+    position: absolute;
+    padding: 20px 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.navbar .nav-items .list-nav .dropdown ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.navbar .nav-items .search {
+    height: 32px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}   
+.navbar .nav-items .search input[type="text"] {
+    height: 32px;
+    width: 250px;
+    border: #9E9D24 solid 1.5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.navbar .nav-items .search button {
+    height: 27px;
+    width: 27px;
+    border: #9E9D24 solid 1.5px;
+    box-sizing: border-box;
+    background: #9E9D24;
+    color: #ffffff;
+    position: absolute;
+    top: 2.5px;
+    right: 2.5px;
+
+}
+.navbar .nav-items .search button:hover {
+    border: #827717 solid 1.5px;
+    background: #827717;
+    color: #fff;
+}
+/* navbar */
+
+.container {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+/* PLAYLIST MUSIC */
+.playlistMusic {
+    width: 650px;
+}
+.playlistMusic #playlist li {
+    padding: 10px;
+    border-bottom: 1px solid #9E9D24;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background: #E6EE9C;
+    color: #827717;
+}
+.playlistMusic #playlist li button {
+    padding: 5px;
+    border: 0px;
+    background: #9E9D24;
+    color: #fff;
+}
+.playlistMusic #playlist li button:hover {
+    background: #827717;
+}
+/* playlist music */
+
+/* TODO LIST */
+.todoList {
+    width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #E6EE9C;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.todoList .form {
+    width: 70%;
+}
+.todoList .form input[type="text"] {
+    border: #9E9D24 solid 1.5px;
+    color: #827717;
+    width: 70%;
+    padding: 8px;
+    color: #827717;
+}
+.todoList button {
+    padding: 8px;
+    width: 80px;
+    background-color: #9E9D24;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.todoList button:hover {
+    background-color: #827717;
+}
+.todoList .selesai {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.todoList h1 {
+    text-align: center;
+    color: #827717;
+}
+.todoList ul {
+    width: 100%;
+}
+.todoList ul li {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.todoList ul li p {
+    width: 60%;
+    overflow: hidden;
+    color: #827717;
+}
+.todoList ul li .aksi {
+    width: 180px;
+}
+.todoList ul li button:nth-child(1) {
+    margin-right: 10px;
+}
+/* todo list */

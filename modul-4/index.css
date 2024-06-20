@@ -1,0 +1,81 @@
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: #ae4a74;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dropdwon{
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+.dropdwon *{
+    box-sizing: border-box;
+}
+.select{
+    background: #c291a1;
+    color: #f3ddeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #b66a8f solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.select-clicked{
+    border: 2px #e8c6dd solid;
+    box-shadow: 0 0 0.8em #e8c6dd;
+}
+.select:hover{
+    background: #c291a1;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+.caret-rotate{
+    transform: rotate(180deg);
+}
+.menu{
+    list-style: none;
+    padding: 0,2em 0.5em;
+    background: #b66a8f;
+    border: #c291a1;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color:  #c291a1;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.25;
+    z-index: 1;
+}
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu li:hover{
+    background: #fff;
+}
+.active{
+    background: #f3ddeb;
+}
+.menu-open{
+    display: block;
+    opacity: 1;
+}

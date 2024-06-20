@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Navbar Dropdown</title>
+  
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Service</button>
+      <div class="dropdown-content">
+        <a href="Playlist.html">Play Music</a>
+        <a href="todo.html">ToDo List</a>
+        <a href="#">Need Help?</a>
+      </div>
+    </div>
+    <a href="#">Kontak</a>
+  </div>
+
+  <div class="container-fluid banner">
+    <div class="container text-center">
+        <h4>WELCOME TO MYPLAYLIST</h4>
+        <h3>Let's Make a Unique MUSIC!!!</h3>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript untuk dropdown
+    var dropdowns = document.getElementsByClassName('dropdown');
+    for (var i = 0; i < dropdowns.length; i++) {
+      var dropdown = dropdowns[i];
+      var dropbtn = dropdown.querySelector('.dropbtn');
+      var dropdownContent = dropdown.querySelector('.dropdown-content');
+      dropbtn.onclick = function() {
+        dropdownContent.classList.toggle('show');
+      };
+    }
+  </script>
+
+</body>
+</html>

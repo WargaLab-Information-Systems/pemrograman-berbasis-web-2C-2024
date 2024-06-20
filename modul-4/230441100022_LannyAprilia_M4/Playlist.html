@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles3.css">
+  <title>Pemutar Musik</title>
+</head>
+<body>
+  
+  <div class="player">
+    <img class="player-image" src="tf.jpg" alt="Music Cover">
+    <div class="player-info">
+      <p id="song-title">Cruel Summer</p>
+      <p id="artist">Taylor Swift</p>
+    </div>
+    <div class="player-controls">
+      <button id="play-pause">Play</button>
+      <button id="stop">Stop</button>
+    </div>
+    <audio id="player-audio" src="TF.mp3" preload="none"></audio>
+  </div>
+
+  <a href="2.html">Back To Home</a>
+
+  <script>
+    // JavaScript untuk kontrol pemutar musik
+    const audio = document.getElementById('player-audio');
+    const playBtn = document.getElementById('play-pause');
+    const stopBtn = document.getElementById('stop');
+    const songTitle = document.getElementById('song-title');
+    const artist = document.getElementById('artist');
+
+    // Update informasi lagu (sesuaikan dengan lagu Anda)
+    songTitle.textContent = 'Cruel Summer';
+    artist.textContent = 'Taylor Swift';
+
+    // Fungsi play/pause lagu
+    function togglePlay() {
+      if (audio.paused) {
+        audio.play();
+        playBtn.textContent = 'Pause';
+      } else {
+        audio.pause();
+        playBtn.textContent = 'Play';
+      }
+    }
+
+    // Fungsi stop lagu
+    function stopAudio() {
+      audio.currentTime = 0;
+      audio.pause();
+      playBtn.textContent = 'Play';
+    }
+
+    // Event listener untuk tombol play/pause
+    playBtn.addEventListener('click', togglePlay);
+
+    // Event listener untuk tombol stop
+    stopBtn.addEventListener('click', stopAudio);
+  </script>
+
+</body>
+</html>

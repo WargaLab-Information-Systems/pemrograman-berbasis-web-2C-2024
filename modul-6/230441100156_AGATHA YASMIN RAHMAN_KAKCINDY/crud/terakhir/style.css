@@ -1,0 +1,52 @@
+body {
+    padding-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* CSS untuk gaya tabel */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* CSS untuk header tabel */
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+/* CSS untuk sel data dalam tabel */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* CSS untuk baris ganjil dalam tabel */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* CSS untuk tombol aksi */
+.btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+

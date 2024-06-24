@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AN NUR</title> <!-- Hubungkan ke file CSS eksternal -->
+</head>
+<body>
+    <style>
+        /* Styling untuk tubuh dokumen */
+body {
+    margin: 0; /* Hilangkan margin default */
+    padding: 0; /* Hilangkan padding default */
+    font-family: Arial, sans-serif; /* Pilih jenis font */
+    background-image: url(annur.webp); /* Gunakan gambar latar belakang */
+    background-size: cover; /* Sesuaikan ukuran latar belakang */
+    background-position: center; /* Posisikan latar belakang di tengah */
+    height: 100vh; /* Gunakan tinggi 100% dari viewport */
+}
+
+/* Styling untuk bagian utama */
+.main {
+    display: flex; /* Gunakan display flex untuk menengahkan konten */
+    justify-content: center; /* Menengahkan konten secara horizontal */
+    align-items: center; /* Menengahkan konten secara vertikal */
+    height: 100vh; /* Gunakan tinggi 100% dari viewport */
+}
+
+/* Styling untuk navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang navbar */
+    padding: 20px 40px; /* Ruang bantalan pada navbar */
+    border-radius: 10px; /* Rounding sudut navbar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan pada navbar */
+    transition: background-color 0.3s ease; /* Transisi efek hover */
+}
+
+/* Efek hover pada navbar */
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang navbar saat dihover */
+}
+
+/* Styling untuk logo */
+.logo {
+    color: #fff; /* Warna teks logo */
+    font-size: 24px; /* Ukuran font logo */
+    font-weight: bold; /* Ketebalan font */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf besar */
+    letter-spacing: 2px; /* Spasi antar huruf */
+}
+
+/* Styling untuk daftar navigasi */
+ul {
+    list-style: none; /* Hilangkan gaya daftar default */
+    padding: 0; /* Hilangkan bantalan di sekitar daftar */
+    margin: 0; /* Hilangkan margin di sekitar daftar */
+}
+
+/* Styling untuk setiap item daftar navigasi */
+ul li {
+    display: inline-block; /* Membuat item berjajar horizontal */
+    margin-left: 20px; /* Ruang antara setiap item */
+}
+
+/* Styling untuk tautan navigasi */
+ul li a {
+    text-decoration: none; /* Hilangkan dekorasi tautan default */
+    color: #fff; /* Warna tautan */
+    transition: color 0.3s ease; /* Transisi efek hover */
+}
+
+/* Efek hover pada tautan navigasi */
+ul li a:hover {
+    color: #ffd700; /* Warna tautan saat dihover */
+}
+
+    </style>
+    <!-- Bagian utama yang mengelompokkan semua elemen -->
+    <div class="main">
+        <!-- Navbar untuk navigasi -->
+        <div class="navbar">
+            <!-- Label/logo untuk situs -->
+            <label class="logo">SMA ANNUR BULULAWANG</label>
+            <!-- Daftar navigasi -->
+            <ul>
+                <!-- Item navigasi -->
+                <center><li><a href="Boostrap2.html">Info</a></li></center>
+        </div>
+    </div>
+</body>
+</html>
